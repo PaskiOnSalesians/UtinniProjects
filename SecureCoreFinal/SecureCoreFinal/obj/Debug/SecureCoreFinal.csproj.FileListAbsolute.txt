@@ -1,0 +1,11 @@
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\bin\Debug\SecureCoreFinal.exe.config
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\bin\Debug\SecureCoreFinal.exe
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\bin\Debug\SecureCoreFinal.pdb
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmLogin.resources
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmSplash.resources
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.Properties.Resources.resources
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.GenerateResource.cache
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CoreCompileInputs.cache
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
+C:\Users\oriol\source\repos\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
