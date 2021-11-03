@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace SecureCoreFinal
 {
-    public partial class frmLogin : Form
+    public partial class frmMain : Form
     {
-        public frmLogin()
+        public frmMain()
         {
             InitializeComponent();
         }
 
-        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        private void lblTest_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmMain frmMain = new frmMain();
-            frmMain.ShowDialog();
         }
     }
 }

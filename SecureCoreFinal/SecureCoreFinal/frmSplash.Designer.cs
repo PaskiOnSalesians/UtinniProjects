@@ -33,11 +33,12 @@ namespace SecureCoreFinal
             this.pgbLoading = new System.Windows.Forms.ProgressBar();
             this.lblLoading = new System.Windows.Forms.Label();
             this.timerSplash = new System.Windows.Forms.Timer(this.components);
+            this.lblText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pgbLoading
             // 
-            this.pgbLoading.Location = new System.Drawing.Point(113, 327);
+            this.pgbLoading.Location = new System.Drawing.Point(111, 327);
             this.pgbLoading.Name = "pgbLoading";
             this.pgbLoading.Size = new System.Drawing.Size(568, 10);
             this.pgbLoading.TabIndex = 0;
@@ -45,7 +46,7 @@ namespace SecureCoreFinal
             // lblLoading
             // 
             this.lblLoading.AutoSize = true;
-            this.lblLoading.Location = new System.Drawing.Point(700, 320);
+            this.lblLoading.Location = new System.Drawing.Point(684, 322);
             this.lblLoading.Name = "lblLoading";
             this.lblLoading.Size = new System.Drawing.Size(28, 17);
             this.lblLoading.TabIndex = 1;
@@ -56,11 +57,23 @@ namespace SecureCoreFinal
             this.timerSplash.Enabled = true;
             this.timerSplash.Tick += new System.EventHandler(this.timerSplash_Tick);
             // 
+            // lblText
+            // 
+            this.lblText.AutoSize = true;
+            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblText.Location = new System.Drawing.Point(316, 156);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(160, 29);
+            this.lblText.TabIndex = 2;
+            this.lblText.Text = "Secure Core";
+            // 
             // frmSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblText);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pgbLoading);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -76,6 +89,7 @@ namespace SecureCoreFinal
         private System.Windows.Forms.ProgressBar pgbLoading;
         private System.Windows.Forms.Label lblLoading;
         private System.Windows.Forms.Timer timerSplash;
+        private System.Windows.Forms.Label lblText;
     }
 }
 
