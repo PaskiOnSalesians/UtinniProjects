@@ -17,13 +17,17 @@ namespace SecureCoreFinal
             InitializeComponent();
         }
 
+        int x = 0;
+
         private void timerSplash_Tick(object sender, EventArgs e)
         {
-            pgbLoading.Increment(4);
-            Opacity -= 0.03;
-            lblLoading.Text = pgbLoading.Value.ToString() + "%";
+            picSpaceShip.Left += 10;
+            //Opacity -= 0.03;
 
-            if(Opacity == 0)
+            panelPgb1.Width += 10;
+            panelPgb2.Width += 10;
+
+            if (panelPgb1.Width >= 400)
             {
                 timerSplash.Stop();
                 this.Hide();
