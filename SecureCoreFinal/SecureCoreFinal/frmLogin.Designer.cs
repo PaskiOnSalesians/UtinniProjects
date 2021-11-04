@@ -52,7 +52,7 @@ namespace SecureCoreFinal
             this.txtUsername.ForeColor = System.Drawing.Color.DimGray;
             this.txtUsername.Location = new System.Drawing.Point(454, 197);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(267, 29);
+            this.txtUsername.Size = new System.Drawing.Size(299, 29);
             this.txtUsername.TabIndex = 2;
             this.txtUsername.Text = "username";
             this.txtUsername.Enter += new System.EventHandler(this.txtUsername_Enter);
