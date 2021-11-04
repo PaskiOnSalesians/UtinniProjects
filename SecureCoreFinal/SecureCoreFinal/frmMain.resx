@@ -117,26 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="9-90091_star-wars-ships-png-star-wars-snowspeeder-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9-90091_star-wars-ships-png-star-wars-snowspeeder-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="togglepassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\togglepassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="spachisp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spachisp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="xdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="okkstarwars" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\okkstarwars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rebels-r2-d2-and-c-3po-star-wars-rebels-r2d2-11563225257oc69vhrqhb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rebels-r2-d2-and-c-3po-star-wars-rebels-r2d2-11563225257oc69vhrqhb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="starwarshlaconlool2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\starwarshlaconlool2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
