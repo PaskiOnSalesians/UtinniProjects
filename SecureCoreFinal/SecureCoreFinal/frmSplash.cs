@@ -21,13 +21,13 @@ namespace SecureCoreFinal
 
         private void timerSplash_Tick(object sender, EventArgs e)
         {
-            picSpaceShip.Left += 10;
+            picSpaceShip.Left += 9;
             //Opacity -= 0.03;
 
-            panelPgb1.Width += 10;
-            panelPgb2.Width += 10;
+            panelPgb1.Width += 9;
+            panelPgb2.Width += 9;
 
-            if (panelPgb1.Width >= 400)
+            if (panelPgb1.Width >= 360)
             {
                 timerSplash.Stop();
                 this.Hide();
