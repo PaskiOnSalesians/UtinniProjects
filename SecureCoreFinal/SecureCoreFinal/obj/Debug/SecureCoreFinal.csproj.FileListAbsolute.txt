@@ -21,3 +21,15 @@ C:\Users\oriol\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal
 C:\Users\oriol\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CoreCompileInputs.cache
 C:\Users\oriol\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
 C:\Users\oriol\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\bin\Debug\SecureCoreFinal.exe.config
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\bin\Debug\SecureCoreFinal.exe
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\bin\Debug\SecureCoreFinal.pdb
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmLogin.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmMain.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmSplash.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.Properties.Resources.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.GenerateResource.cache
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CoreCompileInputs.cache
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
