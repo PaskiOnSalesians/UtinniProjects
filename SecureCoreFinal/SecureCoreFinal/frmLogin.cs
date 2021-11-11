@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SecureCoreFinal
 {
@@ -15,8 +16,20 @@ namespace SecureCoreFinal
         public frmLogin()
         {
             InitializeComponent();
-            panelTop.Focus();
+
+            SqlConnection conn;
+            string cnx;
+            cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;";
+            conn = new SqlConnection(cnx);
+
+
+            SqlDataAdapter adapter;
+            string query;
+            query = "select * from users";
+
+            adapter = new SqlDataAdapter(query, conn);
         }
+
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -32,12 +45,12 @@ namespace SecureCoreFinal
 
         private void picTogglePass_MouseDown(object sender, MouseEventArgs e)
         {
-            txtPassword.UseSystemPasswordChar = false;
+            swTextboxPasswd.UseSystemPasswordChar = false;
         }
 
         private void picTogglePass_MouseUp(object sender, MouseEventArgs e)
         {
-            txtPassword.UseSystemPasswordChar = true;
+            swTextboxPasswd.UseSystemPasswordChar = true;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -45,17 +58,15 @@ namespace SecureCoreFinal
             Application.Exit();
         }
 
-        private void txtUsername_Enter(object sender, EventArgs e)
+        private void swTextboxPasswd_Enter(object sender, EventArgs e)
         {
-            this.Text = string.Empty;
-            txtUsername.ForeColor = Color.Black;
+            swTextboxPasswd.UseSystemPasswordChar = true;
+            swTextboxPasswd.SelectAll();
         }
 
-        private void txtPassword_Enter(object sender, EventArgs e)
+        private void swTextboxUsername_Enter(object sender, EventArgs e)
         {
-            this.Text = string.Empty;
-            txtPassword.ForeColor = Color.Black;
-            txtPassword.UseSystemPasswordChar = true;
+            swTextboxUsername.SelectAll();
         }
     }
 }

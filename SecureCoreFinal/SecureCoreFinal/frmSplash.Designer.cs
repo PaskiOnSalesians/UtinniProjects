@@ -34,7 +34,6 @@ namespace SecureCoreFinal
             this.lblText = new System.Windows.Forms.Label();
             this.panelPgb1 = new System.Windows.Forms.Panel();
             this.picSpaceShip = new System.Windows.Forms.PictureBox();
-            this.panelPgb2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picSpaceShip)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,29 +56,22 @@ namespace SecureCoreFinal
             // panelPgb1
             // 
             this.panelPgb1.BackColor = System.Drawing.Color.Cyan;
-            this.panelPgb1.Location = new System.Drawing.Point(70, 256);
+            this.panelPgb1.Location = new System.Drawing.Point(72, 248);
             this.panelPgb1.Name = "panelPgb1";
-            this.panelPgb1.Size = new System.Drawing.Size(12, 46);
+            this.panelPgb1.Size = new System.Drawing.Size(60, 91);
             this.panelPgb1.TabIndex = 4;
             // 
             // picSpaceShip
             // 
+            this.picSpaceShip.BackColor = System.Drawing.Color.Transparent;
             this.picSpaceShip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picSpaceShip.Image = global::SecureCoreFinal.Properties.Resources.starwarshlaconlool2;
-            this.picSpaceShip.Location = new System.Drawing.Point(74, 196);
+            this.picSpaceShip.Location = new System.Drawing.Point(75, 202);
             this.picSpaceShip.Name = "picSpaceShip";
             this.picSpaceShip.Size = new System.Drawing.Size(226, 187);
             this.picSpaceShip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSpaceShip.TabIndex = 3;
             this.picSpaceShip.TabStop = false;
-            // 
-            // panelPgb2
-            // 
-            this.panelPgb2.BackColor = System.Drawing.Color.Cyan;
-            this.panelPgb2.Location = new System.Drawing.Point(70, 297);
-            this.panelPgb2.Name = "panelPgb2";
-            this.panelPgb2.Size = new System.Drawing.Size(21, 34);
-            this.panelPgb2.TabIndex = 5;
             // 
             // frmSplash
             // 
@@ -87,10 +79,9 @@ namespace SecureCoreFinal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panelPgb2);
+            this.Controls.Add(this.picSpaceShip);
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.panelPgb1);
-            this.Controls.Add(this.picSpaceShip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -105,7 +96,6 @@ namespace SecureCoreFinal
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Panel panelPgb1;
         private System.Windows.Forms.PictureBox picSpaceShip;
-        private System.Windows.Forms.Panel panelPgb2;
     }
 }
 
