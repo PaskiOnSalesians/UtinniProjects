@@ -62,9 +62,10 @@ namespace SecureCoreFinal
             // 
             // picSpaceShip
             // 
+            this.picSpaceShip.BackColor = System.Drawing.Color.Transparent;
             this.picSpaceShip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picSpaceShip.Image = global::SecureCoreFinal.Properties.Resources.starwarshlaconlool2;
-            this.picSpaceShip.Location = new System.Drawing.Point(75, 195);
+            this.picSpaceShip.Location = new System.Drawing.Point(75, 202);
             this.picSpaceShip.Name = "picSpaceShip";
             this.picSpaceShip.Size = new System.Drawing.Size(226, 187);
             this.picSpaceShip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

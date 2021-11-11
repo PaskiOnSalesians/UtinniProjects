@@ -116,5 +116,15 @@
   <ItemGroup>
     <None Include="Resources\starwarshlaconlool2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InCont\InCont.csproj">
+      <Project>{04ebf67c-ac9d-48be-ad05-6aeeab2524d9}</Project>
+      <Name>InCont</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsControl\UsControl.csproj">
+      <Project>{fcf56e92-d48b-46d5-85bd-75dcbeac2adc}</Project>
+      <Name>UsControl</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

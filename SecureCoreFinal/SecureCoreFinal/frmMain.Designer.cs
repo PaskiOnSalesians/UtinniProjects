@@ -32,7 +32,10 @@ namespace SecureCoreFinal
             this.lblTest = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.llancaApp1 = new UsControl.LlancaApp();
+            this.llancaApp2 = new UsControl.LlancaApp();
             this.panelTop.SuspendLayout();
+            this.panelLeft.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTest
@@ -61,12 +64,36 @@ namespace SecureCoreFinal
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.DarkBlue;
+            this.panelLeft.Controls.Add(this.llancaApp2);
+            this.panelLeft.Controls.Add(this.llancaApp1);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.ForeColor = System.Drawing.Color.White;
             this.panelLeft.Location = new System.Drawing.Point(0, 55);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(200, 492);
             this.panelLeft.TabIndex = 2;
+            // 
+            // llancaApp1
+            // 
+            this.llancaApp1.Classe = null;
+            this.llancaApp1.Descripcio = "Hola";
+            this.llancaApp1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.llancaApp1.Formulari = null;
+            this.llancaApp1.Location = new System.Drawing.Point(0, 0);
+            this.llancaApp1.Name = "llancaApp1";
+            this.llancaApp1.Size = new System.Drawing.Size(200, 70);
+            this.llancaApp1.TabIndex = 0;
+            // 
+            // llancaApp2
+            // 
+            this.llancaApp2.Classe = null;
+            this.llancaApp2.Descripcio = "dos";
+            this.llancaApp2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.llancaApp2.Formulari = null;
+            this.llancaApp2.Location = new System.Drawing.Point(0, 70);
+            this.llancaApp2.Name = "llancaApp2";
+            this.llancaApp2.Size = new System.Drawing.Size(200, 70);
+            this.llancaApp2.TabIndex = 1;
             // 
             // frmMain
             // 
@@ -83,6 +110,7 @@ namespace SecureCoreFinal
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            this.panelLeft.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -92,5 +120,7 @@ namespace SecureCoreFinal
         private System.Windows.Forms.Label lblTest;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Panel panelLeft;
+        private UsControl.LlancaApp llancaApp1;
+        private UsControl.LlancaApp llancaApp2;
     }
 }

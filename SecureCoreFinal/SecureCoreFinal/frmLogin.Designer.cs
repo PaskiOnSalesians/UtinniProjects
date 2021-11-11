@@ -29,8 +29,6 @@ namespace SecureCoreFinal
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panelDiv2 = new System.Windows.Forms.Panel();
             this.panelDiv1 = new System.Windows.Forms.Panel();
@@ -39,37 +37,12 @@ namespace SecureCoreFinal
             this.picWelcome = new System.Windows.Forms.PictureBox();
             this.lblTitol = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
+            this.swTextboxUsername = new InCont.SWTextbox();
+            this.swTextboxPasswd = new InCont.SWTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.picTogglePass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWelcome)).BeginInit();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.Color.Azure;
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtUsername.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsername.Location = new System.Drawing.Point(454, 197);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(299, 29);
-            this.txtUsername.TabIndex = 2;
-            this.txtUsername.Text = "username";
-            this.txtUsername.Enter += new System.EventHandler(this.txtUsername_Enter);
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.Color.Azure;
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPassword.Location = new System.Drawing.Point(454, 259);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(0);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(267, 29);
-            this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "password";
-            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             // 
             // btnLogin
             // 
@@ -122,7 +95,7 @@ namespace SecureCoreFinal
             // picTogglePass
             // 
             this.picTogglePass.Image = global::SecureCoreFinal.Properties.Resources.togglepassword;
-            this.picTogglePass.Location = new System.Drawing.Point(724, 259);
+            this.picTogglePass.Location = new System.Drawing.Point(757, 263);
             this.picTogglePass.Name = "picTogglePass";
             this.picTogglePass.Size = new System.Drawing.Size(29, 27);
             this.picTogglePass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,21 +133,55 @@ namespace SecureCoreFinal
             this.panelTop.TabIndex = 1;
             this.panelTop.TabStop = true;
             // 
+            // swTextboxUsername
+            // 
+            this.swTextboxUsername.BackColor = System.Drawing.Color.Azure;
+            this.swTextboxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.swTextboxUsername.CampBuit = false;
+            this.swTextboxUsername.ClauForanea = false;
+            this.swTextboxUsername.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextboxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.swTextboxUsername.ForeColor = System.Drawing.Color.DimGray;
+            this.swTextboxUsername.Location = new System.Drawing.Point(454, 198);
+            this.swTextboxUsername.Name = "swTextboxUsername";
+            this.swTextboxUsername.NomBBDD = null;
+            this.swTextboxUsername.Size = new System.Drawing.Size(297, 29);
+            this.swTextboxUsername.TabIndex = 2;
+            this.swTextboxUsername.Text = "username";
+            this.swTextboxUsername.Enter += new System.EventHandler(this.swTextboxUsername_Enter);
+            // 
+            // swTextboxPasswd
+            // 
+            this.swTextboxPasswd.BackColor = System.Drawing.Color.Azure;
+            this.swTextboxPasswd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.swTextboxPasswd.CampBuit = false;
+            this.swTextboxPasswd.ClauForanea = false;
+            this.swTextboxPasswd.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextboxPasswd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.swTextboxPasswd.ForeColor = System.Drawing.Color.DimGray;
+            this.swTextboxPasswd.Location = new System.Drawing.Point(454, 260);
+            this.swTextboxPasswd.Name = "swTextboxPasswd";
+            this.swTextboxPasswd.NomBBDD = null;
+            this.swTextboxPasswd.Size = new System.Drawing.Size(297, 29);
+            this.swTextboxPasswd.TabIndex = 3;
+            this.swTextboxPasswd.Text = "password";
+            this.swTextboxPasswd.Enter += new System.EventHandler(this.swTextboxPasswd_Enter);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(806, 470);
+            this.Controls.Add(this.swTextboxUsername);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.picTogglePass);
             this.Controls.Add(this.panelDiv1);
             this.Controls.Add(this.panelDiv2);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.picWelcome);
             this.Controls.Add(this.panelTop);
+            this.Controls.Add(this.swTextboxPasswd);
+            this.Controls.Add(this.picTogglePass);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -190,9 +197,6 @@ namespace SecureCoreFinal
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panelDiv2;
         private System.Windows.Forms.Panel panelDiv1;
@@ -201,5 +205,7 @@ namespace SecureCoreFinal
         private System.Windows.Forms.PictureBox picWelcome;
         private System.Windows.Forms.Label lblTitol;
         private System.Windows.Forms.Panel panelTop;
+        private InCont.SWTextbox swTextboxUsername;
+        private InCont.SWTextbox swTextboxPasswd;
     }
 }
