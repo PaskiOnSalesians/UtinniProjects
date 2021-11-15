@@ -18,6 +18,8 @@ namespace SecureCoreFinal
         SqlDataAdapter adapter;
         string query;
         DataSet dts;
+        string idUserCategory;
+        string accessLevel;
 
         public frmLogin()
         {
@@ -29,6 +31,26 @@ namespace SecureCoreFinal
             string cnx;
             cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;Initial Catalog=SecureCore;Integrated Security=True";
             conn = new SqlConnection(cnx);
+        }
+
+        private string getAccessLevel(string idUserCategory)
+        {
+            string level = "";
+
+            query = "Select * from UserCategories " + " where idUserCategory = '" + idUserCategory;
+            adapter = new SqlDataAdapter(query, conn);
+
+            conn.Open();
+            dts = new DataSet();
+            adapter.Fill(dts, "UserCategories");
+            conn.Close();
+
+            foreach (DataRow pRow in dts.Tables["UserCategories"].Rows)
+            {
+                level = pRow["AccessLevel"].ToString();
+            }
+
+            return level;
         }
 
         private bool comprobarLogin()
@@ -47,6 +69,16 @@ namespace SecureCoreFinal
             if(registres > 0)
             {
                 login = true;
+                foreach (DataRow pRow in dts.Tables["Users"].Rows)
+                {
+                    idUserCategory = pRow["idUserCategory"].ToString();
+                }
+
+                if(idUserCategory != null)
+                {
+                    accessLevel = getAccessLevel(idUserCategory);
+                    MessageBox.Show(accessLevel);
+                }
             }
 
             return login;
