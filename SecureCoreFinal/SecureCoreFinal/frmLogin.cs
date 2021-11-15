@@ -8,28 +8,46 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace SecureCoreFinal
 {
     public partial class frmLogin : Form
     {
+        SqlConnection conn;
+        SqlDataAdapter adapter;
+        string query;
+        DataSet dts;
+
         public frmLogin()
         {
             InitializeComponent();
+        }
 
-            SqlConnection conn;
+        private void conectarBBDD()
+        {
             string cnx;
             cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;";
             conn = new SqlConnection(cnx);
-
-
-            SqlDataAdapter adapter;
-            string query;
-            query = "select * from users";
-
-            adapter = new SqlDataAdapter(query, conn);
         }
 
+        private DataSet consultaBBDD()
+        {
+            query = "select * from users";
+            adapter = new SqlDataAdapter(query, conn);
+            conn.Open();
+            dts = new DataSet();
+            adapter.Fill(dts, "users");
+            conn.Close();
+
+            return dts;
+        }
+
+        private bool comprobarLogin()
+        {
+            dts = consultaBBDD();
+            return false;
+        }
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -38,9 +56,19 @@ namespace SecureCoreFinal
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmMain frmMain = new frmMain();
-            frmMain.ShowDialog();
+            bool comprobar;
+
+            comprobar = comprobarLogin();
+
+            if (comprobar)
+            {
+                this.Hide();
+                frmMain frmMain = new frmMain();
+                frmMain.ShowDialog();
+            }
+
+            
+            SHA256 mySHA256 = SHA256.Create();
         }
 
         private void picTogglePass_MouseDown(object sender, MouseEventArgs e)
@@ -67,6 +95,12 @@ namespace SecureCoreFinal
         private void swTextboxUsername_Enter(object sender, EventArgs e)
         {
             swTextboxUsername.SelectAll();
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            conectarBBDD();
+            consultaBBDD();
         }
     }
 }

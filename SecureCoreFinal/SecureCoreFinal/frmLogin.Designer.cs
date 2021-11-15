@@ -187,6 +187,7 @@ namespace SecureCoreFinal
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Secure Core Login";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picTogglePass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWelcome)).EndInit();
             this.panelTop.ResumeLayout(false);
