@@ -27,26 +27,29 @@ namespace SecureCoreFinal
         private void conectarBBDD()
         {
             string cnx;
-            cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;";
+            cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;Initial Catalog=SecureCore;Integrated Security=True";
             conn = new SqlConnection(cnx);
-        }
-
-        private DataSet consultaBBDD()
-        {
-            query = "select * from users";
-            adapter = new SqlDataAdapter(query, conn);
-            conn.Open();
-            dts = new DataSet();
-            adapter.Fill(dts, "users");
-            conn.Close();
-
-            return dts;
         }
 
         private bool comprobarLogin()
         {
-            dts = consultaBBDD();
-            return false;
+            bool login = false;
+
+            query = "Select * from Users " + " where Login = '" + swTextboxUsername.Text + "' AND Password ='" + swTextboxPasswd.Text + "'";
+            adapter = new SqlDataAdapter(query, conn);
+
+            conn.Open();
+            dts = new DataSet();
+            adapter.Fill(dts, "Users");
+            conn.Close();
+
+            int registres = dts.Tables[0].Rows.Count;
+            if(registres > 0)
+            {
+                login = true;
+            }
+
+            return login;
         }
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -56,19 +59,12 @@ namespace SecureCoreFinal
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            bool comprobar;
-
-            comprobar = comprobarLogin();
-
-            if (comprobar)
+            if (comprobarLogin())
             {
                 this.Hide();
                 frmMain frmMain = new frmMain();
                 frmMain.ShowDialog();
             }
-
-            
-            SHA256 mySHA256 = SHA256.Create();
         }
 
         private void picTogglePass_MouseDown(object sender, MouseEventArgs e)
@@ -100,7 +96,6 @@ namespace SecureCoreFinal
         private void frmLogin_Load(object sender, EventArgs e)
         {
             conectarBBDD();
-            consultaBBDD();
         }
     }
 }
