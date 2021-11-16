@@ -37,7 +37,7 @@ namespace SecureCoreFinal
         {
             string level = "";
 
-            query = "Select * from UserCategories " + " where idUserCategory = '" + idUserCategory;
+            query = "Select * from UserCategories " + " where idUserCategory = '" + idUserCategory + "'";
             adapter = new SqlDataAdapter(query, conn);
 
             conn.Open();
