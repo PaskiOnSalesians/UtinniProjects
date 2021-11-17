@@ -21,6 +21,7 @@ namespace SecureCoreFinal
         string idUserCategory;
         string accessLevel;
 
+
         public frmLogin()
         {
             InitializeComponent();
@@ -77,7 +78,6 @@ namespace SecureCoreFinal
                 if(idUserCategory != null)
                 {
                     accessLevel = getAccessLevel(idUserCategory);
-                    MessageBox.Show(accessLevel);
                 }
             }
 
@@ -94,7 +94,7 @@ namespace SecureCoreFinal
             if (comprobarLogin())
             {
                 this.Hide();
-                frmMain frmMain = new frmMain();
+                frmMain frmMain = new frmMain(swTextboxUsername.Text, Convert.ToInt32(accessLevel));
                 frmMain.ShowDialog();
             }
         }

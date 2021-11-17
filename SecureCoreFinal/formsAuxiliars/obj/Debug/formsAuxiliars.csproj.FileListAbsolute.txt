@@ -1,0 +1,9 @@
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\bin\Debug\formsAuxiliars.pdb
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.frmCerca.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.Properties.Resources.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.GenerateResource.cache
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CoreCompileInputs.cache
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.pdb
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\bin\Debug\formsAuxiliars.dll.config
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\bin\Debug\formsAuxiliars.dll
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.dll

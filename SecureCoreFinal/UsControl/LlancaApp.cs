@@ -51,9 +51,14 @@ namespace UsControl
             FormCollection fc = Application.OpenForms;
             foreach (Form frm in fc)
             {
-                if (frm.Name == "frmLlenca")
+                if (frm.Name == "frmMain")
                 {
                     bFormNameOpen = true;
+
+                    foreach (Control item in frm.Controls)
+                    {
+
+                    }
                 }
             }
 
@@ -67,10 +72,10 @@ namespace UsControl
 
             dllBD = Activator.CreateInstance(tipus);
 
-            if (!bFormNameOpen)
-            {
-                ((Form)dllBD).Show();
-            }
+            //if (!bFormNameOpen)
+            //{
+            //    ((Form)dllBD).Show();
+            //}
         }
 
         private void LlancaApp_Load(object sender, EventArgs e)

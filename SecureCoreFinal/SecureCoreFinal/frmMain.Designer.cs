@@ -31,10 +31,10 @@ namespace SecureCoreFinal
         {
             this.lblTest = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblAccessLevel = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.llancaApp1 = new UsControl.LlancaApp();
             this.panelTop.SuspendLayout();
-            this.panelLeft.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTest
@@ -52,6 +52,8 @@ namespace SecureCoreFinal
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.DarkBlue;
+            this.panelTop.Controls.Add(this.lblUsername);
+            this.panelTop.Controls.Add(this.lblAccessLevel);
             this.panelTop.Controls.Add(this.lblTest);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.ForeColor = System.Drawing.Color.White;
@@ -60,27 +62,35 @@ namespace SecureCoreFinal
             this.panelTop.Size = new System.Drawing.Size(1031, 55);
             this.panelTop.TabIndex = 1;
             // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblUsername.Location = new System.Drawing.Point(12, 15);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(124, 29);
+            this.lblUsername.TabIndex = 2;
+            this.lblUsername.Text = "Username";
+            // 
+            // lblAccessLevel
+            // 
+            this.lblAccessLevel.AutoSize = true;
+            this.lblAccessLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblAccessLevel.Location = new System.Drawing.Point(199, 16);
+            this.lblAccessLevel.Name = "lblAccessLevel";
+            this.lblAccessLevel.Size = new System.Drawing.Size(154, 29);
+            this.lblAccessLevel.TabIndex = 1;
+            this.lblAccessLevel.Text = "Access Level";
+            // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.DarkBlue;
-            this.panelLeft.Controls.Add(this.llancaApp1);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.ForeColor = System.Drawing.Color.White;
             this.panelLeft.Location = new System.Drawing.Point(0, 55);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(200, 492);
             this.panelLeft.TabIndex = 2;
-            // 
-            // llancaApp1
-            // 
-            this.llancaApp1.Classe = null;
-            this.llancaApp1.Descripcio = "Hola";
-            this.llancaApp1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.llancaApp1.Formulari = null;
-            this.llancaApp1.Location = new System.Drawing.Point(0, 0);
-            this.llancaApp1.Name = "llancaApp1";
-            this.llancaApp1.Size = new System.Drawing.Size(200, 70);
-            this.llancaApp1.TabIndex = 0;
             // 
             // frmMain
             // 
@@ -95,10 +105,8 @@ namespace SecureCoreFinal
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Secure Core";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
-            this.panelLeft.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -108,6 +116,7 @@ namespace SecureCoreFinal
         private System.Windows.Forms.Label lblTest;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Panel panelLeft;
-        private UsControl.LlancaApp llancaApp1;
+        private System.Windows.Forms.Label lblAccessLevel;
+        private System.Windows.Forms.Label lblUsername;
     }
 }
