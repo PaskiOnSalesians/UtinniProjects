@@ -18,9 +18,6 @@ namespace SecureCoreFinal
         SqlDataAdapter adapter;
         string query;
         DataSet dts;
-        string idUserCategory;
-        string accessLevel;
-
 
         public frmLogin()
         {
@@ -30,58 +27,30 @@ namespace SecureCoreFinal
         private void conectarBBDD()
         {
             string cnx;
-            cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;Initial Catalog=SecureCore;Integrated Security=True";
+<<<<<<< Updated upstream
+            cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;";
+=======
+            cnx = "Data Source=WHITEWOLF\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True";
+>>>>>>> Stashed changes
             conn = new SqlConnection(cnx);
         }
 
-        private string getAccessLevel(string idUserCategory)
+        private DataSet consultaBBDD()
         {
-            string level = "";
-
-            query = "Select * from UserCategories " + " where idUserCategory = '" + idUserCategory + "'";
+            query = "select * from users";
             adapter = new SqlDataAdapter(query, conn);
-
             conn.Open();
             dts = new DataSet();
-            adapter.Fill(dts, "UserCategories");
+            adapter.Fill(dts, "users");
             conn.Close();
 
-            foreach (DataRow pRow in dts.Tables["UserCategories"].Rows)
-            {
-                level = pRow["AccessLevel"].ToString();
-            }
-
-            return level;
+            return dts;
         }
 
         private bool comprobarLogin()
         {
-            bool login = false;
-
-            query = "Select * from Users " + " where Login = '" + swTextboxUsername.Text + "' AND Password ='" + swTextboxPasswd.Text + "'";
-            adapter = new SqlDataAdapter(query, conn);
-
-            conn.Open();
-            dts = new DataSet();
-            adapter.Fill(dts, "Users");
-            conn.Close();
-
-            int registres = dts.Tables[0].Rows.Count;
-            if(registres > 0)
-            {
-                login = true;
-                foreach (DataRow pRow in dts.Tables["Users"].Rows)
-                {
-                    idUserCategory = pRow["idUserCategory"].ToString();
-                }
-
-                if(idUserCategory != null)
-                {
-                    accessLevel = getAccessLevel(idUserCategory);
-                }
-            }
-
-            return login;
+            dts = consultaBBDD();
+            return false;
         }
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -91,12 +60,19 @@ namespace SecureCoreFinal
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (comprobarLogin())
+            bool comprobar;
+
+            comprobar = comprobarLogin();
+
+            if (comprobar)
             {
                 this.Hide();
-                frmMain frmMain = new frmMain(swTextboxUsername.Text, Convert.ToInt32(accessLevel));
+                frmMain frmMain = new frmMain();
                 frmMain.ShowDialog();
             }
+
+            
+            SHA256 mySHA256 = SHA256.Create();
         }
 
         private void picTogglePass_MouseDown(object sender, MouseEventArgs e)
@@ -128,6 +104,7 @@ namespace SecureCoreFinal
         private void frmLogin_Load(object sender, EventArgs e)
         {
             conectarBBDD();
+            consultaBBDD();
         }
     }
 }

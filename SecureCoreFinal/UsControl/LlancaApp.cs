@@ -51,14 +51,9 @@ namespace UsControl
             FormCollection fc = Application.OpenForms;
             foreach (Form frm in fc)
             {
-                if (frm.Name == "frmMain")
+                if (frm.Name == "frmLlenca")
                 {
                     bFormNameOpen = true;
-
-                    foreach (Control item in frm.Controls)
-                    {
-
-                    }
                 }
             }
 
@@ -71,11 +66,14 @@ namespace UsControl
             tipus = ensamblat.GetType(Formulari);
 
             dllBD = Activator.CreateInstance(tipus);
+<<<<<<< Updated upstream
 
-            //if (!bFormNameOpen)
-            //{
-            //    ((Form)dllBD).Show();
-            //}
+            if (!bFormNameOpen)
+            {
+                ((Form)dllBD).Show();
+            }
+=======
+>>>>>>> Stashed changes
         }
 
         private void LlancaApp_Load(object sender, EventArgs e)

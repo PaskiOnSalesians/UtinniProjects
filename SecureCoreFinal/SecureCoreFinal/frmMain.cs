@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UsControl;
 
 namespace SecureCoreFinal
 {
     public partial class frmMain : Form
     {
+<<<<<<< Updated upstream
+        public frmMain()
+=======
         SqlConnection conn;
         SqlDataAdapter adapter;
         string query;
@@ -22,7 +23,7 @@ namespace SecureCoreFinal
         private void conectarBBDD()
         {
             string cnx;
-            cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;Initial Catalog=SecureCore;Integrated Security=True";
+            cnx = "Data Source=WHITEWOLF\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True";
             conn = new SqlConnection(cnx);
         }
 
@@ -52,14 +53,9 @@ namespace SecureCoreFinal
         }
 
         public frmMain(string username, int num)
+>>>>>>> Stashed changes
         {
-
             InitializeComponent();
-            
-            lblUsername.Text = username;
-            lblAccessLevel.Text = num.ToString();
-            conectarBBDD();
-            generateButtons(num);
         }
 
         private void lblTest_Click(object sender, EventArgs e)
