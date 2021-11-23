@@ -29,8 +29,18 @@ namespace SecureCoreFinal
 
         private void conectarBBDD()
         {
+            /*
+             * BORRAR AL ENTREGAR
+             * 
+             * PC Oriol - "Data Source=DESKTOP-HC4ANHR\\sqlexpress;Initial Catalog=SecureCore;Integrated Security=True";
+             * PC Paski - "Data Source=whitewolf\\sqlexpress;Initial Catalog=SecureCore;Integrated Security=True";
+             * PC Carlos - "Data Source=DESKTOP-HC4ANHR\\sqlexpress;Initial Catalog=SecureCore;Integrated Security=True";
+             * PC Gerard - "Data Source=Ribes\\sqlexpress;Initial Catalog=SecureCore;Integrated Security=True";
+             * 
+             */
+
             string cnx;
-            cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;Initial Catalog=SecureCore;Integrated Security=True";
+            cnx = "Data Source=whitewolf\\sqlexpress;Initial Catalog=SecureCore;Integrated Security=True";
             conn = new SqlConnection(cnx);
         }
 
