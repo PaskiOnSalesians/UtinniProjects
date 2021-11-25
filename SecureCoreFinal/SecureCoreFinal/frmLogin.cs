@@ -10,14 +10,16 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
 
+using AccesDades;
+
 namespace SecureCoreFinal
 {
     public partial class frmLogin : Form
     {
-        SqlConnection conn;
-        SqlDataAdapter adapter;
         string query;
         DataSet dts;
+
+        Dades _Dades = new Dades();
 
         public frmLogin()
         {
@@ -26,23 +28,14 @@ namespace SecureCoreFinal
 
         private void conectarBBDD()
         {
-            string cnx;
-<<<<<<< Updated upstream
-            cnx = "Data Source=DESKTOP-HC4ANHR\\SQLEXPRESS_ORIOL;";
-=======
-            cnx = "Data Source=WHITEWOLF\\SQLEXPRESS;Initial Catalog=SecureCore;Integrated Security=True";
->>>>>>> Stashed changes
-            conn = new SqlConnection(cnx);
+            _Dades.ConnectDB();
         }
 
         private DataSet consultaBBDD()
         {
             query = "select * from users";
-            adapter = new SqlDataAdapter(query, conn);
-            conn.Open();
-            dts = new DataSet();
-            adapter.Fill(dts, "users");
-            conn.Close();
+
+            dts = _Dades.PortarPerConsulta(query, "users");
 
             return dts;
         }
@@ -67,12 +60,12 @@ namespace SecureCoreFinal
             if (comprobar)
             {
                 this.Hide();
-                frmMain frmMain = new frmMain();
+                frmMain frmMain = new frmMain(swTextboxUsername.Text, Int32.Parse(swTextboxPasswd.Text));
                 frmMain.ShowDialog();
             }
 
             
-            SHA256 mySHA256 = SHA256.Create();
+            //SHA256 mySHA256 = SHA256.Create();
         }
 
         private void picTogglePass_MouseDown(object sender, MouseEventArgs e)

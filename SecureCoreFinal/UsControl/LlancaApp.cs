@@ -66,14 +66,13 @@ namespace UsControl
             tipus = ensamblat.GetType(Formulari);
 
             dllBD = Activator.CreateInstance(tipus);
-<<<<<<< Updated upstream
+
 
             if (!bFormNameOpen)
             {
                 ((Form)dllBD).Show();
             }
-=======
->>>>>>> Stashed changes
+
         }
 
         private void LlancaApp_Load(object sender, EventArgs e)

@@ -129,6 +129,13 @@ namespace AccesDades
         }
         #endregion
 
-        // Executar
+        // Executar comandes
+        #region Executa (INSERT + UPDATE + DELETE)
+        public int Executar(string comanda)
+        {
+            this.ConnectDB();
+            return new SqlCommand(comanda, this.con).ExecuteNonQuery();
+        }
+        #endregion
     }
 }
