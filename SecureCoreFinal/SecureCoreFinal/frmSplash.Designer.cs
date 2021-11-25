@@ -40,7 +40,7 @@ namespace SecureCoreFinal
             // timerSplash
             // 
             this.timerSplash.Enabled = true;
-            this.timerSplash.Interval = 2;
+            this.timerSplash.Interval = 400;
             this.timerSplash.Tick += new System.EventHandler(this.timerSplash_Tick);
             // 
             // lblText
