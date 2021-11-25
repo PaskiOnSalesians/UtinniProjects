@@ -29,6 +29,7 @@ namespace SecureCoreFinal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblTest = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
@@ -101,6 +102,7 @@ namespace SecureCoreFinal
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Secure Core";

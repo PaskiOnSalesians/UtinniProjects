@@ -13,7 +13,7 @@ namespace AccesDades
     using System.Data.SqlClient;
 
     using System.Configuration;
-    using Microsoft.VisualBasic.CompilerServices;
+    //using Microsoft.VisualBasic.CompilerServices;
 
     public class Dades
     {
@@ -24,9 +24,9 @@ namespace AccesDades
         #region Connectar
         public void ConnectDB()
         {
-            this.conString = this.CadenaConnexio(); // Trae la cadena
-            this.con = new SqlConnection(this.conString); // Nos genera la conexión
-            this.con.Open(); // Obrim al connexió
+            conString = CadenaConnexio(); // Trae la cadena
+            con = new SqlConnection(conString); // Nos genera la conexión
+            con.Open(); // Obrim al connexió
             //this.con.InitializeLifetimeService();
         }
         #endregion
@@ -49,12 +49,12 @@ namespace AccesDades
 
         // Portar la Taula de la Base de Dades
         #region PortaTaula
-        private DataTable PortaTaula(string taula, string query)
+        public DataTable PortaTaula(string query)
         {
             DataTable taulaData = null;
 
-            this.ConnectDB();
-            SqlDataAdapter adapter = new SqlDataAdapter("select * from " + taula + " " + query, this.con);
+            ConnectDB();
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
             SqlCommandBuilder sqlBuilder = new SqlCommandBuilder(adapter);
 
             taulaData = new DataTable();
@@ -62,22 +62,10 @@ namespace AccesDades
             adapter.FillSchema(taulaData, SchemaType.Source);
             adapter.Fill(taulaData);
 
-            // Borrar este intento
-            #region Intento TryCatch
-            /*
-            catch (Exception exc)
+            if (con != null)
             {
-                Exception exc2 = exc;
-                ProjectData.SetProjectError(exc2);
-                Exception exception = exc2;
-                ProjectData.ClearProjectError();
-            }*/
-            #endregion // Borrar 
-
-            if (this.con != null)
-            {
-                this.con.Close();
-                this.con.Dispose();
+                con.Close();
+                con.Dispose();
             }
 
             return taulaData;
@@ -89,8 +77,8 @@ namespace AccesDades
 
         public DataSet PortarPerConsulta(string query)
         {
-            this.ConnectDB();
-            SqlDataAdapter adapter = new SqlDataAdapter(query, this.con);
+            ConnectDB();
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
             DataSet dataSet = new DataSet();
             adapter.Fill(dataSet, "Taula");
@@ -99,9 +87,9 @@ namespace AccesDades
 
         public DataSet PortarPerConsulta(string query, string nomtaula)
         {
-            this.ConnectDB();
+            ConnectDB();
             DataSet dataSet = new DataSet();
-            new SqlDataAdapter(query, this.con).Fill(dataSet, nomtaula);
+            new SqlDataAdapter(query, con).Fill(dataSet, nomtaula);
             return dataSet;
         }
 
@@ -111,8 +99,8 @@ namespace AccesDades
         #region Actualitzar
         public void Actualitzar(string query, string taula, DataSet _dts)
         {
-            this.ConnectDB();
-            SqlDataAdapter adapter = new SqlDataAdapter(query, this.con);
+            ConnectDB();
+            SqlDataAdapter adapter = new SqlDataAdapter(query, con);
 
             SqlCommandBuilder sqlBuilder = new SqlCommandBuilder(adapter);
 
@@ -121,10 +109,10 @@ namespace AccesDades
                 adapter.Update(_dts, taula);
             }
 
-            if(this.con != null)
+            if(con != null)
             {
-                this.con.Close();
-                this.con.Dispose();
+                con.Close();
+                con.Dispose();
             }
         }
         #endregion

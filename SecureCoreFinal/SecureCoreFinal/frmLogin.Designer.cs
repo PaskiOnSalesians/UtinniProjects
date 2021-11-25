@@ -29,6 +29,7 @@ namespace SecureCoreFinal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.btnLogin = new System.Windows.Forms.Button();
             this.panelDiv2 = new System.Windows.Forms.Panel();
             this.panelDiv1 = new System.Windows.Forms.Panel();
@@ -39,6 +40,7 @@ namespace SecureCoreFinal
             this.panelTop = new System.Windows.Forms.Panel();
             this.swTextboxUsername = new InCont.SWTextbox();
             this.swTextboxPasswd = new InCont.SWTextbox();
+            this.ShowMe = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picTogglePass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWelcome)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -167,12 +169,21 @@ namespace SecureCoreFinal
             this.swTextboxPasswd.Text = "password";
             this.swTextboxPasswd.Enter += new System.EventHandler(this.swTextboxPasswd_Enter);
             // 
+            // ShowMe
+            // 
+            this.ShowMe.Location = new System.Drawing.Point(454, 99);
+            this.ShowMe.Name = "ShowMe";
+            this.ShowMe.Size = new System.Drawing.Size(300, 96);
+            this.ShowMe.TabIndex = 12;
+            this.ShowMe.Text = "";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(806, 470);
+            this.Controls.Add(this.ShowMe);
             this.Controls.Add(this.swTextboxUsername);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panelDiv1);
@@ -183,6 +194,7 @@ namespace SecureCoreFinal
             this.Controls.Add(this.swTextboxPasswd);
             this.Controls.Add(this.picTogglePass);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Secure Core Login";
@@ -208,5 +220,6 @@ namespace SecureCoreFinal
         private System.Windows.Forms.Panel panelTop;
         private InCont.SWTextbox swTextboxUsername;
         private InCont.SWTextbox swTextboxPasswd;
+        private System.Windows.Forms.RichTextBox ShowMe;
     }
 }

@@ -16,34 +16,15 @@ namespace SecureCoreFinal
 {
     public partial class frmLogin : Form
     {
-        string query;
+        //string query;
         DataSet dts;
+        DataTable dtsTable;
 
         Dades _Dades = new Dades();
 
         public frmLogin()
         {
             InitializeComponent();
-        }
-
-        private void conectarBBDD()
-        {
-            _Dades.ConnectDB();
-        }
-
-        private DataSet consultaBBDD()
-        {
-            query = "select * from users";
-
-            dts = _Dades.PortarPerConsulta(query, "users");
-
-            return dts;
-        }
-
-        private bool comprobarLogin()
-        {
-            dts = consultaBBDD();
-            return false;
         }
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -53,19 +34,19 @@ namespace SecureCoreFinal
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            bool comprobar;
+            foreach(DataRow dr in dts.Tables[0].Rows)
+            {
 
-            comprobar = comprobarLogin();
+            }
 
+            /*
             if (comprobar)
             {
                 this.Hide();
                 frmMain frmMain = new frmMain(swTextboxUsername.Text, Int32.Parse(swTextboxPasswd.Text));
                 frmMain.ShowDialog();
             }
-
-            
-            //SHA256 mySHA256 = SHA256.Create();
+            */
         }
 
         private void picTogglePass_MouseDown(object sender, MouseEventArgs e)
@@ -96,8 +77,13 @@ namespace SecureCoreFinal
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            conectarBBDD();
-            consultaBBDD();
+            _Dades.ConnectDB();
+            dtsTable = _Dades.PortaTaula("select Login, Password, idUserCategory from Users");
+
+            foreach(DataRow dr in dtsTable.Rows)
+            {
+                ShowMe.Text = dtsTable.Rows[dr].ToString() ;
+            }
         }
     }
 }

@@ -30,6 +30,7 @@ namespace SecureCoreFinal
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
             this.timerSplash = new System.Windows.Forms.Timer(this.components);
             this.lblText = new System.Windows.Forms.Label();
             this.panelPgb1 = new System.Windows.Forms.Panel();
@@ -40,7 +41,7 @@ namespace SecureCoreFinal
             // timerSplash
             // 
             this.timerSplash.Enabled = true;
-            this.timerSplash.Interval = 400;
+            this.timerSplash.Interval = 2;
             this.timerSplash.Tick += new System.EventHandler(this.timerSplash_Tick);
             // 
             // lblText
@@ -83,6 +84,7 @@ namespace SecureCoreFinal
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.panelPgb1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.picSpaceShip)).EndInit();
