@@ -146,7 +146,7 @@ namespace SecureCoreFinal
             this.swTextboxUsername.ForeColor = System.Drawing.Color.DimGray;
             this.swTextboxUsername.Location = new System.Drawing.Point(454, 198);
             this.swTextboxUsername.Name = "swTextboxUsername";
-            this.swTextboxUsername.NomBBDD = null;
+            this.swTextboxUsername.NomBBDD = "Login";
             this.swTextboxUsername.Size = new System.Drawing.Size(297, 29);
             this.swTextboxUsername.TabIndex = 2;
             this.swTextboxUsername.Text = "username";
@@ -163,7 +163,7 @@ namespace SecureCoreFinal
             this.swTextboxPasswd.ForeColor = System.Drawing.Color.DimGray;
             this.swTextboxPasswd.Location = new System.Drawing.Point(454, 260);
             this.swTextboxPasswd.Name = "swTextboxPasswd";
-            this.swTextboxPasswd.NomBBDD = null;
+            this.swTextboxPasswd.NomBBDD = "Password";
             this.swTextboxPasswd.Size = new System.Drawing.Size(297, 29);
             this.swTextboxPasswd.TabIndex = 3;
             this.swTextboxPasswd.Text = "password";

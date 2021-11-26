@@ -11,7 +11,6 @@ namespace InCont
 {
     public class SWTextbox : TextBox
     {
-        #region Inicializar
         public SWTextbox()
         {
             InitializeComponent();
@@ -29,9 +28,9 @@ namespace InCont
             this.ResumeLayout(false);
 
         }
-        #endregion
 
-        #region Interficie
+        // Entrada y salida del TextBox
+        #region Eventos de Entrada y Salida
         private void SWTextbox_Enter(object sender, EventArgs e)
         {
             this.BackColor = Color.Pink;
@@ -42,17 +41,17 @@ namespace InCont
         }
         #endregion
 
+        // Propiedades TextBox
         #region Propiedades
-        //Indica el tipus de dada que haurà al textbox
+
+        // Tipo de dato del TextBox
         public enum TipusDada
         {
             Numero,
             Text,
             Codi
         }
-
         private TipusDada _DadaPermesa;
-
         public TipusDada DadaPermesa
         {
             get { return _DadaPermesa; }
@@ -62,9 +61,9 @@ namespace InCont
             }
 
         }
-        //Indica si pot sortir del text box amb el camp buit
-        private bool _CampBuit;
 
+        // Campo vacio
+        private bool _CampBuit;
         public bool CampBuit
         {
             get { return _CampBuit; }
@@ -74,9 +73,9 @@ namespace InCont
             }
 
         }
-        //Indica si és una clau foranea
-        private bool _ClauForanea;
 
+        // Clave Foránea
+        private bool _ClauForanea;
         public bool ClauForanea
         {
             get { return _ClauForanea; }
@@ -84,12 +83,10 @@ namespace InCont
             {
                 _ClauForanea = value;
             }
-
         }
 
-        //Revisio que sigui correcte
-        private String _NomBBDD;
-
+        // Campo Base de Datos al que hace Referencia
+        private string _NomBBDD;
         public string NomBBDD
         {
             get { return _NomBBDD; }
@@ -97,7 +94,10 @@ namespace InCont
         }
         #endregion
 
+        // Verificaciones
         #region Verificar
+
+        // Verificar el patrón
         private bool VerificaPattern(string dada, string patro)
         {
             bool FinalResult = false;
@@ -108,6 +108,7 @@ namespace InCont
             return FinalResult;
         }
 
+        // Validador Constante
         private void SWTextbox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
             string patro = ""; //Revisar
