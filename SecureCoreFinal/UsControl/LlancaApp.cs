@@ -19,31 +19,36 @@ namespace UsControl
             InitializeComponent();
         }
 
-        private String _Classe;
+        // Propietats de LlancaApp
+        #region Propietats
 
+        // Propietat Classe
+        private string _Classe;
         public string Classe
         {
             get { return _Classe; }
             set { _Classe = value; }
         }
 
-        private String _Formulari;
-
+        // Propietat Formulari
+        private string _Formulari;
         public string Formulari
         {
             get { return _Formulari; }
             set { _Formulari = value; }
         }
 
+        // Propietat Descripcio
         private string _desc;
-
         public string Descripcio
         {
             get { return _desc; }
             set { _desc = value; }
         }
+        #endregion
 
-
+        // Botones
+        #region Botones
         private void button1_Click(object sender, EventArgs e)
         {
             bool bFormNameOpen = false;
@@ -74,10 +79,14 @@ namespace UsControl
             }
 
         }
+        #endregion
 
+        // Eventos
+        #region Eventos
         private void LlancaApp_Load(object sender, EventArgs e)
         {
             button1.Text = Descripcio;
         }
+        #endregion
     }
 }

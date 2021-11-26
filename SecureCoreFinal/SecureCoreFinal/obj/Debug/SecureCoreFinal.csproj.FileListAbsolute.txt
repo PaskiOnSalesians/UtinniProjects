@@ -56,3 +56,4 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\bin\Debug\AccesDades.dll
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\bin\Debug\AccesDades.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete

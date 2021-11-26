@@ -17,6 +17,7 @@ namespace SecureCoreFinal
             InitializeComponent();
         }
 
+        // Funcio del Timer
         private void timerSplash_Tick(object sender, EventArgs e)
         {
             picSpaceShip.Left += 10;
