@@ -20,9 +20,29 @@ namespace SecureCoreFinal
         string query;
         DataSet dts;
 
-        private void conectarBBDD()
+        public frmMain(string username)
         {
-            _Dades.ConnectDB();
+            InitializeComponent();
+
+            getUsername(username);
+        }
+
+        private void getUsername(string user)
+        {
+            int registres;
+
+            query = "select UserName from Users where Login = '" + user + "'";
+            dts = _Dades.PortarPerConsulta(query, "Users");
+
+            registres = dts.Tables[0].Rows.Count;
+
+            foreach (DataRow dr in dts.Tables[0].Rows)
+            {
+                if (registres > 0)
+                {
+                    //lblUsername.Text = dts.Tables[0].Rows.;
+                }
+            }
         }
 
         private void generateButtons(int level)
@@ -44,14 +64,14 @@ namespace SecureCoreFinal
             }
         }
 
-        public frmMain(string username)
-        {
-            InitializeComponent();
-        }
-
         private void lblTest_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void frmMain_Load(string username, object sender, EventArgs e)
+        {
+            _Dades.ConnectDB();
         }
     }
 }

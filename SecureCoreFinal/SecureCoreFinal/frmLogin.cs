@@ -78,15 +78,18 @@ namespace SecureCoreFinal
         // Boton de Login
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //query = "select Login, Password from Users where Login = '" + swTextboxUsername.Text +
-            //    "' and Password = '" + swTextboxPasswd.Text + "';";
+            int registres;
 
-            dts = _Dades.PortarPerConsulta("select * from Users", "Users");
+            query = "select Login, Password from Users where Login = '" + swTextboxUsername.Text +
+                    "' and Password='" + swTextboxPasswd.Text + "'";
+
+            dts = _Dades.PortarPerConsulta(query, "Users");
+
+            registres = dts.Tables[0].Rows.Count;
 
             foreach (DataRow dr in dts.Tables[0].Rows)
             {
-                if (dts.Tables[0].Columns[3].Equals(swTextboxUsername.Text)
-                    && dts.Tables[0].Columns[4].Equals(swTextboxPasswd.Text))
+                if (registres > 0)
                 {
                     this.Hide();
                     frmMain frm = new frmMain(swTextboxUsername.Text);
