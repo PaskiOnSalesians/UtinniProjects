@@ -27,7 +27,7 @@ namespace AccesDades
             conString = CadenaConnexio(); // Trae la cadena
             con = new SqlConnection(conString); // Nos genera la conexión
             con.Open(); // Obrim al connexió
-            //this.con.InitializeLifetimeService();
+            //con.InitializeLifetimeService();
         }
         #endregion
 

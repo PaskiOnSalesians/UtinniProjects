@@ -72,7 +72,7 @@ namespace SecureCoreFinal
         {
             foreach (DataRow dr in dts.Tables[0].Rows)
             {
-
+                if(dts.Tables[0].Columns["Login"] )
             }
         }
 
