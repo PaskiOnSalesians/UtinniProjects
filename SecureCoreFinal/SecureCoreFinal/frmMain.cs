@@ -69,7 +69,7 @@ namespace SecureCoreFinal
             Application.Exit();
         }
 
-        private void frmMain_Load(string username, object sender, EventArgs e)
+        private void frmMain_Load(object sender, EventArgs e)
         {
             _Dades.ConnectDB();
         }

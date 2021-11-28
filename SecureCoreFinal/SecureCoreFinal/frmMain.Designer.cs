@@ -60,7 +60,7 @@ namespace SecureCoreFinal
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.ForeColor = System.Drawing.Color.White;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(2);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(773, 45);
             this.panelTop.TabIndex = 1;
@@ -93,7 +93,7 @@ namespace SecureCoreFinal
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.ForeColor = System.Drawing.Color.White;
             this.panelLeft.Location = new System.Drawing.Point(0, 45);
-            this.panelLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(2);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(150, 399);
             this.panelLeft.TabIndex = 2;
@@ -108,7 +108,7 @@ namespace SecureCoreFinal
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Secure Core";
