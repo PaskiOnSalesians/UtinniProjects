@@ -16,9 +16,9 @@ namespace SecureCoreFinal
 {
     public partial class frmLogin : Form
     {
-        //string query;
-        DataSet dts;
-        DataTable dtsTable;
+        string query;
+        DataSet dts = null;
+        //DataTable dtsTable;
 
         Dades _Dades = new Dades();
 
@@ -33,16 +33,24 @@ namespace SecureCoreFinal
         private void frmLogin_Load(object sender, EventArgs e)
         {
             _Dades.ConnectDB();
-            dtsTable = _Dades.PortaTaula("select Login, Password, idUserCategory from Users");
-
-            foreach (DataRow dr in dtsTable.Rows)
-            {
-                //ShowMe.Text = dtsTable.Rows[dr].ToString() ;
-            }
+            //dtsTable = _Dades.PortaTaula("select * from Users");
         }
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        // Acceder al TextBox del usuario
+        private void swTextboxUsername_Enter(object sender, EventArgs e)
+        {
+            swTextboxUsername.SelectAll();
+        }
+
+        // Acceder al TextBox de la contraseña
+        private void swTextboxPasswd_Enter(object sender, EventArgs e)
+        {
+            swTextboxPasswd.UseSystemPasswordChar = true;
+            swTextboxPasswd.SelectAll();
         }
 
         #endregion
@@ -70,9 +78,20 @@ namespace SecureCoreFinal
         // Boton de Login
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            //query = "select Login, Password from Users where Login = '" + swTextboxUsername.Text +
+            //    "' and Password = '" + swTextboxPasswd.Text + "';";
+
+            dts = _Dades.PortarPerConsulta("select * from Users", "Users");
+
             foreach (DataRow dr in dts.Tables[0].Rows)
             {
-                if(dts.Tables[0].Columns["Login"] )
+                if (dts.Tables[0].Columns[3].Equals(swTextboxUsername.Text)
+                    && dts.Tables[0].Columns[4].Equals(swTextboxPasswd.Text))
+                {
+                    this.Hide();
+                    frmMain frm = new frmMain(swTextboxUsername.Text);
+                    frm.ShowDialog();
+                }
             }
         }
 
@@ -80,19 +99,6 @@ namespace SecureCoreFinal
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        // Acceder al TextBox del usuario
-        private void swTextboxUsername_Enter(object sender, EventArgs e)
-        {
-            swTextboxUsername.SelectAll();
-        }
-
-        // Acceder al TextBox de la contraseña
-        private void swTextboxPasswd_Enter(object sender, EventArgs e)
-        {
-            swTextboxPasswd.UseSystemPasswordChar = true;
-            swTextboxPasswd.SelectAll();
         }
 
         #endregion        

@@ -44,7 +44,7 @@ namespace SecureCoreFinal
             }
         }
 
-        public frmMain(string username, int num)
+        public frmMain(string username)
         {
             InitializeComponent();
         }
