@@ -52,7 +52,6 @@ namespace UsControl
         private void btnLlenca_Click(object sender, EventArgs e)
         {
             Form frm;
-            string name;
 
             Assembly ensamblat = Assembly.LoadFrom(Classe);
 
