@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace formsAuxiliars
 {
-    public partial class frmManteniment : Form
+    public partial class frmSimple : Form
     {
-        public frmManteniment()
+        public frmSimple()
         {
             InitializeComponent();
         }

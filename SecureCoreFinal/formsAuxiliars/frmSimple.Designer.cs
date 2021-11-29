@@ -1,7 +1,7 @@
 ﻿
 namespace formsAuxiliars
 {
-    partial class frmManteniment
+    partial class frmSimple
     {
         /// <summary>
         /// Required designer variable.
@@ -29,22 +29,59 @@ namespace formsAuxiliars
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.secureCoreDataSet = new formsAuxiliars.SecureCoreDataSet();
+            this.secureCoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // frmManteniment
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.DataSource = this.secureCoreDataSetBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(182, 43);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // secureCoreDataSet
+            // 
+            this.secureCoreDataSet.DataSetName = "SecureCoreDataSet";
+            this.secureCoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // secureCoreDataSetBindingSource
+            // 
+            this.secureCoreDataSetBindingSource.DataSource = this.secureCoreDataSet;
+            this.secureCoreDataSetBindingSource.Position = 0;
+            // 
+            // frmSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1092, 523);
+            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmManteniment";
+            this.Name = "frmSimple";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource secureCoreDataSetBindingSource;
+        private SecureCoreDataSet secureCoreDataSet;
     }
 }
 
