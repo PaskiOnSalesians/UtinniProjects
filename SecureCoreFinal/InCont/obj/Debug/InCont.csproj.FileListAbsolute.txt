@@ -21,3 +21,4 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debu
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.CoreCompileInputs.cache
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.dll
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.pdb
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.AssemblyReference.cache

@@ -49,35 +49,30 @@ namespace UsControl
 
         // Botones
         #region Botones
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLlenca_Click(object sender, EventArgs e)
         {
-            bool bFormNameOpen = false;
-
-            FormCollection fc = Application.OpenForms;
-            foreach (Form frm in fc)
-            {
-                if (frm.Name == "frmLlenca")
-                {
-                    bFormNameOpen = true;
-                }
-            }
+            Form frm;
+            string name;
 
             Assembly ensamblat = Assembly.LoadFrom(Classe);
 
             Object dllBD;
-
             Type tipus;
 
-            tipus = ensamblat.GetType(Formulari);
+            frm = this.FindForm();
 
-            dllBD = Activator.CreateInstance(tipus);
-
-
-            if (!bFormNameOpen)
+            foreach (Control ctrl in frm.Controls)
             {
-                ((Form)dllBD).Show();
+                if (ctrl.Name.Equals("pnlMain"))
+                {
+                    tipus = ensamblat.GetType(Formulari);
+                    dllBD = Activator.CreateInstance(tipus);
+                    ((Form)dllBD).TopLevel = false;
+                    ctrl.Controls.Add(((Form)dllBD));
+                    ((Form)dllBD).Dock = DockStyle.Fill;
+                    ((Form)dllBD).Show();
+                }
             }
-
         }
         #endregion
 
@@ -85,8 +80,10 @@ namespace UsControl
         #region Eventos
         private void LlancaApp_Load(object sender, EventArgs e)
         {
-            button1.Text = Descripcio;
+            btnLlenca.Text = Descripcio;
         }
         #endregion
+
+        
     }
 }

@@ -6,3 +6,13 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.d
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.LlancaApp.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.Properties.Resources.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete

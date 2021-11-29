@@ -87,14 +87,11 @@ namespace SecureCoreFinal
 
             registres = dts.Tables[0].Rows.Count;
 
-            foreach (DataRow dr in dts.Tables[0].Rows)
+            if (registres > 0)
             {
-                if (registres > 0)
-                {
-                    this.Hide();
-                    frmMain frm = new frmMain(swTextboxUsername.Text);
-                    frm.ShowDialog();
-                }
+                this.Hide();
+                frmMain frm = new frmMain(swTextboxUsername.Text);
+                frm.ShowDialog();
             }
         }
 

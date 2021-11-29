@@ -65,5 +65,11 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\formsAuxiliars\formsAuxiliars.csproj">
+      <Project>{f734c45f-d462-4248-b5a8-8efd191f137b}</Project>
+      <Name>formsAuxiliars</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

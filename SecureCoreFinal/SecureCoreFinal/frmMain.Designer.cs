@@ -35,6 +35,7 @@ namespace SecureCoreFinal
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblAccessLevel = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,12 +44,11 @@ namespace SecureCoreFinal
             this.lblTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTest.AutoSize = true;
             this.lblTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lblTest.Location = new System.Drawing.Point(716, 7);
-            this.lblTest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTest.Location = new System.Drawing.Point(983, 8);
             this.lblTest.Name = "lblTest";
-            this.lblTest.Size = new System.Drawing.Size(52, 29);
+            this.lblTest.Size = new System.Drawing.Size(36, 36);
             this.lblTest.TabIndex = 0;
-            this.lblTest.Text = "Exit";
+            this.lblTest.Text = "X";
             this.lblTest.Click += new System.EventHandler(this.lblTest_Click);
             // 
             // panelTop
@@ -60,19 +60,18 @@ namespace SecureCoreFinal
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.ForeColor = System.Drawing.Color.White;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(773, 45);
+            this.panelTop.Size = new System.Drawing.Size(1031, 55);
             this.panelTop.TabIndex = 1;
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblUsername.Location = new System.Drawing.Point(9, 12);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUsername.Location = new System.Drawing.Point(12, 15);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(97, 24);
+            this.lblUsername.Size = new System.Drawing.Size(124, 29);
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username";
             // 
@@ -80,10 +79,9 @@ namespace SecureCoreFinal
             // 
             this.lblAccessLevel.AutoSize = true;
             this.lblAccessLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblAccessLevel.Location = new System.Drawing.Point(149, 13);
-            this.lblAccessLevel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAccessLevel.Location = new System.Drawing.Point(199, 16);
             this.lblAccessLevel.Name = "lblAccessLevel";
-            this.lblAccessLevel.Size = new System.Drawing.Size(122, 24);
+            this.lblAccessLevel.Size = new System.Drawing.Size(154, 29);
             this.lblAccessLevel.TabIndex = 1;
             this.lblAccessLevel.Text = "Access Level";
             // 
@@ -92,23 +90,32 @@ namespace SecureCoreFinal
             this.panelLeft.BackColor = System.Drawing.Color.DarkBlue;
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.ForeColor = System.Drawing.Color.White;
-            this.panelLeft.Location = new System.Drawing.Point(0, 45);
-            this.panelLeft.Margin = new System.Windows.Forms.Padding(2);
+            this.panelLeft.Location = new System.Drawing.Point(0, 55);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(150, 399);
+            this.panelLeft.Size = new System.Drawing.Size(200, 491);
             this.panelLeft.TabIndex = 2;
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(200, 55);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(831, 491);
+            this.pnlMain.TabIndex = 3;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(773, 444);
+            this.ClientSize = new System.Drawing.Size(1031, 546);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Secure Core";
@@ -127,5 +134,6 @@ namespace SecureCoreFinal
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Label lblAccessLevel;
         private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Panel pnlMain;
     }
 }
