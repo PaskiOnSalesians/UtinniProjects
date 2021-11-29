@@ -19,19 +19,20 @@ namespace SecureCoreFinal
 
         string query;
         DataSet dts;
+        int userCateogry;
+        int level;
 
-        public frmMain(string username)
+        public frmMain(string user)
         {
             InitializeComponent();
-
-            getUsername(username);
+            getUsername(user);
         }
 
         private void getUsername(string user)
         {
             int registres;
 
-            query = "select UserName from Users where Login = '" + user + "'";
+            query = "select * from Users where Login = '" + user + "'";
             dts = _Dades.PortarPerConsulta(query, "Users");
 
             registres = dts.Tables[0].Rows.Count;
@@ -40,16 +41,33 @@ namespace SecureCoreFinal
             {
                 if (registres > 0)
                 {
-                    //lblUsername.Text = dts.Tables[0].Rows.;
+                    lblUsername.Text = dr["UserName"].ToString();
+                    userCateogry = (int)dr["idUserCategory"];
+                    level = getAccessLevel(userCateogry);
+                    lblAccessLevel.Text = level.ToString();
+                    generateButtons(level);
                 }
             }
         }
+        private int getAccessLevel(int category)
+        {
+            int level = 0;
 
+            query = "select AccessLevel from UserCategories where idUserCategory = '" + category + "'";
+            dts = _Dades.PortarPerConsulta(query, "UserCategories");
+
+            foreach (DataRow dr in dts.Tables[0].Rows)
+            {
+                level = (int)dr["AccessLevel"];
+            }
+
+            return level;
+        }
         private void generateButtons(int level)
         {
             query = "Select * from UserOptions " + " where minLevel <= '" + level + "'";
 
-            dts = _Dades.PortarPerConsulta(query);
+            dts = _Dades.PortarPerConsulta(query, "UserOptions");
 
             foreach (DataRow dr in dts.Tables[0].Rows)
             {

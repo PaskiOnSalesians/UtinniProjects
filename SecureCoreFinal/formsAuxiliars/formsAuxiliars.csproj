@@ -49,15 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCerca.cs">
+    <Compile Include="frmManteniment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCerca.Designer.cs">
-      <DependentUpon>frmCerca.cs</DependentUpon>
+    <Compile Include="frmManteniment.Designer.cs">
+      <DependentUpon>frmManteniment.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCerca.resx">
-      <DependentUpon>frmCerca.cs</DependentUpon>
+    <EmbeddedResource Include="frmManteniment.resx">
+      <DependentUpon>frmManteniment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

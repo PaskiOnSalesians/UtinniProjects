@@ -1,7 +1,7 @@
 ﻿
 namespace formsAuxiliars
 {
-    partial class frmCerca
+    partial class frmManteniment
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,13 @@ namespace formsAuxiliars
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // frmCerca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 484);
+            this.ClientSize = new System.Drawing.Size(1133, 590);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "frmCerca";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
