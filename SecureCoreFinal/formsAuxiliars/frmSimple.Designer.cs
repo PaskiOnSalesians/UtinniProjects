@@ -30,58 +30,163 @@ namespace formsAuxiliars
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvGeneral = new System.Windows.Forms.DataGridView();
+            this.agenciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.secureCoreDataSet = new formsAuxiliars.SecureCoreDataSet();
-            this.secureCoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.swTextboxCodi = new InCont.SWTextbox();
+            this.swTextboxAgencia = new InCont.SWTextbox();
+            this.btnActualitzar = new System.Windows.Forms.Button();
+            this.btnVeureDataSet = new System.Windows.Forms.Button();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersTableAdapter = new formsAuxiliars.SecureCoreDataSetTableAdapters.UsersTableAdapter();
+            this.agenciesTableAdapter = new formsAuxiliars.SecureCoreDataSetTableAdapters.AgenciesTableAdapter();
+            this.lblCodi = new System.Windows.Forms.Label();
+            this.lblAgencia = new System.Windows.Forms.Label();
+            this.lblExit = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvGeneral
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.DataSource = this.secureCoreDataSetBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(182, 43);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvGeneral.AutoGenerateColumns = false;
+            this.dgvGeneral.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGeneral.DataSource = this.secureCoreDataSet;
+            this.dgvGeneral.Location = new System.Drawing.Point(30, 151);
+            this.dgvGeneral.Name = "dgvGeneral";
+            this.dgvGeneral.RowHeadersWidth = 51;
+            this.dgvGeneral.RowTemplate.Height = 24;
+            this.dgvGeneral.Size = new System.Drawing.Size(511, 181);
+            this.dgvGeneral.TabIndex = 0;
             // 
             // secureCoreDataSet
             // 
             this.secureCoreDataSet.DataSetName = "SecureCoreDataSet";
             this.secureCoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // secureCoreDataSetBindingSource
+            // swTextboxCodi
             // 
-            this.secureCoreDataSetBindingSource.DataSource = this.secureCoreDataSet;
-            this.secureCoreDataSetBindingSource.Position = 0;
+            this.swTextboxCodi.CampBuit = false;
+            this.swTextboxCodi.ClauForanea = false;
+            this.swTextboxCodi.DadaPermesa = InCont.SWTextbox.TipusDada.Numero;
+            this.swTextboxCodi.Location = new System.Drawing.Point(274, 30);
+            this.swTextboxCodi.Name = "swTextboxCodi";
+            this.swTextboxCodi.NomBBDD = null;
+            this.swTextboxCodi.Size = new System.Drawing.Size(145, 22);
+            this.swTextboxCodi.TabIndex = 1;
+            this.swTextboxCodi.Tag = "CodeAgency";
+            // 
+            // swTextboxAgencia
+            // 
+            this.swTextboxAgencia.CampBuit = false;
+            this.swTextboxAgencia.ClauForanea = false;
+            this.swTextboxAgencia.DadaPermesa = InCont.SWTextbox.TipusDada.Numero;
+            this.swTextboxAgencia.Location = new System.Drawing.Point(274, 63);
+            this.swTextboxAgencia.Name = "swTextboxAgencia";
+            this.swTextboxAgencia.NomBBDD = null;
+            this.swTextboxAgencia.Size = new System.Drawing.Size(145, 22);
+            this.swTextboxAgencia.TabIndex = 2;
+            this.swTextboxAgencia.Tag = "DescAgency";
+            // 
+            // btnActualitzar
+            // 
+            this.btnActualitzar.Location = new System.Drawing.Point(267, 377);
+            this.btnActualitzar.Name = "btnActualitzar";
+            this.btnActualitzar.Size = new System.Drawing.Size(110, 31);
+            this.btnActualitzar.TabIndex = 3;
+            this.btnActualitzar.Text = "Actualitzar";
+            this.btnActualitzar.UseVisualStyleBackColor = true;
+            this.btnActualitzar.Click += new System.EventHandler(this.btnActualitzar_Click);
+            // 
+            // btnVeureDataSet
+            // 
+            this.btnVeureDataSet.Location = new System.Drawing.Point(383, 377);
+            this.btnVeureDataSet.Name = "btnVeureDataSet";
+            this.btnVeureDataSet.Size = new System.Drawing.Size(158, 31);
+            this.btnVeureDataSet.TabIndex = 4;
+            this.btnVeureDataSet.Text = "Veure DataSet";
+            this.btnVeureDataSet.UseVisualStyleBackColor = true;
+            this.btnVeureDataSet.Click += new System.EventHandler(this.btnVeureDataSet_Click);
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // agenciesTableAdapter
+            // 
+            this.agenciesTableAdapter.ClearBeforeFill = true;
+            // 
+            // lblCodi
+            // 
+            this.lblCodi.AutoSize = true;
+            this.lblCodi.Location = new System.Drawing.Point(186, 34);
+            this.lblCodi.Name = "lblCodi";
+            this.lblCodi.Size = new System.Drawing.Size(36, 17);
+            this.lblCodi.TabIndex = 5;
+            this.lblCodi.Text = "Codi";
+            // 
+            // lblAgencia
+            // 
+            this.lblAgencia.AutoSize = true;
+            this.lblAgencia.Location = new System.Drawing.Point(186, 68);
+            this.lblAgencia.Name = "lblAgencia";
+            this.lblAgencia.Size = new System.Drawing.Size(59, 17);
+            this.lblAgencia.TabIndex = 6;
+            this.lblAgencia.Text = "Agencia";
+            // 
+            // lblExit
+            // 
+            this.lblExit.AutoSize = true;
+            this.lblExit.Location = new System.Drawing.Point(799, 9);
+            this.lblExit.Name = "lblExit";
+            this.lblExit.Size = new System.Drawing.Size(17, 17);
+            this.lblExit.TabIndex = 7;
+            this.lblExit.Text = "X";
             // 
             // frmSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1092, 523);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(828, 482);
+            this.Controls.Add(this.lblExit);
+            this.Controls.Add(this.lblAgencia);
+            this.Controls.Add(this.lblCodi);
+            this.Controls.Add(this.btnVeureDataSet);
+            this.Controls.Add(this.btnActualitzar);
+            this.Controls.Add(this.swTextboxAgencia);
+            this.Controls.Add(this.swTextboxCodi);
+            this.Controls.Add(this.dgvGeneral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSimple";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmSimple_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource secureCoreDataSetBindingSource;
+        private System.Windows.Forms.DataGridView dgvGeneral;
         private SecureCoreDataSet secureCoreDataSet;
+        private InCont.SWTextbox swTextboxCodi;
+        private InCont.SWTextbox swTextboxAgencia;
+        private System.Windows.Forms.Button btnActualitzar;
+        private System.Windows.Forms.Button btnVeureDataSet;
+        private System.Windows.Forms.BindingSource usersBindingSource;
+        private SecureCoreDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
+        private System.Windows.Forms.BindingSource agenciesBindingSource;
+        private SecureCoreDataSetTableAdapters.AgenciesTableAdapter agenciesTableAdapter;
+        private System.Windows.Forms.Label lblCodi;
+        private System.Windows.Forms.Label lblAgencia;
+        private System.Windows.Forms.Label lblExit;
     }
 }
 

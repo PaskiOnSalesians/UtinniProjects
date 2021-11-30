@@ -35,18 +35,21 @@ namespace SecureCoreFinal
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblAccessLevel = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.pnlMain = new System.Windows.Forms.Panel();
+            this.pnlMid = new System.Windows.Forms.Panel();
+            this.pnlMidRight = new System.Windows.Forms.Panel();
+            this.pnlMidBottom = new System.Windows.Forms.Panel();
             this.panelTop.SuspendLayout();
+            this.pnlMid.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTest
             // 
             this.lblTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTest.AutoSize = true;
-            this.lblTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lblTest.Location = new System.Drawing.Point(983, 8);
+            this.lblTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.lblTest.Location = new System.Drawing.Point(987, 9);
             this.lblTest.Name = "lblTest";
-            this.lblTest.Size = new System.Drawing.Size(36, 36);
+            this.lblTest.Size = new System.Drawing.Size(32, 31);
             this.lblTest.TabIndex = 0;
             this.lblTest.Text = "X";
             this.lblTest.Click += new System.EventHandler(this.lblTest_Click);
@@ -96,13 +99,33 @@ namespace SecureCoreFinal
             this.panelLeft.Size = new System.Drawing.Size(200, 491);
             this.panelLeft.TabIndex = 2;
             // 
-            // pnlMain
+            // pnlMid
             // 
-            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(200, 55);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(831, 491);
-            this.pnlMain.TabIndex = 3;
+            this.pnlMid.Controls.Add(this.pnlMidRight);
+            this.pnlMid.Controls.Add(this.pnlMidBottom);
+            this.pnlMid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMid.Location = new System.Drawing.Point(200, 55);
+            this.pnlMid.Name = "pnlMid";
+            this.pnlMid.Size = new System.Drawing.Size(831, 491);
+            this.pnlMid.TabIndex = 3;
+            // 
+            // pnlMidRight
+            // 
+            this.pnlMidRight.BackColor = System.Drawing.Color.DarkBlue;
+            this.pnlMidRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlMidRight.Location = new System.Drawing.Point(812, 0);
+            this.pnlMidRight.Name = "pnlMidRight";
+            this.pnlMidRight.Size = new System.Drawing.Size(19, 476);
+            this.pnlMidRight.TabIndex = 1;
+            // 
+            // pnlMidBottom
+            // 
+            this.pnlMidBottom.BackColor = System.Drawing.Color.DarkBlue;
+            this.pnlMidBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlMidBottom.Location = new System.Drawing.Point(0, 476);
+            this.pnlMidBottom.Name = "pnlMidBottom";
+            this.pnlMidBottom.Size = new System.Drawing.Size(831, 15);
+            this.pnlMidBottom.TabIndex = 0;
             // 
             // frmMain
             // 
@@ -110,7 +133,7 @@ namespace SecureCoreFinal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1031, 546);
-            this.Controls.Add(this.pnlMain);
+            this.Controls.Add(this.pnlMid);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -123,6 +146,7 @@ namespace SecureCoreFinal
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            this.pnlMid.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -134,6 +158,8 @@ namespace SecureCoreFinal
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Label lblAccessLevel;
         private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.Panel pnlMid;
+        private System.Windows.Forms.Panel pnlMidRight;
+        private System.Windows.Forms.Panel pnlMidBottom;
     }
 }

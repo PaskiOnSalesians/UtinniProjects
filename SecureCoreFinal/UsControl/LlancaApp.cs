@@ -62,7 +62,7 @@ namespace UsControl
 
             foreach (Control ctrl in frm.Controls)
             {
-                if (ctrl.Name.Equals("pnlMain"))
+                if (ctrl.Name.Equals("pnlMid"))
                 {
                     tipus = ensamblat.GetType(Formulari);
                     dllBD = Activator.CreateInstance(tipus);
@@ -82,7 +82,5 @@ namespace UsControl
             btnLlenca.Text = Descripcio;
         }
         #endregion
-
-        
     }
 }

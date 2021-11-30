@@ -19,4 +19,5 @@ C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliar
 C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliars.dll
 C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliars.pdb
 C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.AssemblyReference.cache
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.frmManteniment.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.frmSimple.resources
+C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete
