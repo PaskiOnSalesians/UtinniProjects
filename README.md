@@ -1,2 +1,2 @@
 # Utinni-Projectes
-Projectes de Utinni a Salesians de Sarriàa
+Projectes de Utinni a Salesians de Sarrià
