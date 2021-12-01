@@ -54,11 +54,11 @@ namespace formsAuxiliars
             this.dgvGeneral.AutoGenerateColumns = false;
             this.dgvGeneral.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGeneral.DataSource = this.secureCoreDataSet;
-            this.dgvGeneral.Location = new System.Drawing.Point(109, 149);
+            this.dgvGeneral.Location = new System.Drawing.Point(45, 113);
             this.dgvGeneral.Name = "dgvGeneral";
             this.dgvGeneral.RowHeadersWidth = 51;
             this.dgvGeneral.RowTemplate.Height = 24;
-            this.dgvGeneral.Size = new System.Drawing.Size(511, 181);
+            this.dgvGeneral.Size = new System.Drawing.Size(544, 208);
             this.dgvGeneral.TabIndex = 0;
             // 
             // secureCoreDataSet
@@ -70,8 +70,8 @@ namespace formsAuxiliars
             // 
             this.swTextboxCodi.CampBuit = false;
             this.swTextboxCodi.ClauForanea = false;
-            this.swTextboxCodi.DadaPermesa = InCont.SWTextbox.TipusDada.Numero;
-            this.swTextboxCodi.Location = new System.Drawing.Point(274, 30);
+            this.swTextboxCodi.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextboxCodi.Location = new System.Drawing.Point(129, 22);
             this.swTextboxCodi.Name = "swTextboxCodi";
             this.swTextboxCodi.NomBBDD = null;
             this.swTextboxCodi.Size = new System.Drawing.Size(228, 22);
@@ -82,8 +82,8 @@ namespace formsAuxiliars
             // 
             this.swTextboxAgencia.CampBuit = false;
             this.swTextboxAgencia.ClauForanea = false;
-            this.swTextboxAgencia.DadaPermesa = InCont.SWTextbox.TipusDada.Numero;
-            this.swTextboxAgencia.Location = new System.Drawing.Point(274, 63);
+            this.swTextboxAgencia.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextboxAgencia.Location = new System.Drawing.Point(129, 55);
             this.swTextboxAgencia.Name = "swTextboxAgencia";
             this.swTextboxAgencia.NomBBDD = null;
             this.swTextboxAgencia.Size = new System.Drawing.Size(228, 22);
@@ -92,7 +92,7 @@ namespace formsAuxiliars
             // 
             // btnActualitzar
             // 
-            this.btnActualitzar.Location = new System.Drawing.Point(327, 377);
+            this.btnActualitzar.Location = new System.Drawing.Point(305, 345);
             this.btnActualitzar.Name = "btnActualitzar";
             this.btnActualitzar.Size = new System.Drawing.Size(110, 31);
             this.btnActualitzar.TabIndex = 3;
@@ -102,7 +102,7 @@ namespace formsAuxiliars
             // 
             // btnVeureDataSet
             // 
-            this.btnVeureDataSet.Location = new System.Drawing.Point(462, 377);
+            this.btnVeureDataSet.Location = new System.Drawing.Point(431, 345);
             this.btnVeureDataSet.Name = "btnVeureDataSet";
             this.btnVeureDataSet.Size = new System.Drawing.Size(158, 31);
             this.btnVeureDataSet.TabIndex = 4;
@@ -121,7 +121,7 @@ namespace formsAuxiliars
             // lblCodi
             // 
             this.lblCodi.AutoSize = true;
-            this.lblCodi.Location = new System.Drawing.Point(186, 34);
+            this.lblCodi.Location = new System.Drawing.Point(41, 26);
             this.lblCodi.Name = "lblCodi";
             this.lblCodi.Size = new System.Drawing.Size(36, 17);
             this.lblCodi.TabIndex = 5;
@@ -130,7 +130,7 @@ namespace formsAuxiliars
             // lblAgencia
             // 
             this.lblAgencia.AutoSize = true;
-            this.lblAgencia.Location = new System.Drawing.Point(186, 68);
+            this.lblAgencia.Location = new System.Drawing.Point(41, 60);
             this.lblAgencia.Name = "lblAgencia";
             this.lblAgencia.Size = new System.Drawing.Size(59, 17);
             this.lblAgencia.TabIndex = 6;
@@ -141,7 +141,7 @@ namespace formsAuxiliars
             this.lblExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblExit.AutoSize = true;
             this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblExit.Location = new System.Drawing.Point(796, 9);
+            this.lblExit.Location = new System.Drawing.Point(836, 9);
             this.lblExit.Name = "lblExit";
             this.lblExit.Size = new System.Drawing.Size(20, 20);
             this.lblExit.TabIndex = 7;
@@ -153,7 +153,7 @@ namespace formsAuxiliars
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(828, 482);
+            this.ClientSize = new System.Drawing.Size(868, 471);
             this.Controls.Add(this.lblExit);
             this.Controls.Add(this.lblAgencia);
             this.Controls.Add(this.lblCodi);
