@@ -105,7 +105,6 @@ namespace AccesDades
 
             ConnectDB();
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-
             SqlCommandBuilder sqlBuilder = new SqlCommandBuilder(adapter);
 
             if (_dts.HasChanges())
