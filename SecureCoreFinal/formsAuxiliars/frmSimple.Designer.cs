@@ -31,8 +31,8 @@ namespace formsAuxiliars
         {
             this.components = new System.ComponentModel.Container();
             this.dgvGeneral = new System.Windows.Forms.DataGridView();
-            this.agenciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.secureCoreDataSet = new formsAuxiliars.SecureCoreDataSet();
+            this.agenciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.swTextboxCodi = new InCont.SWTextbox();
             this.swTextboxAgencia = new InCont.SWTextbox();
             this.btnActualitzar = new System.Windows.Forms.Button();
@@ -44,8 +44,8 @@ namespace formsAuxiliars
             this.lblAgencia = new System.Windows.Forms.Label();
             this.lblExit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@ namespace formsAuxiliars
             this.dgvGeneral.AutoGenerateColumns = false;
             this.dgvGeneral.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGeneral.DataSource = this.secureCoreDataSet;
-            this.dgvGeneral.Location = new System.Drawing.Point(30, 151);
+            this.dgvGeneral.Location = new System.Drawing.Point(109, 149);
             this.dgvGeneral.Name = "dgvGeneral";
             this.dgvGeneral.RowHeadersWidth = 51;
             this.dgvGeneral.RowTemplate.Height = 24;
@@ -74,7 +74,7 @@ namespace formsAuxiliars
             this.swTextboxCodi.Location = new System.Drawing.Point(274, 30);
             this.swTextboxCodi.Name = "swTextboxCodi";
             this.swTextboxCodi.NomBBDD = null;
-            this.swTextboxCodi.Size = new System.Drawing.Size(145, 22);
+            this.swTextboxCodi.Size = new System.Drawing.Size(228, 22);
             this.swTextboxCodi.TabIndex = 1;
             this.swTextboxCodi.Tag = "CodeAgency";
             // 
@@ -86,13 +86,13 @@ namespace formsAuxiliars
             this.swTextboxAgencia.Location = new System.Drawing.Point(274, 63);
             this.swTextboxAgencia.Name = "swTextboxAgencia";
             this.swTextboxAgencia.NomBBDD = null;
-            this.swTextboxAgencia.Size = new System.Drawing.Size(145, 22);
+            this.swTextboxAgencia.Size = new System.Drawing.Size(228, 22);
             this.swTextboxAgencia.TabIndex = 2;
             this.swTextboxAgencia.Tag = "DescAgency";
             // 
             // btnActualitzar
             // 
-            this.btnActualitzar.Location = new System.Drawing.Point(267, 377);
+            this.btnActualitzar.Location = new System.Drawing.Point(327, 377);
             this.btnActualitzar.Name = "btnActualitzar";
             this.btnActualitzar.Size = new System.Drawing.Size(110, 31);
             this.btnActualitzar.TabIndex = 3;
@@ -102,7 +102,7 @@ namespace formsAuxiliars
             // 
             // btnVeureDataSet
             // 
-            this.btnVeureDataSet.Location = new System.Drawing.Point(383, 377);
+            this.btnVeureDataSet.Location = new System.Drawing.Point(462, 377);
             this.btnVeureDataSet.Name = "btnVeureDataSet";
             this.btnVeureDataSet.Size = new System.Drawing.Size(158, 31);
             this.btnVeureDataSet.TabIndex = 4;
@@ -138,12 +138,15 @@ namespace formsAuxiliars
             // 
             // lblExit
             // 
+            this.lblExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblExit.AutoSize = true;
-            this.lblExit.Location = new System.Drawing.Point(799, 9);
+            this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblExit.Location = new System.Drawing.Point(796, 9);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(17, 17);
+            this.lblExit.Size = new System.Drawing.Size(20, 20);
             this.lblExit.TabIndex = 7;
             this.lblExit.Text = "X";
+            this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
             // 
             // frmSimple
             // 
@@ -164,8 +167,8 @@ namespace formsAuxiliars
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmSimple_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
