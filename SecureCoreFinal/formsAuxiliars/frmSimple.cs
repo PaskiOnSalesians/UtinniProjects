@@ -17,8 +17,9 @@ namespace formsAuxiliars
     {
         Dades _Dades = new Dades();
 
-        string query;
+        string query = "Select * from Agencies";
         DataSet dts;
+        bool verify = false;
 
         public frmSimple()
         {
@@ -46,34 +47,62 @@ namespace formsAuxiliars
             }
         }
 
+        private void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            DataGridViewColumn viewDB = dgvGeneral.Columns[0];
+            viewDB.Visible = false;
+
+            dgvGeneral.Columns[1].HeaderText = "CodeAgency";
+            dgvGeneral.Columns[2].HeaderText = "DescAgency";
+        }
+
         private void frmSimple_Load(object sender, EventArgs e)
         {
-            query = "Select * from Agencies";
-
+            this.agenciesTableAdapter.Fill(this.secureCoreDataSet.Agencies);
+            _Dades.ConnectDB();
             dts = _Dades.PortarPerConsulta(query, "Agencies");
             dgvGeneral.DataSource = dts.Tables[0];
-
             DBinding();
 
-            // TODO: This line of code loads data into the 'secureCoreDataSet.Agencies' table. You can move, or remove it, as needed.
-            this.agenciesTableAdapter.Fill(this.secureCoreDataSet.Agencies);
             // TODO: This line of code loads data into the 'secureCoreDataSet.Users' table. You can move, or remove it, as needed.
             this.usersTableAdapter.Fill(this.secureCoreDataSet.Users);
         }
 
         private void btnActualitzar_Click(object sender, EventArgs e)
         {
-            DBinding();
-        }
-
-        private void btnVeureDataSet_Click(object sender, EventArgs e)
-        {
-
+            if (verify)
+            {
+                DataRow DataR = dts.Tables[0].NewRow();
+                DataR["CodeAgency"] = swTextboxCodi.Text;
+                DataR["DescAgency"] = swTextboxAgencia.Text;
+                dts.Tables[0].Rows.Add(DataR);
+            }
+            if (swTextboxCodi.TextLength <= 12 && swTextboxAgencia.TextLength <= 50)
+            {
+                _Dades.Actualitzar(query, "Agencies", dts);
+                _Dades.PortarPerConsulta(query, "Agencies");
+                DBinding();
+                verify = false;
+            } else
+            {
+                MessageBox.Show("Codi text limit is 12, Agency text limit is 50.");
+            }
         }
 
         private void lblExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnInsertarDataSet_Click(object sender, EventArgs e)
+        {
+            swTextboxCodi.DataBindings.Clear();
+            swTextboxAgencia.DataBindings.Clear();
+
+            swTextboxCodi.Clear();
+            swTextboxAgencia.Clear();
+
+            verify = true;
         }
     }
 }

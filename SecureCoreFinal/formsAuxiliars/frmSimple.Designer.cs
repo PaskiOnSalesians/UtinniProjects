@@ -36,24 +36,33 @@ namespace formsAuxiliars
             this.swTextboxCodi = new InCont.SWTextbox();
             this.swTextboxAgencia = new InCont.SWTextbox();
             this.btnActualitzar = new System.Windows.Forms.Button();
-            this.btnVeureDataSet = new System.Windows.Forms.Button();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnInsertar = new System.Windows.Forms.Button();
             this.usersTableAdapter = new formsAuxiliars.SecureCoreDataSetTableAdapters.UsersTableAdapter();
             this.agenciesTableAdapter = new formsAuxiliars.SecureCoreDataSetTableAdapters.AgenciesTableAdapter();
             this.lblCodi = new System.Windows.Forms.Label();
             this.lblAgencia = new System.Windows.Forms.Label();
             this.lblExit = new System.Windows.Forms.Label();
+            this.agenciesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.agenciesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.idAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvGeneral
             // 
             this.dgvGeneral.AutoGenerateColumns = false;
             this.dgvGeneral.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGeneral.DataSource = this.secureCoreDataSet;
+            this.dgvGeneral.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idAgencyDataGridViewTextBoxColumn,
+            this.codeAgencyDataGridViewTextBoxColumn,
+            this.descAgencyDataGridViewTextBoxColumn});
+            this.dgvGeneral.DataSource = this.agenciesBindingSource2;
             this.dgvGeneral.Location = new System.Drawing.Point(45, 113);
             this.dgvGeneral.Name = "dgvGeneral";
             this.dgvGeneral.RowHeadersWidth = 51;
@@ -100,15 +109,15 @@ namespace formsAuxiliars
             this.btnActualitzar.UseVisualStyleBackColor = true;
             this.btnActualitzar.Click += new System.EventHandler(this.btnActualitzar_Click);
             // 
-            // btnVeureDataSet
+            // btnInsertar
             // 
-            this.btnVeureDataSet.Location = new System.Drawing.Point(431, 345);
-            this.btnVeureDataSet.Name = "btnVeureDataSet";
-            this.btnVeureDataSet.Size = new System.Drawing.Size(158, 31);
-            this.btnVeureDataSet.TabIndex = 4;
-            this.btnVeureDataSet.Text = "Veure DataSet";
-            this.btnVeureDataSet.UseVisualStyleBackColor = true;
-            this.btnVeureDataSet.Click += new System.EventHandler(this.btnVeureDataSet_Click);
+            this.btnInsertar.Location = new System.Drawing.Point(431, 345);
+            this.btnInsertar.Name = "btnInsertar";
+            this.btnInsertar.Size = new System.Drawing.Size(158, 31);
+            this.btnInsertar.TabIndex = 4;
+            this.btnInsertar.Text = "Insertar";
+            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertarDataSet_Click);
             // 
             // usersTableAdapter
             // 
@@ -148,6 +157,42 @@ namespace formsAuxiliars
             this.lblExit.Text = "X";
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
             // 
+            // agenciesBindingSource1
+            // 
+            this.agenciesBindingSource1.DataMember = "Agencies";
+            this.agenciesBindingSource1.DataSource = this.secureCoreDataSet;
+            // 
+            // agenciesBindingSource2
+            // 
+            this.agenciesBindingSource2.DataMember = "Agencies";
+            this.agenciesBindingSource2.DataSource = this.secureCoreDataSet;
+            // 
+            // idAgencyDataGridViewTextBoxColumn
+            // 
+            this.idAgencyDataGridViewTextBoxColumn.DataPropertyName = "idAgency";
+            this.idAgencyDataGridViewTextBoxColumn.HeaderText = "idAgency";
+            this.idAgencyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idAgencyDataGridViewTextBoxColumn.Name = "idAgencyDataGridViewTextBoxColumn";
+            this.idAgencyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idAgencyDataGridViewTextBoxColumn.Visible = false;
+            this.idAgencyDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // codeAgencyDataGridViewTextBoxColumn
+            // 
+            this.codeAgencyDataGridViewTextBoxColumn.DataPropertyName = "CodeAgency";
+            this.codeAgencyDataGridViewTextBoxColumn.HeaderText = "CodeAgency";
+            this.codeAgencyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codeAgencyDataGridViewTextBoxColumn.Name = "codeAgencyDataGridViewTextBoxColumn";
+            this.codeAgencyDataGridViewTextBoxColumn.Width = 160;
+            // 
+            // descAgencyDataGridViewTextBoxColumn
+            // 
+            this.descAgencyDataGridViewTextBoxColumn.DataPropertyName = "DescAgency";
+            this.descAgencyDataGridViewTextBoxColumn.HeaderText = "DescAgency";
+            this.descAgencyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.descAgencyDataGridViewTextBoxColumn.Name = "descAgencyDataGridViewTextBoxColumn";
+            this.descAgencyDataGridViewTextBoxColumn.Width = 160;
+            // 
             // frmSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -157,7 +202,7 @@ namespace formsAuxiliars
             this.Controls.Add(this.lblExit);
             this.Controls.Add(this.lblAgencia);
             this.Controls.Add(this.lblCodi);
-            this.Controls.Add(this.btnVeureDataSet);
+            this.Controls.Add(this.btnInsertar);
             this.Controls.Add(this.btnActualitzar);
             this.Controls.Add(this.swTextboxAgencia);
             this.Controls.Add(this.swTextboxCodi);
@@ -169,7 +214,8 @@ namespace formsAuxiliars
             ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,14 +228,18 @@ namespace formsAuxiliars
         private InCont.SWTextbox swTextboxCodi;
         private InCont.SWTextbox swTextboxAgencia;
         private System.Windows.Forms.Button btnActualitzar;
-        private System.Windows.Forms.Button btnVeureDataSet;
-        private System.Windows.Forms.BindingSource usersBindingSource;
+        private System.Windows.Forms.Button btnInsertar;
         private SecureCoreDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
         private System.Windows.Forms.BindingSource agenciesBindingSource;
         private SecureCoreDataSetTableAdapters.AgenciesTableAdapter agenciesTableAdapter;
         private System.Windows.Forms.Label lblCodi;
         private System.Windows.Forms.Label lblAgencia;
         private System.Windows.Forms.Label lblExit;
+        private System.Windows.Forms.BindingSource agenciesBindingSource2;
+        private System.Windows.Forms.BindingSource agenciesBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idAgencyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codeAgencyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descAgencyDataGridViewTextBoxColumn;
     }
 }
 
