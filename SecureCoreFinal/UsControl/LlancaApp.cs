@@ -69,6 +69,7 @@ namespace UsControl
                     ((Form)dllBD).TopLevel = false;
                     ctrl.Controls.Add(((Form)dllBD));
                     ((Form)dllBD).Dock = DockStyle.Fill;
+                    ((Form)dllBD).BringToFront();
                     ((Form)dllBD).Show();
                 }
             }

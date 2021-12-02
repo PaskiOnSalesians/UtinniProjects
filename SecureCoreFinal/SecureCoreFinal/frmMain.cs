@@ -17,6 +17,7 @@ namespace SecureCoreFinal
     {
         Dades _Dades = new Dades();
 
+        string photo;
         string query;
         DataSet dts;
         int userCateogry;
@@ -41,10 +42,12 @@ namespace SecureCoreFinal
             {
                 if (registres > 0)
                 {
-                    lblUsername.Text = dr["UserName"].ToString();
+                    lblUsername.Text = "User: " + dr["UserName"].ToString();
                     userCateogry = (int)dr["idUserCategory"];
+                    photo = dr["Photo"].ToString();
                     level = getAccessLevel(userCateogry);
-                    lblAccessLevel.Text = level.ToString();
+                    //lblAccessLevel.Text = level.ToString();
+                    picUser.Image = Image.FromFile(photo);
                     generateButtons(level);
                 }
             }

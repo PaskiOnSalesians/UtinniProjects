@@ -63,9 +63,6 @@ namespace formsAuxiliars
             dts = _Dades.PortarPerConsulta(query, "Agencies");
             dgvGeneral.DataSource = dts.Tables[0];
             DBinding();
-
-            // TODO: This line of code loads data into the 'secureCoreDataSet.Users' table. You can move, or remove it, as needed.
-            this.usersTableAdapter.Fill(this.secureCoreDataSet.Users);
         }
 
         private void btnActualitzar_Click(object sender, EventArgs e)
