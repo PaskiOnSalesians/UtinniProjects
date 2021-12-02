@@ -32,8 +32,8 @@ namespace SecureCoreFinal
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblTest = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.picUser = new System.Windows.Forms.PictureBox();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.picUser = new System.Windows.Forms.PictureBox();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.pnlRight = new System.Windows.Forms.Panel();
             this.pnlBottom = new System.Windows.Forms.Panel();
@@ -47,7 +47,7 @@ namespace SecureCoreFinal
             this.lblTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTest.AutoSize = true;
             this.lblTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblTest.Location = new System.Drawing.Point(996, -1);
+            this.lblTest.Location = new System.Drawing.Point(996, 3);
             this.lblTest.Name = "lblTest";
             this.lblTest.Size = new System.Drawing.Size(32, 31);
             this.lblTest.TabIndex = 0;
@@ -68,6 +68,16 @@ namespace SecureCoreFinal
             this.panelTop.Size = new System.Drawing.Size(1031, 50);
             this.panelTop.TabIndex = 1;
             // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblUsername.Location = new System.Drawing.Point(51, 3);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(150, 36);
+            this.lblUsername.TabIndex = 2;
+            this.lblUsername.Text = "Username";
+            // 
             // picUser
             // 
             this.picUser.Location = new System.Drawing.Point(3, 3);
@@ -76,16 +86,6 @@ namespace SecureCoreFinal
             this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picUser.TabIndex = 3;
             this.picUser.TabStop = false;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lblUsername.Location = new System.Drawing.Point(51, 9);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(150, 36);
-            this.lblUsername.TabIndex = 2;
-            this.lblUsername.Text = "Username";
             // 
             // panelLeft
             // 
