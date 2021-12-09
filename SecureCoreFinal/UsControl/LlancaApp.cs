@@ -82,7 +82,5 @@ namespace UsControl
             btnLlenca.Text = Descripcio;
         }
         #endregion
-
-        
     }
 }

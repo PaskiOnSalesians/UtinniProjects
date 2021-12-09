@@ -49,15 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmManteniment.cs">
+    <Compile Include="frmSimple.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmManteniment.Designer.cs">
-      <DependentUpon>frmManteniment.cs</DependentUpon>
+    <Compile Include="frmSimple.Designer.cs">
+      <DependentUpon>frmSimple.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmManteniment.resx">
-      <DependentUpon>frmManteniment.cs</DependentUpon>
+    <Compile Include="SecureCoreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecureCoreDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmSimple.resx">
+      <DependentUpon>frmSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,9 +82,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SecureCoreDataSet.xsc">
+      <DependentUpon>SecureCoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SecureCoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SecureCoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SecureCoreDataSet.xss">
+      <DependentUpon>SecureCoreDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesDades\AccesDades.csproj">
+      <Project>{b34a4254-fb07-4f32-88d0-f15f88c046d8}</Project>
+      <Name>AccesDades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InCont\InCont.csproj">
+      <Project>{04EBF67C-AC9D-48BE-AD05-6AEEAB2524D9}</Project>
+      <Name>InCont</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,6 +13,8 @@ namespace AccesDades
     using System.Data.SqlClient;
 
     using System.Configuration;
+    using System.Windows.Forms;
+
     //using Microsoft.VisualBasic.CompilerServices;
 
     public class Dades
@@ -99,6 +101,8 @@ namespace AccesDades
         #region Actualitzar
         public void Actualitzar(string query, string taula, DataSet _dts)
         {
+            int numReg;
+
             ConnectDB();
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
 
@@ -106,7 +110,8 @@ namespace AccesDades
 
             if (_dts.HasChanges())
             {
-                adapter.Update(_dts, taula);
+                numReg = adapter.Update(_dts, taula);
+                MessageBox.Show("Registres modificats: " + numReg.ToString());
             }
 
             if(con != null)
