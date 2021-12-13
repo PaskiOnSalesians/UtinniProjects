@@ -31,6 +31,10 @@ namespace formsAuxiliars
         {
             this.components = new System.ComponentModel.Container();
             this.dgvGeneral = new System.Windows.Forms.DataGridView();
+            this.idAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.agenciesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.secureCoreDataSet = new formsAuxiliars.SecureCoreDataSet();
             this.agenciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.swTextboxCodi = new InCont.SWTextbox();
@@ -43,15 +47,11 @@ namespace formsAuxiliars
             this.lblAgencia = new System.Windows.Forms.Label();
             this.lblExit = new System.Windows.Forms.Label();
             this.agenciesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.agenciesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.idAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvGeneral
@@ -69,6 +69,37 @@ namespace formsAuxiliars
             this.dgvGeneral.RowTemplate.Height = 24;
             this.dgvGeneral.Size = new System.Drawing.Size(544, 208);
             this.dgvGeneral.TabIndex = 0;
+            // 
+            // idAgencyDataGridViewTextBoxColumn
+            // 
+            this.idAgencyDataGridViewTextBoxColumn.DataPropertyName = "idAgency";
+            this.idAgencyDataGridViewTextBoxColumn.HeaderText = "idAgency";
+            this.idAgencyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idAgencyDataGridViewTextBoxColumn.Name = "idAgencyDataGridViewTextBoxColumn";
+            this.idAgencyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idAgencyDataGridViewTextBoxColumn.Visible = false;
+            this.idAgencyDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // codeAgencyDataGridViewTextBoxColumn
+            // 
+            this.codeAgencyDataGridViewTextBoxColumn.DataPropertyName = "CodeAgency";
+            this.codeAgencyDataGridViewTextBoxColumn.HeaderText = "CodeAgency";
+            this.codeAgencyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codeAgencyDataGridViewTextBoxColumn.Name = "codeAgencyDataGridViewTextBoxColumn";
+            this.codeAgencyDataGridViewTextBoxColumn.Width = 160;
+            // 
+            // descAgencyDataGridViewTextBoxColumn
+            // 
+            this.descAgencyDataGridViewTextBoxColumn.DataPropertyName = "DescAgency";
+            this.descAgencyDataGridViewTextBoxColumn.HeaderText = "DescAgency";
+            this.descAgencyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.descAgencyDataGridViewTextBoxColumn.Name = "descAgencyDataGridViewTextBoxColumn";
+            this.descAgencyDataGridViewTextBoxColumn.Width = 160;
+            // 
+            // agenciesBindingSource2
+            // 
+            this.agenciesBindingSource2.DataMember = "Agencies";
+            this.agenciesBindingSource2.DataSource = this.secureCoreDataSet;
             // 
             // secureCoreDataSet
             // 
@@ -150,7 +181,7 @@ namespace formsAuxiliars
             this.lblExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblExit.AutoSize = true;
             this.lblExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblExit.Location = new System.Drawing.Point(836, 9);
+            this.lblExit.Location = new System.Drawing.Point(832, 9);
             this.lblExit.Name = "lblExit";
             this.lblExit.Size = new System.Drawing.Size(20, 20);
             this.lblExit.TabIndex = 7;
@@ -162,43 +193,12 @@ namespace formsAuxiliars
             this.agenciesBindingSource1.DataMember = "Agencies";
             this.agenciesBindingSource1.DataSource = this.secureCoreDataSet;
             // 
-            // agenciesBindingSource2
-            // 
-            this.agenciesBindingSource2.DataMember = "Agencies";
-            this.agenciesBindingSource2.DataSource = this.secureCoreDataSet;
-            // 
-            // idAgencyDataGridViewTextBoxColumn
-            // 
-            this.idAgencyDataGridViewTextBoxColumn.DataPropertyName = "idAgency";
-            this.idAgencyDataGridViewTextBoxColumn.HeaderText = "idAgency";
-            this.idAgencyDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idAgencyDataGridViewTextBoxColumn.Name = "idAgencyDataGridViewTextBoxColumn";
-            this.idAgencyDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idAgencyDataGridViewTextBoxColumn.Visible = false;
-            this.idAgencyDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // codeAgencyDataGridViewTextBoxColumn
-            // 
-            this.codeAgencyDataGridViewTextBoxColumn.DataPropertyName = "CodeAgency";
-            this.codeAgencyDataGridViewTextBoxColumn.HeaderText = "CodeAgency";
-            this.codeAgencyDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.codeAgencyDataGridViewTextBoxColumn.Name = "codeAgencyDataGridViewTextBoxColumn";
-            this.codeAgencyDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // descAgencyDataGridViewTextBoxColumn
-            // 
-            this.descAgencyDataGridViewTextBoxColumn.DataPropertyName = "DescAgency";
-            this.descAgencyDataGridViewTextBoxColumn.HeaderText = "DescAgency";
-            this.descAgencyDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.descAgencyDataGridViewTextBoxColumn.Name = "descAgencyDataGridViewTextBoxColumn";
-            this.descAgencyDataGridViewTextBoxColumn.Width = 160;
-            // 
             // frmSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(868, 471);
+            this.ClientSize = new System.Drawing.Size(864, 431);
             this.Controls.Add(this.lblExit);
             this.Controls.Add(this.lblAgencia);
             this.Controls.Add(this.lblCodi);
@@ -212,10 +212,10 @@ namespace formsAuxiliars
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmSimple_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

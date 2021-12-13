@@ -33,12 +33,13 @@ namespace SecureCoreFinal
             this.lblTest = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.lblAccessLevel = new System.Windows.Forms.Label();
+            this.picUser = new System.Windows.Forms.PictureBox();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.pnlRight = new System.Windows.Forms.Panel();
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTest
@@ -46,7 +47,7 @@ namespace SecureCoreFinal
             this.lblTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTest.AutoSize = true;
             this.lblTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblTest.Location = new System.Drawing.Point(987, 9);
+            this.lblTest.Location = new System.Drawing.Point(996, 3);
             this.lblTest.Name = "lblTest";
             this.lblTest.Size = new System.Drawing.Size(32, 31);
             this.lblTest.TabIndex = 0;
@@ -57,54 +58,53 @@ namespace SecureCoreFinal
             // 
             this.panelTop.BackColor = System.Drawing.Color.DarkBlue;
             this.panelTop.Controls.Add(this.lblUsername);
-            this.panelTop.Controls.Add(this.lblAccessLevel);
             this.panelTop.Controls.Add(this.lblTest);
+            this.panelTop.Controls.Add(this.picUser);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.ForeColor = System.Drawing.Color.White;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1031, 55);
+            this.panelTop.Size = new System.Drawing.Size(1031, 50);
             this.panelTop.TabIndex = 1;
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblUsername.Location = new System.Drawing.Point(12, 15);
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.lblUsername.Location = new System.Drawing.Point(51, 3);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(124, 29);
+            this.lblUsername.Size = new System.Drawing.Size(150, 36);
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username";
             // 
-            // lblAccessLevel
+            // picUser
             // 
-            this.lblAccessLevel.AutoSize = true;
-            this.lblAccessLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblAccessLevel.Location = new System.Drawing.Point(199, 16);
-            this.lblAccessLevel.Name = "lblAccessLevel";
-            this.lblAccessLevel.Size = new System.Drawing.Size(154, 29);
-            this.lblAccessLevel.TabIndex = 1;
-            this.lblAccessLevel.Text = "Access Level";
+            this.picUser.Location = new System.Drawing.Point(3, 3);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(42, 42);
+            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUser.TabIndex = 3;
+            this.picUser.TabStop = false;
             // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.DarkBlue;
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.ForeColor = System.Drawing.Color.White;
-            this.panelLeft.Location = new System.Drawing.Point(0, 55);
+            this.panelLeft.Location = new System.Drawing.Point(0, 50);
             this.panelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(200, 491);
+            this.panelLeft.Size = new System.Drawing.Size(200, 496);
             this.panelLeft.TabIndex = 2;
             // 
             // pnlRight
             // 
             this.pnlRight.BackColor = System.Drawing.Color.DarkBlue;
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlRight.Location = new System.Drawing.Point(1016, 55);
+            this.pnlRight.Location = new System.Drawing.Point(1016, 50);
             this.pnlRight.Name = "pnlRight";
-            this.pnlRight.Size = new System.Drawing.Size(15, 491);
+            this.pnlRight.Size = new System.Drawing.Size(15, 496);
             this.pnlRight.TabIndex = 3;
             // 
             // pnlBottom
@@ -119,9 +119,9 @@ namespace SecureCoreFinal
             // pnlMain
             // 
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(200, 55);
+            this.pnlMain.Location = new System.Drawing.Point(200, 50);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(816, 476);
+            this.pnlMain.Size = new System.Drawing.Size(816, 481);
             this.pnlMain.TabIndex = 5;
             // 
             // frmMain
@@ -145,6 +145,7 @@ namespace SecureCoreFinal
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,10 +155,10 @@ namespace SecureCoreFinal
         private System.Windows.Forms.Label lblTest;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Panel panelLeft;
-        private System.Windows.Forms.Label lblAccessLevel;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Panel pnlRight;
         private System.Windows.Forms.Panel pnlBottom;
         private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.PictureBox picUser;
     }
 }
