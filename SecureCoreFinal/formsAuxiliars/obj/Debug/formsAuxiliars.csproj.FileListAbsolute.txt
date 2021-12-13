@@ -9,7 +9,6 @@ C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\ob
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\bin\Debug\formsAuxiliars.dll.config
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\bin\Debug\formsAuxiliars.dll
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\bin\Debug\formsAuxiliars.pdb
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.frmCerca.resources
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.Properties.Resources.resources
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.GenerateResource.cache
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CoreCompileInputs.cache
@@ -21,3 +20,9 @@ C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliar
 C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.AssemblyReference.cache
 C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.frmSimple.resources
 C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliars.dll.config
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliars.dll
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliars.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.AssemblyReference.cache
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.frmSimple.resources
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete

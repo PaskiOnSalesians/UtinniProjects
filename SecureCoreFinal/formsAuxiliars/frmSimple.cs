@@ -18,6 +18,7 @@ namespace formsAuxiliars
         Dades _Dades = new Dades();
 
         string query = "Select * from Agencies";
+        string nomTaula = "Agencies";
         DataSet dts;
         bool verify = false;
 
@@ -27,7 +28,7 @@ namespace formsAuxiliars
         }
 
         // Inicialitzar DataBindings
-        private void DBinding()
+        public void DBinding()
         {
             swTextboxCodi.DataBindings.Clear(); // Borra el DataBinding
             swTextboxCodi.DataBindings.Add("Text", dts.Tables[0], swTextboxCodi.Tag.ToString()); // Introdueix les dades com a Text dins del TextBox
@@ -39,7 +40,7 @@ namespace formsAuxiliars
         }
 
         // Validar les Dades a la Base de Dades
-        private void VerifyDB(object sender, EventArgs e)
+        public void VerifyDB(object sender, EventArgs e)
         {
             if (((TextBox)sender).DataBindings.Count > 0)
             {
@@ -47,7 +48,7 @@ namespace formsAuxiliars
             }
         }
 
-        private void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        public void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             DataGridViewColumn viewDB = dgvGeneral.Columns[0];
             viewDB.Visible = false;
@@ -56,16 +57,16 @@ namespace formsAuxiliars
             dgvGeneral.Columns[2].HeaderText = "DescAgency";
         }
 
-        private void frmSimple_Load(object sender, EventArgs e)
+        public void frmSimple_Load(object sender, EventArgs e)
         {
             this.agenciesTableAdapter.Fill(this.secureCoreDataSet.Agencies);
             _Dades.ConnectDB();
-            dts = _Dades.PortarPerConsulta(query, "Agencies");
+            dts = _Dades.PortarPerConsulta(query, nomTaula);
             dgvGeneral.DataSource = dts.Tables[0];
             DBinding();
         }
 
-        private void btnActualitzar_Click(object sender, EventArgs e)
+        public void btnActualitzar_Click(object sender, EventArgs e)
         {
             if (verify)
             {
@@ -86,12 +87,12 @@ namespace formsAuxiliars
             }
         }
 
-        private void lblExit_Click(object sender, EventArgs e)
+        public void lblExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnInsertarDataSet_Click(object sender, EventArgs e)
+        public void btnInsertarDataSet_Click(object sender, EventArgs e)
         {
             swTextboxCodi.DataBindings.Clear();
             swTextboxAgencia.DataBindings.Clear();
