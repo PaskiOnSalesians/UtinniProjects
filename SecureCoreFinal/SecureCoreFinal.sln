@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "formsAuxiliars", "formsAuxi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesDades", "AccesDades\AccesDades.csproj", "{B34A4254-FB07-4F32-88D0-F15F88C046D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsGestio", "FormsGestio\FormsGestio.csproj", "{8FD01528-4EFE-4335-A203-A905324D8685}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{B34A4254-FB07-4F32-88D0-F15F88C046D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B34A4254-FB07-4F32-88D0-F15F88C046D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B34A4254-FB07-4F32-88D0-F15F88C046D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8FD01528-4EFE-4335-A203-A905324D8685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FD01528-4EFE-4335-A203-A905324D8685}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FD01528-4EFE-4335-A203-A905324D8685}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FD01528-4EFE-4335-A203-A905324D8685}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

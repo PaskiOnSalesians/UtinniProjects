@@ -21,7 +21,7 @@ namespace formsAuxiliars
         DataSet dts;
         bool verify = false;
 
-        private void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        private new void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             DataGridViewColumn viewDB = dgvGeneral.Columns[0];
             viewDB.Visible = false;
@@ -30,7 +30,7 @@ namespace formsAuxiliars
             dgvGeneral.Columns[2].HeaderText = "DescSpecie";
         }
 
-        private void frmSimple_Load(object sender, EventArgs e)
+        private new void frmSimple_Load(object sender, EventArgs e)
         {
             this.agenciesTableAdapter.Fill(this.secureCoreDataSet.Agencies);
             _Dades.ConnectDB();
@@ -39,7 +39,7 @@ namespace formsAuxiliars
             DBinding();
         }
 
-        private void btnActualitzar_Click(object sender, EventArgs e)
+        private new void btnActualitzar_Click(object sender, EventArgs e)
         {
             if (verify)
             {
