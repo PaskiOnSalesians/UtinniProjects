@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
+
+using System.Data;
+using formsAuxiliars;
+using AccesDades;
 using System.Windows.Forms;
 
-//using formsAuxiliars;
-using AccesDades;
-using System.Data;
-
-namespace formsAuxiliars
+namespace GestioForms
 {
     public class GestioSpecies : frmSimple
     {
@@ -30,14 +29,15 @@ namespace formsAuxiliars
             dgvGeneral.Columns[2].HeaderText = "DescSpecie";
         }
 
+        /*
         private new void frmSimple_Load(object sender, EventArgs e)
         {
-            this.agenciesTableAdapter.Fill(this.secureCoreDataSet.Agencies);
+            frmS.agenciesTableAdapter.Fill(frmSimple.secureCoreDataSet.Agencies);
             _Dades.ConnectDB();
             dts = _Dades.PortarPerConsulta(query, nomTaula);
             dgvGeneral.DataSource = dts.Tables[0];
             DBinding();
-        }
+        }*/
 
         private new void btnActualitzar_Click(object sender, EventArgs e)
         {
