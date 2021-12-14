@@ -35,21 +35,18 @@ namespace formsAuxiliars
             this.codeAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descAgencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.agenciesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.secureCoreDataSet = new formsAuxiliars.SecureCoreDataSet();
+            
             this.agenciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.swTextboxCodi = new InCont.SWTextbox();
             this.swTextboxAgencia = new InCont.SWTextbox();
             this.btnActualitzar = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
-            this.usersTableAdapter = new formsAuxiliars.SecureCoreDataSetTableAdapters.UsersTableAdapter();
-            this.agenciesTableAdapter = new formsAuxiliars.SecureCoreDataSetTableAdapters.AgenciesTableAdapter();
             this.lblCodi = new System.Windows.Forms.Label();
             this.lblAgencia = new System.Windows.Forms.Label();
             this.lblExit = new System.Windows.Forms.Label();
             this.agenciesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -100,13 +97,7 @@ namespace formsAuxiliars
             // agenciesBindingSource2
             // 
             this.agenciesBindingSource2.DataMember = "Agencies";
-            this.agenciesBindingSource2.DataSource = this.secureCoreDataSet;
-            // 
-            // secureCoreDataSet
-            // 
-            this.secureCoreDataSet.DataSetName = "SecureCoreDataSet";
-            this.secureCoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
+            
             // swTextboxCodi
             // 
             this.swTextboxCodi.CampBuit = false;
@@ -155,14 +146,6 @@ namespace formsAuxiliars
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertarDataSet_Click);
             // 
-            // usersTableAdapter
-            // 
-            this.usersTableAdapter.ClearBeforeFill = true;
-            // 
-            // agenciesTableAdapter
-            // 
-            this.agenciesTableAdapter.ClearBeforeFill = true;
-            // 
             // lblCodi
             // 
             this.lblCodi.AutoSize = true;
@@ -199,7 +182,6 @@ namespace formsAuxiliars
             // agenciesBindingSource1
             // 
             this.agenciesBindingSource1.DataMember = "Agencies";
-            this.agenciesBindingSource1.DataSource = this.secureCoreDataSet;
             // 
             // frmSimple
             // 
@@ -222,7 +204,6 @@ namespace formsAuxiliars
             this.Load += new System.EventHandler(this.frmSimple_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGeneral)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secureCoreDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agenciesBindingSource1)).EndInit();
             this.ResumeLayout(false);
@@ -231,12 +212,10 @@ namespace formsAuxiliars
         }
 
         #endregion
-        private SecureCoreDataSet secureCoreDataSet;
+       
         private System.Windows.Forms.Button btnActualitzar;
         private System.Windows.Forms.Button btnInsertar;
-        private SecureCoreDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
         private System.Windows.Forms.BindingSource agenciesBindingSource;
-        private SecureCoreDataSetTableAdapters.AgenciesTableAdapter agenciesTableAdapter;
         private System.Windows.Forms.Label lblCodi;
         private System.Windows.Forms.Label lblAgencia;
         private System.Windows.Forms.Label lblExit;

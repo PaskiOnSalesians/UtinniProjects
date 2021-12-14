@@ -1,0 +1,14 @@
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\bin\Debug\GestioForms.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\bin\Debug\GestioForms.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\bin\Debug\AccesDades.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\bin\Debug\formsAuxiliars.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\bin\Debug\InCont.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\bin\Debug\AccesDades.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\bin\Debug\formsAuxiliars.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\bin\Debug\formsAuxiliars.dll.config
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\bin\Debug\InCont.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\obj\Debug\GestioForms.csproj.AssemblyReference.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\obj\Debug\GestioForms.csproj.CoreCompileInputs.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\obj\Debug\GestioForms.csproj.CopyComplete
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\obj\Debug\GestioForms.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioForms\obj\Debug\GestioForms.pdb

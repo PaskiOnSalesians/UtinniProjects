@@ -29,16 +29,16 @@ namespace GestioForms
             dgvGeneral.Columns[2].HeaderText = "DescSpecie";
         }
 
-        /*
+
         private new void frmSimple_Load(object sender, EventArgs e)
         {
-            frmS.agenciesTableAdapter.Fill(frmSimple.secureCoreDataSet.Agencies);
+            //frmS.agenciesTableAdapter.Fill(frmSimple.secureCoreDataSet.Agencies);
             _Dades.ConnectDB();
             dts = _Dades.PortarPerConsulta(query, nomTaula);
             dgvGeneral.DataSource = dts.Tables[0];
             DBinding();
-        }*/
 
+        }
         private new void btnActualitzar_Click(object sender, EventArgs e)
         {
             if (verify)

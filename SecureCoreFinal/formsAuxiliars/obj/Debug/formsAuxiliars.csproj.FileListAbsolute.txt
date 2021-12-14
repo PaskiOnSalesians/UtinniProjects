@@ -26,3 +26,14 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\formsAuxili
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.AssemblyReference.cache
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.frmSimple.resources
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.AssemblyReference.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.frmSimple.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.Properties.Resources.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.GenerateResource.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CoreCompileInputs.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliars.dll.config
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliars.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\formsAuxiliars.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete

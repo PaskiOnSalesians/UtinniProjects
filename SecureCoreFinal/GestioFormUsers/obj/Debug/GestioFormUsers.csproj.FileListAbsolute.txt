@@ -1,0 +1,7 @@
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.AssemblyReference.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CoreCompileInputs.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CopyComplete
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.pdb

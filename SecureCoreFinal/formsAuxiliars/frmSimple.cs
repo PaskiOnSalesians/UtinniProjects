@@ -59,7 +59,7 @@ namespace formsAuxiliars
 
         public void frmSimple_Load(object sender, EventArgs e)
         {
-            this.agenciesTableAdapter.Fill(this.secureCoreDataSet.Agencies);
+           
             _Dades.ConnectDB();
             dts = _Dades.PortarPerConsulta(query, nomTaula);
             dgvGeneral.DataSource = dts.Tables[0];
