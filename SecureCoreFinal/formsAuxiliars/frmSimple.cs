@@ -16,9 +16,12 @@ namespace formsAuxiliars
     public partial class frmSimple : Form
     {
         Dades _Dades = new Dades();
+        Form frm;
 
-        string query = "Select * from Agencies";
-        string nomTaula = "Agencies";
+        //string query = "Select * from Agencies";
+        //string nomTaula = "Agencies";
+        string query = "";
+        string nomTaula = "";
         DataSet dts;
         bool verify = false;
 
@@ -30,13 +33,16 @@ namespace formsAuxiliars
         // Inicialitzar DataBindings
         public void DBinding()
         {
-            swTextboxCodi.DataBindings.Clear(); // Borra el DataBinding
-            swTextboxCodi.DataBindings.Add("Text", dts.Tables[0], swTextboxCodi.Tag.ToString()); // Introdueix les dades com a Text dins del TextBox
-            this.swTextboxCodi.Validated += new System.EventHandler(this.VerifyDB);
+            frm = this.FindForm();
 
-            swTextboxAgencia.DataBindings.Clear();
-            swTextboxAgencia.DataBindings.Add("Text", dts.Tables[0], swTextboxAgencia.Tag.ToString());
-            this.swTextboxAgencia.Validated += new System.EventHandler(this.VerifyDB);
+            foreach (TextBox txt in frm.Controls)
+            {
+                txt.DataBindings.Clear(); // Borra el DataBinding
+                txt.DataBindings.Add("Text", dts.Tables[0], txt.Tag.ToString()); // Introdueix les dades com a Text dins del TextBox
+                txt.Validated += new System.EventHandler(this.VerifyDB);
+            }
+
+            
         }
 
         // Validar les Dades a la Base de Dades
@@ -48,14 +54,14 @@ namespace formsAuxiliars
             }
         }
 
-        public void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
-        {
-            DataGridViewColumn viewDB = dgvGeneral.Columns[0];
-            viewDB.Visible = false;
+        //public void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        //{
+        //    DataGridViewColumn viewDB = dgvGeneral.Columns[0];
+        //    viewDB.Visible = false;
 
-            dgvGeneral.Columns[1].HeaderText = "CodeAgency";
-            dgvGeneral.Columns[2].HeaderText = "DescAgency";
-        }
+        //    dgvGeneral.Columns[1].HeaderText = "CodeAgency";
+        //    dgvGeneral.Columns[2].HeaderText = "DescAgency";
+        //}
 
         public void frmSimple_Load(object sender, EventArgs e)
         {
@@ -70,15 +76,22 @@ namespace formsAuxiliars
         {
             if (verify)
             {
-                DataRow DataR = dts.Tables[0].NewRow();
-                DataR["CodeAgency"] = swTextboxCodi.Text;
-                DataR["DescAgency"] = swTextboxAgencia.Text;
-                dts.Tables[0].Rows.Add(DataR);
+                foreach (TextBox txt in frm.Controls)
+                {
+                    DataRow DataR = dts.Tables[0].NewRow();
+
+                    if (txt.Tag.ToString().Equals("Codi") || txt.Tag.ToString().Equals("Desc"))
+                    {
+                        DataR[txt.Tag.ToString()] = txt.Text;
+                    }
+
+                    dts.Tables[0].Rows.Add(DataR);
+                }
             }
             if (swTextboxCodi.TextLength <= 12 && swTextboxAgencia.TextLength <= 50)
             {
-                _Dades.Actualitzar(query, "Agencies", dts);
-                _Dades.PortarPerConsulta(query, "Agencies");
+                _Dades.Actualitzar(query, nomTaula, dts);
+                _Dades.PortarPerConsulta(query, nomTaula);
                 DBinding();
                 verify = false;
             } else
@@ -94,13 +107,14 @@ namespace formsAuxiliars
 
         public void btnInsertarDataSet_Click(object sender, EventArgs e)
         {
-            swTextboxCodi.DataBindings.Clear();
-            swTextboxAgencia.DataBindings.Clear();
+            foreach(TextBox txt in frm.Controls)
+            {
+                txt.DataBindings.Clear();
 
-            swTextboxCodi.Clear();
-            swTextboxAgencia.Clear();
+                txt.Clear();
 
-            verify = true;
+                verify = true;
+            }
         }
     }
 }
