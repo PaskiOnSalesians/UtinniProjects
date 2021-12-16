@@ -28,29 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.swTextbox1 = new InCont.SWTextbox();
+            this.swTextboxDesc = new InCont.SWTextbox();
+            this.swTextboxCodi = new InCont.SWTextbox();
+            this.lbl_Desc = new System.Windows.Forms.Label();
+            this.lbl_Codi = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // swTextbox1
+            // lblExit
             // 
-            this.swTextbox1.CampBuit = true;
-            this.swTextbox1.ClauForanea = false;
-            this.swTextbox1.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
-            this.swTextbox1.Location = new System.Drawing.Point(200, 93);
-            this.swTextbox1.Name = "swTextbox1";
-            this.swTextbox1.NomBBDD = "descSpecie";
-            this.swTextbox1.Size = new System.Drawing.Size(285, 26);
-            this.swTextbox1.TabIndex = 8;
+            this.lblExit.Location = new System.Drawing.Point(723, 9);
+            // 
+            // swTextboxDesc
+            // 
+            this.swTextboxDesc.CampBuit = true;
+            this.swTextboxDesc.ClauForanea = false;
+            this.swTextboxDesc.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextboxDesc.Location = new System.Drawing.Point(186, 138);
+            this.swTextboxDesc.Margin = new System.Windows.Forms.Padding(2);
+            this.swTextboxDesc.Name = "swTextboxDesc";
+            this.swTextboxDesc.NomBBDD = "descSpecie";
+            this.swTextboxDesc.Size = new System.Drawing.Size(191, 20);
+            this.swTextboxDesc.TabIndex = 8;
+            // 
+            // swTextboxCodi
+            // 
+            this.swTextboxCodi.CampBuit = false;
+            this.swTextboxCodi.ClauForanea = false;
+            this.swTextboxCodi.DadaPermesa = InCont.SWTextbox.TipusDada.Numero;
+            this.swTextboxCodi.Location = new System.Drawing.Point(186, 89);
+            this.swTextboxCodi.Name = "swTextboxCodi";
+            this.swTextboxCodi.NomBBDD = "codiSpecie";
+            this.swTextboxCodi.Size = new System.Drawing.Size(191, 20);
+            this.swTextboxCodi.TabIndex = 9;
+            // 
+            // lbl_Desc
+            // 
+            this.lbl_Desc.AutoSize = true;
+            this.lbl_Desc.Location = new System.Drawing.Point(99, 141);
+            this.lbl_Desc.Name = "lbl_Desc";
+            this.lbl_Desc.Size = new System.Drawing.Size(68, 13);
+            this.lbl_Desc.TabIndex = 10;
+            this.lbl_Desc.Text = "DescSpecie:";
+            // 
+            // lbl_Codi
+            // 
+            this.lbl_Codi.AutoSize = true;
+            this.lbl_Codi.Location = new System.Drawing.Point(99, 89);
+            this.lbl_Codi.Name = "lbl_Codi";
+            this.lbl_Codi.Size = new System.Drawing.Size(64, 13);
+            this.lbl_Codi.TabIndex = 11;
+            this.lbl_Codi.Text = "CodiSpecie:";
             // 
             // GestioEspecies
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1257, 763);
-            this.Controls.Add(this.swTextbox1);
+            this.ClientSize = new System.Drawing.Size(766, 496);
+            this.Controls.Add(this.lbl_Codi);
+            this.Controls.Add(this.lbl_Desc);
+            this.Controls.Add(this.swTextboxCodi);
+            this.Controls.Add(this.swTextboxDesc);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "GestioEspecies";
             this.Controls.SetChildIndex(this.lblExit, 0);
-            this.Controls.SetChildIndex(this.swTextbox1, 0);
+            this.Controls.SetChildIndex(this.swTextboxDesc, 0);
+            this.Controls.SetChildIndex(this.swTextboxCodi, 0);
+            this.Controls.SetChildIndex(this.lbl_Desc, 0);
+            this.Controls.SetChildIndex(this.lbl_Codi, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -58,6 +102,9 @@
 
         #endregion
 
-        private InCont.SWTextbox swTextbox1;
+        private InCont.SWTextbox swTextboxDesc;
+        private InCont.SWTextbox swTextboxCodi;
+        private System.Windows.Forms.Label lbl_Desc;
+        private System.Windows.Forms.Label lbl_Codi;
     }
 }

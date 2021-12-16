@@ -19,8 +19,6 @@ namespace formsAuxiliars
         Dades _Dades = new Dades();
         Form frm;
 
-        //string query = "Select * from Agencies";
-        //string nomTaula = "Agencies";
         string query = "";
         public string nomTaula = "";
         DataSet dts;
@@ -34,8 +32,6 @@ namespace formsAuxiliars
         // Inicialitzar DataBindings
         public void DBinding()
         {
-            
-
             foreach (Control txt in this.Controls)
             {
                 if (txt is SWTextbox)
@@ -45,10 +41,7 @@ namespace formsAuxiliars
                     ctr.DataBindings.Add("Text", dts.Tables[0], ctr.NomBBDD); // Introdueix les dades com a Text dins del TextBox
                     ctr.Validated += new System.EventHandler(this.VerifyDB);
                 }
-                
             }
-
-            
         }
 
         // Validar les Dades a la Base de Dades
@@ -60,20 +53,8 @@ namespace formsAuxiliars
             }
         }
 
-
-        
-        //public void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
-        //{
-        //    DataGridViewColumn viewDB = dgvGeneral.Columns[0];
-        //    viewDB.Visible = false;
-
-        //    dgvGeneral.Columns[1].HeaderText = "CodeAgency";
-        //    dgvGeneral.Columns[2].HeaderText = "DescAgency";
-        //}
-
         public void frmSimple_Load(object sender, EventArgs e)
         {
-
             if (DesignMode) return;
             _Dades.ConnectDB();
             query = "select * from " + nomTaula;
@@ -97,11 +78,10 @@ namespace formsAuxiliars
                 }
                 dts.Tables[0].Rows.Add(DataR);
             }
-  
-                _Dades.Actualitzar(query, nomTaula, dts);
-                _Dades.PortarPerConsulta(query, nomTaula);
-                DBinding();
-                verify = false;
+            _Dades.Actualitzar(query, nomTaula, dts);
+            _Dades.PortarPerConsulta(query, nomTaula);
+            DBinding();
+            verify = false;
         }
 
         public void lblExit_Click(object sender, EventArgs e)
@@ -120,7 +100,6 @@ namespace formsAuxiliars
                     ctr.DataBindings.Clear();
                     ctr.Clear();
                 }
-                
             }
         }
     }
