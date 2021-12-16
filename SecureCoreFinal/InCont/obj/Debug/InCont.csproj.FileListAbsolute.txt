@@ -28,4 +28,3 @@ C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debu
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.CoreCompileInputs.cache
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.dll
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.pdb
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.AssemblyReference.cache

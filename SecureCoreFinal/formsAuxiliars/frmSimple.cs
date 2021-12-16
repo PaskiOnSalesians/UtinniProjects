@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using InCont;
 
 using AccesDades;
 
@@ -21,7 +22,7 @@ namespace formsAuxiliars
         //string query = "Select * from Agencies";
         //string nomTaula = "Agencies";
         string query = "";
-        string nomTaula = "";
+        public string nomTaula = "";
         DataSet dts;
         bool verify = false;
 
@@ -33,13 +34,18 @@ namespace formsAuxiliars
         // Inicialitzar DataBindings
         public void DBinding()
         {
-            frm = this.FindForm();
+            
 
-            foreach (TextBox txt in frm.Controls)
+            foreach (Control txt in this.Controls)
             {
-                txt.DataBindings.Clear(); // Borra el DataBinding
-                txt.DataBindings.Add("Text", dts.Tables[0], txt.Tag.ToString()); // Introdueix les dades com a Text dins del TextBox
-                txt.Validated += new System.EventHandler(this.VerifyDB);
+                if (txt is SWTextbox)
+                {
+                    SWTextbox ctr = (SWTextbox)txt;
+                    ctr.DataBindings.Clear(); // Borra el DataBinding
+                    ctr.DataBindings.Add("Text", dts.Tables[0], ctr.NomBBDD); // Introdueix les dades com a Text dins del TextBox
+                    ctr.Validated += new System.EventHandler(this.VerifyDB);
+                }
+                
             }
 
             
@@ -48,12 +54,14 @@ namespace formsAuxiliars
         // Validar les Dades a la Base de Dades
         public void VerifyDB(object sender, EventArgs e)
         {
-            if (((TextBox)sender).DataBindings.Count > 0)
+            if (((SWTextbox)sender).DataBindings.Count > 0)
             {
-                ((TextBox)sender).DataBindings[0].BindingManagerBase.EndCurrentEdit();
+                ((SWTextbox)sender).DataBindings[0].BindingManagerBase.EndCurrentEdit();
             }
         }
 
+
+        
         //public void DataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         //{
         //    DataGridViewColumn viewDB = dgvGeneral.Columns[0];
@@ -65,8 +73,10 @@ namespace formsAuxiliars
 
         public void frmSimple_Load(object sender, EventArgs e)
         {
-           
+
+            if (DesignMode) return;
             _Dades.ConnectDB();
+            query = "select * from " + nomTaula;
             dts = _Dades.PortarPerConsulta(query, nomTaula);
             dgvGeneral.DataSource = dts.Tables[0];
             DBinding();
@@ -76,28 +86,22 @@ namespace formsAuxiliars
         {
             if (verify)
             {
-                foreach (TextBox txt in frm.Controls)
+                DataRow DataR = dts.Tables[0].NewRow();
+                foreach (Control txt in frm.Controls)
                 {
-                    DataRow DataR = dts.Tables[0].NewRow();
-
-                    if (txt.Tag.ToString().Equals("Codi") || txt.Tag.ToString().Equals("Desc"))
+                    if (txt is SWTextbox)
                     {
-                        DataR[txt.Tag.ToString()] = txt.Text;
+                        SWTextbox ctr = (SWTextbox)txt;
+                        DataR[ctr.NomBBDD] = ctr.Text;
                     }
-
-                    dts.Tables[0].Rows.Add(DataR);
                 }
+                dts.Tables[0].Rows.Add(DataR);
             }
-            if (swTextboxCodi.TextLength <= 12 && swTextboxAgencia.TextLength <= 50)
-            {
+  
                 _Dades.Actualitzar(query, nomTaula, dts);
                 _Dades.PortarPerConsulta(query, nomTaula);
                 DBinding();
                 verify = false;
-            } else
-            {
-                MessageBox.Show("Codi text limit is 12, Agency text limit is 50.");
-            }
         }
 
         public void lblExit_Click(object sender, EventArgs e)
@@ -107,13 +111,16 @@ namespace formsAuxiliars
 
         public void btnInsertarDataSet_Click(object sender, EventArgs e)
         {
-            foreach(TextBox txt in frm.Controls)
+            verify = true;
+            foreach (Control txt in frm.Controls)
             {
-                txt.DataBindings.Clear();
-
-                txt.Clear();
-
-                verify = true;
+                if (txt is SWTextbox)
+                {
+                    SWTextbox ctr = (SWTextbox)txt;
+                    ctr.DataBindings.Clear();
+                    ctr.Clear();
+                }
+                
             }
         }
     }

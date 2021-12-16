@@ -5,3 +5,5 @@ C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormU
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CopyComplete
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.dll
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.GestioEspecies.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.GenerateResource.cache

@@ -38,6 +38,18 @@ namespace UsControl
             set { _Formulari = value; }
         }
 
+        //Propietat NomTaula
+        private string _NomTaula;
+
+
+        public string NomTaula
+        {
+            get { return _NomTaula; }
+            set { _NomTaula = value; }
+        }
+
+
+
         // Propietat Descripcio
         private string _desc;
         public string Descripcio
@@ -64,8 +76,9 @@ namespace UsControl
             {
                 if (ctrl.Name.Equals("pnlMain"))
                 {
+                    Object[] args = { NomTaula };
                     tipus = ensamblat.GetType(Formulari);
-                    dllBD = Activator.CreateInstance(tipus);
+                    dllBD = Activator.CreateInstance(tipus, args);
                     ((Form)dllBD).TopLevel = false;
                     ctrl.Controls.Add(((Form)dllBD));
                     ((Form)dllBD).Dock = DockStyle.Fill;

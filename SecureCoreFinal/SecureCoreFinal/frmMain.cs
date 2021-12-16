@@ -80,6 +80,7 @@ namespace SecureCoreFinal
                 btnLlenca.Descripcio = dr["descripcio"].ToString();
                 btnLlenca.Classe = dr["classe"].ToString();
                 btnLlenca.Formulari = dr["formulari"].ToString();
+                btnLlenca.NomTaula = dr["taula"].ToString();
 
                 btnLlenca.Dock = DockStyle.Top;
             }

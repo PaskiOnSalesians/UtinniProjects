@@ -15,4 +15,3 @@ C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\AccesDades\bin\
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\AccesDades\obj\Debug\AccesDades.csproj.CoreCompileInputs.cache
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\AccesDades\obj\Debug\AccesDades.dll
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\AccesDades\obj\Debug\AccesDades.pdb
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\AccesDades\obj\Debug\AccesDades.csproj.AssemblyReference.cache
