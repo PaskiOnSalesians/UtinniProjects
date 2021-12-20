@@ -4,25 +4,27 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3AD2F967-B9C1-447B-A4C4-CB3C5ED1805F}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>users</RootNamespace>
-    <AssemblyName>users</AssemblyName>
+    <ProjectGuid>{99A67986-8069-4779-BEA0-8D1FB7774032}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BaixarArxius</RootNamespace>
+    <AssemblyName>BaixarArxius</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\dll\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,8 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,34 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GestioUsers.cs" />
-    <Compile Include="GestioUsers.Designer.cs">
-      <DependentUpon>GestioUsers.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AccesDades\AccesDades.csproj">
-      <Project>{b34a4254-fb07-4f32-88d0-f15f88c046d8}</Project>
-      <Name>AccesDades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\formsAuxiliars\formsAuxiliars.csproj">
-      <Project>{f734c45f-d462-4248-b5a8-8efd191f137b}</Project>
-      <Name>formsAuxiliars</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\InCont\InCont.csproj">
-      <Project>{04ebf67c-ac9d-48be-ad05-6aeeab2524d9}</Project>
-      <Name>InCont</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UsControl\UsControl.csproj">
-      <Project>{fcf56e92-d48b-46d5-85bd-75dcbeac2adc}</Project>
-      <Name>UsControl</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="GestioUsers.resx">
-      <DependentUpon>GestioUsers.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
