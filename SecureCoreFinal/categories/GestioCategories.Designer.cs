@@ -29,10 +29,9 @@ namespace categories
         /// </summary>
         private void InitializeComponent()
         {
-            this.swTextbox1 = new InCont.SWTextbox();
-            this.swTextbox2 = new InCont.SWTextbox();
-            this.swTextbox3 = new InCont.SWTextbox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.swTextbox_code = new InCont.SWTextbox();
+            this.swTextbox_desc = new InCont.SWTextbox();
+            this.swTextbox_level = new InCont.SWTextbox();
             this.lbl_codi = new System.Windows.Forms.Label();
             this.lbl_desc = new System.Windows.Forms.Label();
             this.lbl_AccessLevel = new System.Windows.Forms.Label();
@@ -42,47 +41,38 @@ namespace categories
             // 
             this.lblExit.Location = new System.Drawing.Point(733, 9);
             // 
-            // swTextbox1
+            // swTextbox_code
             // 
-            this.swTextbox1.CampBuit = false;
-            this.swTextbox1.ClauForanea = false;
-            this.swTextbox1.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
-            this.swTextbox1.Location = new System.Drawing.Point(297, 119);
-            this.swTextbox1.Name = "swTextbox1";
-            this.swTextbox1.NomBBDD = "CodeCategory";
-            this.swTextbox1.Size = new System.Drawing.Size(147, 20);
-            this.swTextbox1.TabIndex = 8;
+            this.swTextbox_code.CampBuit = false;
+            this.swTextbox_code.ClauForanea = false;
+            this.swTextbox_code.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextbox_code.Location = new System.Drawing.Point(297, 119);
+            this.swTextbox_code.Name = "swTextbox_code";
+            this.swTextbox_code.NomBBDD = "CodeCategory";
+            this.swTextbox_code.Size = new System.Drawing.Size(147, 20);
+            this.swTextbox_code.TabIndex = 8;
             // 
-            // swTextbox2
+            // swTextbox_desc
             // 
-            this.swTextbox2.CampBuit = false;
-            this.swTextbox2.ClauForanea = false;
-            this.swTextbox2.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
-            this.swTextbox2.Location = new System.Drawing.Point(297, 156);
-            this.swTextbox2.Name = "swTextbox2";
-            this.swTextbox2.NomBBDD = "DescCategory";
-            this.swTextbox2.Size = new System.Drawing.Size(147, 20);
-            this.swTextbox2.TabIndex = 9;
+            this.swTextbox_desc.CampBuit = false;
+            this.swTextbox_desc.ClauForanea = false;
+            this.swTextbox_desc.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextbox_desc.Location = new System.Drawing.Point(297, 156);
+            this.swTextbox_desc.Name = "swTextbox_desc";
+            this.swTextbox_desc.NomBBDD = "DescCategory";
+            this.swTextbox_desc.Size = new System.Drawing.Size(147, 20);
+            this.swTextbox_desc.TabIndex = 9;
             // 
-            // swTextbox3
+            // swTextbox_level
             // 
-            this.swTextbox3.CampBuit = false;
-            this.swTextbox3.ClauForanea = false;
-            this.swTextbox3.DadaPermesa = InCont.SWTextbox.TipusDada.Numero;
-            this.swTextbox3.Location = new System.Drawing.Point(297, 196);
-            this.swTextbox3.Name = "swTextbox3";
-            this.swTextbox3.NomBBDD = "AccessLevel";
-            this.swTextbox3.Size = new System.Drawing.Size(147, 20);
-            this.swTextbox3.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "label1";
+            this.swTextbox_level.CampBuit = false;
+            this.swTextbox_level.ClauForanea = false;
+            this.swTextbox_level.DadaPermesa = InCont.SWTextbox.TipusDada.Numero;
+            this.swTextbox_level.Location = new System.Drawing.Point(297, 196);
+            this.swTextbox_level.Name = "swTextbox_level";
+            this.swTextbox_level.NomBBDD = "AccessLevel";
+            this.swTextbox_level.Size = new System.Drawing.Size(147, 20);
+            this.swTextbox_level.TabIndex = 10;
             // 
             // lbl_codi
             // 
@@ -119,18 +109,16 @@ namespace categories
             this.Controls.Add(this.lbl_AccessLevel);
             this.Controls.Add(this.lbl_desc);
             this.Controls.Add(this.lbl_codi);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.swTextbox3);
-            this.Controls.Add(this.swTextbox2);
-            this.Controls.Add(this.swTextbox1);
+            this.Controls.Add(this.swTextbox_level);
+            this.Controls.Add(this.swTextbox_desc);
+            this.Controls.Add(this.swTextbox_code);
             this.Name = "GestioCategories";
             this.Text = "GestioCategories";
             this.Load += new System.EventHandler(this.GestioCategories_Load);
             this.Controls.SetChildIndex(this.lblExit, 0);
-            this.Controls.SetChildIndex(this.swTextbox1, 0);
-            this.Controls.SetChildIndex(this.swTextbox2, 0);
-            this.Controls.SetChildIndex(this.swTextbox3, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.swTextbox_code, 0);
+            this.Controls.SetChildIndex(this.swTextbox_desc, 0);
+            this.Controls.SetChildIndex(this.swTextbox_level, 0);
             this.Controls.SetChildIndex(this.lbl_codi, 0);
             this.Controls.SetChildIndex(this.lbl_desc, 0);
             this.Controls.SetChildIndex(this.lbl_AccessLevel, 0);
@@ -141,10 +129,9 @@ namespace categories
 
         #endregion
 
-        private InCont.SWTextbox swTextbox1;
-        private InCont.SWTextbox swTextbox2;
-        private InCont.SWTextbox swTextbox3;
-        private System.Windows.Forms.Label label1;
+        private InCont.SWTextbox swTextbox_code;
+        private InCont.SWTextbox swTextbox_desc;
+        private InCont.SWTextbox swTextbox_level;
         private System.Windows.Forms.Label lbl_codi;
         private System.Windows.Forms.Label lbl_desc;
         private System.Windows.Forms.Label lbl_AccessLevel;

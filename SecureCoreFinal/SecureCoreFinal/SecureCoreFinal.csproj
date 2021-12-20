@@ -42,6 +42,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,22 +76,22 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserCategory.Context.cs">
-      <DependentUpon>UserCategory.Context.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>UserCategory.Context.tt</DependentUpon>
     </Compile>
     <Compile Include="UserCategory.cs">
       <DependentUpon>UserCategory.tt</DependentUpon>
     </Compile>
     <Compile Include="UserCategory.Designer.cs">
-      <DependentUpon>UserCategory.edmx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>UserCategory.edmx</DependentUpon>
     </Compile>
     <Compile Include="UserCategory1.cs">
-      <DependentUpon>UserCategory.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>UserCategory.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -174,6 +176,9 @@
       <DependentUpon>UserCategory.edmx</DependentUpon>
       <LastGenOutput>UserCategory1.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

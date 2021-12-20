@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="UsersCateogriesModelStoreContainer" CdmEntityContainer="UsersCategoriesEntities">
+  <EntityContainerMapping StorageEntityContainer="UserCategoriesModelStoreContainer" CdmEntityContainer="UserCategoriesEntities">
     <EntitySetMapping Name="UserCategories">
-      <EntityTypeMapping TypeName="UsersCateogriesModel.UserCategory">
+      <EntityTypeMapping TypeName="UserCategoriesModel.UserCategory">
         <MappingFragment StoreEntitySet="UserCategories">
           <ScalarProperty Name="idUserCategory" ColumnName="idUserCategory" />
           <ScalarProperty Name="CodeCategory" ColumnName="CodeCategory" />

@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace categories
+namespace SecureCoreFinal
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class UsersCategoriesEntities : DbContext
+    public partial class UserCategoriesEntities : DbContext
     {
-        public UsersCategoriesEntities()
-            : base("name=UsersCategoriesEntities")
+        public UserCategoriesEntities()
+            : base("name=UserCategoriesEntities")
         {
         }
     

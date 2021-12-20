@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace categories
+namespace SecureCoreFinal
 {
     using System;
     using System.Collections.Generic;

@@ -77,3 +77,4 @@ C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
