@@ -75,6 +75,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sectors.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sectors.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sectors.cs">
+      <DependentUpon>Sectors.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sectors.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sectors.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Sectors1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sectors.tt</DependentUpon>
+    </Compile>
     <Compile Include="UserCategory.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,11 +105,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UserCategory.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="UserCategory1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UserCategory.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -126,6 +139,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>UserCategory.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="Sectors.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Sectors.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Sectors.edmx.diagram">
+      <DependentUpon>Sectors.edmx</DependentUpon>
+    </None>
     <None Include="UserCategory.edmx.diagram">
       <DependentUpon>UserCategory.edmx</DependentUpon>
     </None>
@@ -166,6 +186,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Sectors.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Sectors.edmx</DependentUpon>
+      <LastGenOutput>Sectors.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Sectors.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Sectors.edmx</DependentUpon>
+      <LastGenOutput>Sectors1.cs</LastGenOutput>
+    </Content>
     <Content Include="UserCategory.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>UserCategory.edmx</DependentUpon>

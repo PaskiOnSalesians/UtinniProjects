@@ -8,3 +8,12 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.csproj.CopyComplete
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.dll
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.pdb
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\categories.dll.config
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\categories.dll
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\categories.pdb
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.csproj.AssemblyReference.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.GestioCategories.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.csproj.GenerateResource.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.csproj.CoreCompileInputs.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.dll
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.pdb
