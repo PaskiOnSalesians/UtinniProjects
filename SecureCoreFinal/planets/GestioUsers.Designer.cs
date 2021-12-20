@@ -31,10 +31,14 @@ namespace users
         {
             this.swTextbox_codi = new InCont.SWTextbox();
             this.swTextbox_desc = new InCont.SWTextbox();
-            this.swTextbox1 = new InCont.SWTextbox();
-            this.swTextbox2 = new InCont.SWTextbox();
-            this.swTextbox3 = new InCont.SWTextbox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.swTextbox_password = new InCont.SWTextbox();
+            this.swTextbox_login = new InCont.SWTextbox();
+            this.swTextbox_photo = new InCont.SWTextbox();
+            this.lbl_codi = new System.Windows.Forms.Label();
+            this.lbl_user = new System.Windows.Forms.Label();
+            this.lbl_login = new System.Windows.Forms.Label();
+            this.lbl_password = new System.Windows.Forms.Label();
+            this.lbl_photo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // swTextbox_codi
@@ -42,7 +46,7 @@ namespace users
             this.swTextbox_codi.CampBuit = false;
             this.swTextbox_codi.ClauForanea = false;
             this.swTextbox_codi.DadaPermesa = InCont.SWTextbox.TipusDada.Codi;
-            this.swTextbox_codi.Location = new System.Drawing.Point(211, 100);
+            this.swTextbox_codi.Location = new System.Drawing.Point(329, 100);
             this.swTextbox_codi.Name = "swTextbox_codi";
             this.swTextbox_codi.NomBBDD = "CodeUser";
             this.swTextbox_codi.Size = new System.Drawing.Size(182, 20);
@@ -53,63 +57,103 @@ namespace users
             this.swTextbox_desc.CampBuit = false;
             this.swTextbox_desc.ClauForanea = false;
             this.swTextbox_desc.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
-            this.swTextbox_desc.Location = new System.Drawing.Point(211, 126);
+            this.swTextbox_desc.Location = new System.Drawing.Point(329, 126);
             this.swTextbox_desc.Name = "swTextbox_desc";
             this.swTextbox_desc.NomBBDD = "UserName";
             this.swTextbox_desc.Size = new System.Drawing.Size(182, 20);
             this.swTextbox_desc.TabIndex = 9;
             // 
-            // swTextbox1
+            // swTextbox_password
             // 
-            this.swTextbox1.CampBuit = false;
-            this.swTextbox1.ClauForanea = false;
-            this.swTextbox1.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
-            this.swTextbox1.Location = new System.Drawing.Point(211, 178);
-            this.swTextbox1.Name = "swTextbox1";
-            this.swTextbox1.NomBBDD = "Password";
-            this.swTextbox1.Size = new System.Drawing.Size(182, 20);
-            this.swTextbox1.TabIndex = 11;
+            this.swTextbox_password.CampBuit = false;
+            this.swTextbox_password.ClauForanea = false;
+            this.swTextbox_password.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextbox_password.Location = new System.Drawing.Point(329, 178);
+            this.swTextbox_password.Name = "swTextbox_password";
+            this.swTextbox_password.NomBBDD = "Password";
+            this.swTextbox_password.Size = new System.Drawing.Size(182, 20);
+            this.swTextbox_password.TabIndex = 11;
             // 
-            // swTextbox2
+            // swTextbox_login
             // 
-            this.swTextbox2.CampBuit = false;
-            this.swTextbox2.ClauForanea = false;
-            this.swTextbox2.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
-            this.swTextbox2.Location = new System.Drawing.Point(211, 152);
-            this.swTextbox2.Name = "swTextbox2";
-            this.swTextbox2.NomBBDD = "Login";
-            this.swTextbox2.Size = new System.Drawing.Size(182, 20);
-            this.swTextbox2.TabIndex = 10;
+            this.swTextbox_login.CampBuit = false;
+            this.swTextbox_login.ClauForanea = false;
+            this.swTextbox_login.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextbox_login.Location = new System.Drawing.Point(329, 152);
+            this.swTextbox_login.Name = "swTextbox_login";
+            this.swTextbox_login.NomBBDD = "Login";
+            this.swTextbox_login.Size = new System.Drawing.Size(182, 20);
+            this.swTextbox_login.TabIndex = 10;
             // 
-            // swTextbox3
+            // swTextbox_photo
             // 
-            this.swTextbox3.CampBuit = false;
-            this.swTextbox3.ClauForanea = false;
-            this.swTextbox3.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
-            this.swTextbox3.Location = new System.Drawing.Point(211, 204);
-            this.swTextbox3.Name = "swTextbox3";
-            this.swTextbox3.NomBBDD = "Photo";
-            this.swTextbox3.Size = new System.Drawing.Size(182, 20);
-            this.swTextbox3.TabIndex = 12;
+            this.swTextbox_photo.CampBuit = false;
+            this.swTextbox_photo.ClauForanea = false;
+            this.swTextbox_photo.DadaPermesa = InCont.SWTextbox.TipusDada.Text;
+            this.swTextbox_photo.Location = new System.Drawing.Point(329, 204);
+            this.swTextbox_photo.Name = "swTextbox_photo";
+            this.swTextbox_photo.NomBBDD = "Photo";
+            this.swTextbox_photo.Size = new System.Drawing.Size(182, 20);
+            this.swTextbox_photo.TabIndex = 12;
             // 
-            // label1
+            // lbl_codi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(99, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Codi:";
+            this.lbl_codi.AutoSize = true;
+            this.lbl_codi.Location = new System.Drawing.Point(217, 103);
+            this.lbl_codi.Name = "lbl_codi";
+            this.lbl_codi.Size = new System.Drawing.Size(31, 13);
+            this.lbl_codi.TabIndex = 13;
+            this.lbl_codi.Text = "Codi:";
+            // 
+            // lbl_user
+            // 
+            this.lbl_user.AutoSize = true;
+            this.lbl_user.Location = new System.Drawing.Point(217, 129);
+            this.lbl_user.Name = "lbl_user";
+            this.lbl_user.Size = new System.Drawing.Size(58, 13);
+            this.lbl_user.TabIndex = 14;
+            this.lbl_user.Text = "Username:";
+            // 
+            // lbl_login
+            // 
+            this.lbl_login.AutoSize = true;
+            this.lbl_login.Location = new System.Drawing.Point(217, 155);
+            this.lbl_login.Name = "lbl_login";
+            this.lbl_login.Size = new System.Drawing.Size(36, 13);
+            this.lbl_login.TabIndex = 15;
+            this.lbl_login.Text = "Login:";
+            // 
+            // lbl_password
+            // 
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.Location = new System.Drawing.Point(217, 181);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(56, 13);
+            this.lbl_password.TabIndex = 16;
+            this.lbl_password.Text = "Password:";
+            // 
+            // lbl_photo
+            // 
+            this.lbl_photo.AutoSize = true;
+            this.lbl_photo.Location = new System.Drawing.Point(217, 207);
+            this.lbl_photo.Name = "lbl_photo";
+            this.lbl_photo.Size = new System.Drawing.Size(38, 13);
+            this.lbl_photo.TabIndex = 17;
+            this.lbl_photo.Text = "Photo:";
             // 
             // GestioUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 485);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.swTextbox3);
-            this.Controls.Add(this.swTextbox1);
-            this.Controls.Add(this.swTextbox2);
+            this.Controls.Add(this.lbl_photo);
+            this.Controls.Add(this.lbl_password);
+            this.Controls.Add(this.lbl_login);
+            this.Controls.Add(this.lbl_user);
+            this.Controls.Add(this.lbl_codi);
+            this.Controls.Add(this.swTextbox_photo);
+            this.Controls.Add(this.swTextbox_password);
+            this.Controls.Add(this.swTextbox_login);
             this.Controls.Add(this.swTextbox_desc);
             this.Controls.Add(this.swTextbox_codi);
             this.Name = "GestioUsers";
@@ -117,10 +161,14 @@ namespace users
             this.Controls.SetChildIndex(this.lblExit, 0);
             this.Controls.SetChildIndex(this.swTextbox_codi, 0);
             this.Controls.SetChildIndex(this.swTextbox_desc, 0);
-            this.Controls.SetChildIndex(this.swTextbox2, 0);
-            this.Controls.SetChildIndex(this.swTextbox1, 0);
-            this.Controls.SetChildIndex(this.swTextbox3, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.swTextbox_login, 0);
+            this.Controls.SetChildIndex(this.swTextbox_password, 0);
+            this.Controls.SetChildIndex(this.swTextbox_photo, 0);
+            this.Controls.SetChildIndex(this.lbl_codi, 0);
+            this.Controls.SetChildIndex(this.lbl_user, 0);
+            this.Controls.SetChildIndex(this.lbl_login, 0);
+            this.Controls.SetChildIndex(this.lbl_password, 0);
+            this.Controls.SetChildIndex(this.lbl_photo, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,9 +178,13 @@ namespace users
 
         private InCont.SWTextbox swTextbox_codi;
         private InCont.SWTextbox swTextbox_desc;
-        private InCont.SWTextbox swTextbox1;
-        private InCont.SWTextbox swTextbox2;
-        private InCont.SWTextbox swTextbox3;
-        private System.Windows.Forms.Label label1;
+        private InCont.SWTextbox swTextbox_password;
+        private InCont.SWTextbox swTextbox_login;
+        private InCont.SWTextbox swTextbox_photo;
+        private System.Windows.Forms.Label lbl_codi;
+        private System.Windows.Forms.Label lbl_user;
+        private System.Windows.Forms.Label lbl_login;
+        private System.Windows.Forms.Label lbl_password;
+        private System.Windows.Forms.Label lbl_photo;
     }
 }
