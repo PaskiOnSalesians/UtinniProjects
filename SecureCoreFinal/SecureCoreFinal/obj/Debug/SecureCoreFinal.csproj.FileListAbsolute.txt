@@ -78,3 +78,17 @@ C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe.config
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.pdb
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.SuggestedBindingRedirects.cache
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmLogin.resources
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmMain.resources
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmSplash.resources
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.Properties.Resources.resources
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.GenerateResource.cache
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
+\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb

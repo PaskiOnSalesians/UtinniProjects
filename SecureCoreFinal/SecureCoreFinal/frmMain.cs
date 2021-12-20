@@ -47,7 +47,7 @@ namespace SecureCoreFinal
                     photo = dr["Photo"].ToString();
                     level = getAccessLevel(userCateogry);
                     //lblAccessLevel.Text = level.ToString();
-                    picUser.Image = Image.FromFile(photo);
+                    //picUser.Image = Image.FromFile(photo);
                     generateButtons(level);
                 }
             }
