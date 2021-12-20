@@ -41,6 +41,10 @@ namespace users
             this.lbl_photo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // lblExit
+            // 
+            this.lblExit.Location = new System.Drawing.Point(729, 9);
+            // 
             // swTextbox_codi
             // 
             this.swTextbox_codi.CampBuit = false;
@@ -145,7 +149,7 @@ namespace users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 485);
+            this.ClientSize = new System.Drawing.Size(767, 485);
             this.Controls.Add(this.lbl_photo);
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_login);
