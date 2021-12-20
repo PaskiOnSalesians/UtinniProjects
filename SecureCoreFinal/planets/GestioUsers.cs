@@ -7,15 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using formsAuxiliars;
 
-namespace GestioFormUsers
+namespace users
 {
-    public partial class GestioUsers : frmSimple
+    public partial class GestioUsers: frmSimple
     {
-        public GestioUsers()
+        public GestioUsers(string taula)
         {
             InitializeComponent();
+            nomTaula = taula;
         }
     }
 }

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesDades", "AccesDades\Ac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestioFormUsers", "GestioFormUsers\GestioFormUsers.csproj", "{2802F68B-5587-4BDF-9C76-4D0F311AFE89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "users", "planets\users.csproj", "{3AD2F967-B9C1-447B-A4C4-CB3C5ED1805F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{2802F68B-5587-4BDF-9C76-4D0F311AFE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2802F68B-5587-4BDF-9C76-4D0F311AFE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2802F68B-5587-4BDF-9C76-4D0F311AFE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD2F967-B9C1-447B-A4C4-CB3C5ED1805F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD2F967-B9C1-447B-A4C4-CB3C5ED1805F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD2F967-B9C1-447B-A4C4-CB3C5ED1805F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD2F967-B9C1-447B-A4C4-CB3C5ED1805F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
