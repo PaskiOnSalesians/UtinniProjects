@@ -21,6 +21,11 @@ namespace GestioFormUsers
             InitializeComponent();
             nomTaula = taula;
         }
+
+        private void GestioEspecies_Load(object sender, EventArgs e)
+        {
+            dgvGeneral.Columns["idSpecie"].Visible = false;
+        }
     }
 }
 

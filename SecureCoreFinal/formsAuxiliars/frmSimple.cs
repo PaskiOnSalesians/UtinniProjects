@@ -17,7 +17,6 @@ namespace formsAuxiliars
     public partial class frmSimple : Form
     {
         Dades _Dades = new Dades();
-        Form frm;
 
         string query = "";
         public string nomTaula = "";
@@ -68,7 +67,7 @@ namespace formsAuxiliars
             if (verify)
             {
                 DataRow DataR = dts.Tables[0].NewRow();
-                foreach (Control txt in frm.Controls)
+                foreach (Control txt in this.Controls)
                 {
                     if (txt is SWTextbox)
                     {
@@ -78,10 +77,10 @@ namespace formsAuxiliars
                 }
                 dts.Tables[0].Rows.Add(DataR);
             }
-            _Dades.Actualitzar(query, nomTaula, dts);
-            _Dades.PortarPerConsulta(query, nomTaula);
-            DBinding();
-            verify = false;
+                _Dades.Actualitzar(query, nomTaula, dts);
+                _Dades.PortarPerConsulta(query, nomTaula);
+                DBinding();
+                verify = false;
         }
 
         public void lblExit_Click(object sender, EventArgs e)
@@ -92,7 +91,7 @@ namespace formsAuxiliars
         public void btnInsertarDataSet_Click(object sender, EventArgs e)
         {
             verify = true;
-            foreach (Control txt in frm.Controls)
+            foreach (Control txt in this.Controls)
             {
                 if (txt is SWTextbox)
                 {
