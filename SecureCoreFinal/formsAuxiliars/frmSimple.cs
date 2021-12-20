@@ -17,7 +17,6 @@ namespace formsAuxiliars
     public partial class frmSimple : Form
     {
         Dades _Dades = new Dades();
-        Form frm;
 
         string query = "";
         public string nomTaula = "";

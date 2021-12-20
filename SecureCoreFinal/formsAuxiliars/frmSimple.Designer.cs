@@ -107,9 +107,6 @@ namespace formsAuxiliars
        
         private System.Windows.Forms.Button btnActualitzar;
         private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idAgencyDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codeAgencyDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descAgencyDataGridViewTextBoxColumn;
         public System.Windows.Forms.DataGridView dgvGeneral;
         public System.Windows.Forms.Label lblExit;
     }

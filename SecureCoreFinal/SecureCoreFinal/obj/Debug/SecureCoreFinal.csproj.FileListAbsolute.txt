@@ -45,7 +45,6 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\bin\Debug\UsControl.dll
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\bin\Debug\InCont.pdb
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\bin\Debug\UsControl.pdb
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmLogin.resources
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmMain.resources
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmSplash.resources
