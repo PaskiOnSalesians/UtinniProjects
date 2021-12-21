@@ -28,6 +28,16 @@ C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debu
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.CoreCompileInputs.cache
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.dll
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.pdb
+<<<<<<< Updated upstream
+=======
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\InCont.dll
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\InCont.pdb
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.SWTextbox.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.GenerateResource.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.CoreCompileInputs.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.dll
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.pdb
+>>>>>>> Stashed changes
 \\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\InCont.dll
 \\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\InCont.pdb
 \\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.AssemblyReference.cache
