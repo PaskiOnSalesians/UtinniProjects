@@ -18,7 +18,6 @@ namespace ConsoleFTP
             Console.Title = "Utinni FTP Service";
 
             #endregion
-
             #region FTP
 
             string user, password;
