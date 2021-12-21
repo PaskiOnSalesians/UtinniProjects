@@ -176,6 +176,10 @@
       <Project>{b34a4254-fb07-4f32-88d0-f15f88c046d8}</Project>
       <Name>AccesDades</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BaixarArxius\BaixarArxius.csproj">
+      <Project>{44de4a34-98fe-4e0d-a0c7-e4bed18a05c6}</Project>
+      <Name>BaixarArxius</Name>
+    </ProjectReference>
     <ProjectReference Include="..\InCont\InCont.csproj">
       <Project>{04ebf67c-ac9d-48be-ad05-6aeeab2524d9}</Project>
       <Name>InCont</Name>
