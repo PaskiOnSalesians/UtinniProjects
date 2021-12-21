@@ -17,3 +17,13 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Deb
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.csproj.CopyComplete
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.dll
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\sectors.dll.config
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\sectors.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\sectors.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.GestioSectors.resources
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.csproj.CopyComplete
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.pdb

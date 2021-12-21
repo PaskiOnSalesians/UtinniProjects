@@ -9,15 +9,28 @@ namespace ConsoleFTP
 {
     class Program
     {
-        public void FtpWebRequest()
-        {
-            FtpWebRequest ftpRequest;
-            ftpRequest = (FtpWebRequest)WebRequest.Create("ftp://myftp//myfile.txt")
-        }
-
         static void Main(string[] args)
         {
+            #region Console Settings
 
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Title = "Utinni FTP Service";
+
+            #endregion
+
+            #region FTP
+
+            string user, password;
+
+            FtpWebRequest ftpRequest;
+            ftpRequest = (FtpWebRequest)WebRequest.Create("ftp://myftp//myfile.txt");
+
+            user = "Josep";
+            password = "12345";
+            ftpRequest.Credentials = new NetworkCredential(user, password);
+
+            #endregion 
         }
     }
 }

@@ -1,0 +1,7 @@
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\ConsoleFTP\bin\Debug\ConsoleFTP.dll.config
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\ConsoleFTP\bin\Debug\ConsoleFTP.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\ConsoleFTP\bin\Debug\ConsoleFTP.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\ConsoleFTP\obj\Debug\ConsoleFTP.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\ConsoleFTP\obj\Debug\ConsoleFTP.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\ConsoleFTP\obj\Debug\ConsoleFTP.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\ConsoleFTP\obj\Debug\ConsoleFTP.pdb

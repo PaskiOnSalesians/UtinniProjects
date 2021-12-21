@@ -22,3 +22,12 @@ C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\Git
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.csproj.CoreCompileInputs.cache
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.dll
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\users.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\users.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.GestioUsers.resources
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.csproj.CopyComplete
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.pdb

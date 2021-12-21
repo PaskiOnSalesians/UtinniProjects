@@ -24,3 +24,12 @@ C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\Git
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CoreCompileInputs.cache
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.dll
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.GestioEspecies.resources
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CopyComplete
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.pdb

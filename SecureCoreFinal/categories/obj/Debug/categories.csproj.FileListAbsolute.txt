@@ -17,3 +17,13 @@ C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\Git
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.csproj.CoreCompileInputs.cache
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.dll
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\categories.dll.config
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\categories.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\categories.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.GestioCategories.resources
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.csproj.CopyComplete
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\categories\obj\Debug\categories.pdb

@@ -1,52 +1,10 @@
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.LlancaApp.resources
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.Properties.Resources.resources
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.LlancaApp.resources
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.Properties.Resources.resources
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
-C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.LlancaApp.resources
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.Properties.Resources.resources
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
-<<<<<<< Updated upstream
-=======
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.LlancaApp.resources
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.Properties.Resources.resources
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
->>>>>>> Stashed changes
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.LlancaApp.resources
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.Properties.Resources.resources
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
-\\Mac\Home\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.LlancaApp.resources
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.Properties.Resources.resources
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
+\\Mac\Home\Desktop\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
