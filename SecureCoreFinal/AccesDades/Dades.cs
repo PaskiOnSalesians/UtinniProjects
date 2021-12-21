@@ -38,7 +38,7 @@ namespace AccesDades
         private string CadenaConnexio()
         {
             string cadena = "";
-            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["SecureCorePaski"];
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["SecureCoreCarlos"];
             
             if(settings != null)
             {
