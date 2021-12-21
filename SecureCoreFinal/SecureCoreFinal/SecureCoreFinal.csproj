@@ -13,9 +13,9 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\Instalador\</PublishUrl>
+    <PublishUrl>\\DESKTOP-SVU78TJ\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\Instalador\</PublishUrl>
     <Install>false</Install>
-    <InstallFrom>Disk</InstallFrom>
+    <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
