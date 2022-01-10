@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SectorsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sectors">
+    <Key>
+      <PropertyRef Name="idSector" />
+    </Key>
+    <Property Name="idSector" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CodeSector" Type="nvarchar" MaxLength="12" />
+    <Property Name="DescSector" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="250" />
+    <Property Name="idRegion" Type="int" />
+  </EntityType>
+  <EntityContainer Name="SectorsModelStoreContainer">
+    <EntitySet Name="Sectors" EntityType="Self.Sectors" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

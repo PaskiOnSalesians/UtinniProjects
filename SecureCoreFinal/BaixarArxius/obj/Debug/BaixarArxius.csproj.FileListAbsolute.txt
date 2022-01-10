@@ -1,0 +1,7 @@
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\bin\Debug\BaixarArxius.exe.config
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\bin\Debug\BaixarArxius.exe
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\bin\Debug\BaixarArxius.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\obj\Debug\BaixarArxius.csproj.AssemblyReference.cache
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\obj\Debug\BaixarArxius.csproj.CoreCompileInputs.cache
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\obj\Debug\BaixarArxius.exe
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\obj\Debug\BaixarArxius.pdb

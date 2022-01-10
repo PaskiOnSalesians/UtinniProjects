@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SectorsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Sectors">
+    <Key>
+      <PropertyRef Name="idSector" />
+    </Key>
+    <Property Name="idSector" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodeSector" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="DescSector" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="idRegion" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="SectorsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sectors" EntityType="Self.Sectors" />
+  </EntityContainer>
+</Schema>
