@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4e0176bb-996c-4f44-9b65-02d2642f2b5c": {
+      "ProjectGuid": "4e0176bb-996c-4f44-9b65-02d2642f2b5c",
+      "DisplayName": "sectors",
+      "ColorIndex": 0
+    },
+    "f539c463-ffcc-4383-87a1-963f58df8a54": {
+      "ProjectGuid": "f539c463-ffcc-4383-87a1-963f58df8a54",
+      "DisplayName": "SecureCoreFinal",
+      "ColorIndex": 1
+    },
+    "b34a4254-fb07-4f32-88d0-f15f88c046d8": {
+      "ProjectGuid": "b34a4254-fb07-4f32-88d0-f15f88c046d8",
+      "DisplayName": "AccesDades",
+      "ColorIndex": 2
+    },
+    "fcf56e92-d48b-46d5-85bd-75dcbeac2adc": {
+      "ProjectGuid": "fcf56e92-d48b-46d5-85bd-75dcbeac2adc",
+      "DisplayName": "UsControl",
+      "ColorIndex": 3
+    },
+    "e3157f2e-7b89-4819-bcf6-146f9a4f1f67": {
+      "ProjectGuid": "e3157f2e-7b89-4819-bcf6-146f9a4f1f67",
+      "DisplayName": "categories",
+      "ColorIndex": 4
+    },
+    "99a67986-8069-4779-bea0-8d1fb7774032": {
+      "ProjectGuid": "99a67986-8069-4779-bea0-8d1fb7774032",
+      "DisplayName": "BaixarArxius",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

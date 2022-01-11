@@ -5,3 +5,4 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\ob
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\obj\Debug\BaixarArxius.csproj.CoreCompileInputs.cache
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\obj\Debug\BaixarArxius.exe
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\obj\Debug\BaixarArxius.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\BaixarArxius\obj\Debug\BaixarArxius.csproj.SuggestedBindingRedirects.cache
