@@ -50,37 +50,39 @@ namespace ConsolaFTP
         private static void menu()
         {
             Console.Write("----------------------------------\n");
-            Console.Write("S: Sortir\n");
             Console.Write("D: Baixar fitxers des del servidor FTP\n");
             Console.Write("E: Processat de fitxer EDI\n");
+            Console.Write("S: Sortir\n");
             Console.Write("----------------------------------\n");
         }
         private static void download()
         {
             //Ruta de classe
-            string rutadades = "ftp://g1@10.0.1.220//home//g1";
+            //string rutadades = "ftp://g1@10.0.1.220//home//g1";
 
             //Ruta servidor propi
-            //string rutaprincipal = "";
+            string rutaDades = "ftp://51.83.97.10//home//utinni//ftp";
 
             List<string> ruta = AgafarRuta();
-            foreach (var document in ruta)
+            foreach (string document in ruta)
             {
                 try
                 {
-                    FtpWebRequest request = (FtpWebRequest)WebRequest.Create(rutadades + "//" + document);
+                    FtpWebRequest request = (FtpWebRequest)WebRequest.Create(rutaDades + "//" + document);
 
                     //Ruta de classe
-                    request.Credentials = new NetworkCredential("g1", "12345aA");
+                    //request.Credentials = new NetworkCredential("g1", "12345aA");
 
                     //Ruta servidor propi
-                    //request.Credentials = new NetworkCredential("g1", "12345aA");
+                    request.Credentials = new NetworkCredential("utinni", "utinni");
 
                     request.Method = WebRequestMethods.Ftp.DownloadFile;
                     FtpWebResponse response = (FtpWebResponse)request.GetResponse();
                     Stream responseStream = response.GetResponseStream();
                     StreamReader reader = new StreamReader(responseStream);
                     string contingut = reader.ReadToEnd();
+
+                    // Has de fer una carpeta temp a la unitat 'C:\'
                     File.WriteAllText("C:\\temp\\" + document, contingut);
                     Console.WriteLine($"Download Complete, status {response.StatusDescription}");
                     reader.Close();
@@ -92,24 +94,23 @@ namespace ConsolaFTP
                     Console.WriteLine("ERROR");
 
                 }
-
             }
         }
 
 
 
-        public void nomfitxer (string Fitxer) //Canviar una mica? ni que sigui variables
+        public static string filename (string file)
         {
-            Stack<char> vomiton = new Stack<char>();
-            string lineacortada = "";
-            char caracter = 'h';
+            Stack<char> charStack = new Stack<char>();
+            string cutline = ""; // linia tallada
+            char character = 'h'; // caracter
 
-            for (int i = Fitxer.Length; i > 0; i--)
+            for (int i = file.Length; i > 0; i--)
             {
-                if (caracter != ' ')
+                if (character != ' ')
                 {
-                    caracter = Fitxer[i - 1];
-                    vomiton.Push(caracter);
+                    character = file[i - 1];
+                    charStack.Push(character);
                 }
                 else
                 {
@@ -117,13 +118,12 @@ namespace ConsolaFTP
                 }
 
             }
-            foreach (var item in vomiton)
+            foreach (var item in charStack)
             {
-                lineacortada += item;
+                cutline += item;
             }
 
-            return lineacortada.Trim();
-
+            return cutline.Trim();
         }
 
 
@@ -131,75 +131,80 @@ namespace ConsolaFTP
         {
             List<string> rutas = new List<string>();
             // Get the object used to communicate with the server.
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://10.0.1.220//home//g1");
+
+            // Escola
+            //FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://10.0.1.220//home//g1");
+
+            // Server
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://51.83.97.10//home//utinni//ftp//");
             request.Method = WebRequestMethods.Ftp.ListDirectoryDetails;
 
-            // This example assumes the FTP site uses anonymous logon.
             //Ruta Classe
-            request.Credentials = new NetworkCredential("g1", "12345aA");
-
-            ////Ruta servidor propi
             //request.Credentials = new NetworkCredential("g1", "12345aA");
+
+            // Server
+            request.Credentials = new NetworkCredential("utinni", "utinni");
 
             FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 
             Stream responseStream = response.GetResponseStream();
             StreamReader reader = new StreamReader(responseStream);
-            string linea = reader.ReadLine();
+            string line = reader.ReadLine();
 
-            while (linea != null)
+            while (line != null)
             {
-                if (!linea.StartsWith("d"))
+                if (!line.StartsWith("d"))
                 {
 
-                    rutas.Add(nomfitxer(linea));
+                    rutas.Add(filename(line));
 
                 }
-                if (!linea.StartsWith("d"))
+                if (!line.StartsWith("d"))
                 {
-                    Console.WriteLine($"\nDirectory List Complete, status {response.StatusDescription}");
+                    Console.WriteLine($"\nDirectory List Complete, status {response.StatusDescription}.");
                 }
                 else
                 {
-                    Console.WriteLine("\nThere arent files to download");
+                    Console.WriteLine("\nThere aren't files to download.");
                 }
-                linea = reader.ReadLine();
+                line = reader.ReadLine();
             }
-
 
             reader.Close();
             response.Close();
             return rutas;
-
         }
 
 
-        public void rename(string linea)
+        public static void rename(string linea)
         {
             FtpWebRequest ftpRequest = null;
             FtpWebResponse ftpResponse = null;
             try
             {
                 //ruta classe
-                ftpRequest = (FtpWebRequest)WebRequest.Create("ftp://g1@10.0.1.220//home//g1" + "//" + linea );
-
-                //ruta servidor propi
                 //ftpRequest = (FtpWebRequest)WebRequest.Create("ftp://g1@10.0.1.220//home//g1" + "//" + linea );
 
+                //ruta servidor propi
+                ftpRequest = (FtpWebRequest)WebRequest.Create("ftp://51.83.97.10//home//utinni//ftp//" + linea );
 
-                ftpRequest.Credentials = new NetworkCredential("g1", "12345aA");
+                // Escola
+                //ftpRequest.Credentials = new NetworkCredential("g1", "12345aA");
+
+                // Server
+                ftpRequest.Credentials = new NetworkCredential("utinni", "utinni");
+
                 ftpRequest.UseBinary = true;
                 ftpRequest.UsePassive = true;
                 ftpRequest.KeepAlive = true;
                 ftpRequest.Method = WebRequestMethods.Ftp.Rename;
-                ftpRequest.RenameTo = ".//Tractats" + "//" + linea;
+                ftpRequest.RenameTo = ".//Tractats//" + linea;
                 ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
                 ftpResponse.Close();
                 ftpRequest = null;
-                Console.WriteLine(linea + " moved to 'Tractats'\n");
+                Console.WriteLine(linea + " moved to 'Tractats'.\n");
             }
             catch (Exception ex) { Console.WriteLine(ex); }
         }
-    }
     }
 }
