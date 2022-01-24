@@ -173,7 +173,6 @@
     <None Include="Sectors.edmx.diagram">
       <DependentUpon>Sectors.edmx</DependentUpon>
     </None>
-    <None Include="SecureCoreFinal_TemporaryKey.pfx" />
     <None Include="UserCategory.edmx.diagram">
       <DependentUpon>UserCategory.edmx</DependentUpon>
     </None>
