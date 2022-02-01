@@ -35,3 +35,4 @@ C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\Git
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.CoreCompileInputs.cache
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.dll
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.AssemblyReference.cache
