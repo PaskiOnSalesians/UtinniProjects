@@ -13,10 +13,12 @@ namespace ConsolaFTP
     {
         static void Main(string[] args)
         {
-            string opcio;
+            string opcio, msgProcessat;
+            bool correctOrder;
 
             do
             {
+                bienvenida();
                 menu();
 
                 Console.Write("Opcio: ");
@@ -36,24 +38,52 @@ namespace ConsolaFTP
                         download();
                         break;
                     case "E":
-                        //edi();
+                        correctOrder = processat();
+                        if (!correctOrder)
+                        {
+                            msgProcessat = "El fitxer no s'ha processat correctament\n";
+                        }
+                        else
+                        {
+                            msgProcessat = "El processat a tingut éxit!";
+                        }
+
+                        Console.WriteLine(msgProcessat);
                         break;
                     default:
-                        Console.Write("ERROR. OPCIÓ NO DISPONIBLE.\n");
+                        Console.Write("ERROR.\n");
                         break;
                 }
             } while (opcio != "S");
         }
 
-
+        private static void bienvenida()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("               ____==========_______\n");
+            Console.Write("    _--____   |    | ''  ' ''|      \\\n");
+            Console.Write("   /  )8}  ^^^| 0  |  =     |  o  0  |\n");
+            Console.Write(" </_ +-==B vvv|''  |  =     | '  '' ' | \n");
+            Console.Write("    \\_____/   |____|________|________|\n");
+            Console.Write("             (_(  )\\________/___(  )__)\n");
+            Console.Write("               |\\  \\            /  /\\\n");
+            Console.Write("  ------------ | \\  \\          /  /\\ \\\n");
+            Console.Write("  UTINNI GROUP  | |\\  \\        /  /  \\ \\\n");
+            Console.Write("  ------------ (  )(  )       (  \\   (  )\n");
+            Console.Write("                \\  / /        \\  \\   \\  \\\n");
+            Console.Write("                 \\|  |\\        \\  \\  |  |\n");
+            Console.Write("                  |  | )____    \\  \\ \\  )___\n");
+            Console.Write("                  (  )  /  /    (  )  (/  /\n");
+            Console.Write("                 /___\\ /__/     /___\\ /__/\n");
+        }
 
         private static void menu()
         {
-            Console.Write("----------------------------------\n");
+            Console.Write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
             Console.Write("D: Baixar fitxers des del servidor FTP\n");
             Console.Write("E: Processat de fitxer EDI\n");
             Console.Write("S: Sortir\n");
-            Console.Write("----------------------------------\n");
+            Console.Write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
         }
         private static void download()
         {
@@ -97,7 +127,11 @@ namespace ConsolaFTP
             }
         }
 
-
+        private static bool processat()
+        {
+            bool a = true;
+            return a;
+        }
 
         public static string filename (string file)
         {
