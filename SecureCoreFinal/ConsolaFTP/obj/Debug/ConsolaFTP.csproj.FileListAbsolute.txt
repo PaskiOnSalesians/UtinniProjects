@@ -19,3 +19,6 @@ C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\Git
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.exe
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CopyComplete

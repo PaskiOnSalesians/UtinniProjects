@@ -5,20 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Net;
-
+using DocumentFormat.OpenXml.Drawing.Diagrams;
+using System.Data;
 
 namespace ConsolaFTP
 {
     class Program
     {
+        static DataSet dts;
+        const string pathedi = "../RAREDI_2.edi";
         static void Main(string[] args)
         {
             string opcio, msgProcessat;
             bool correctOrder;
 
+            bienvenida();
             do
             {
-                bienvenida();
                 menu();
 
                 Console.Write("Opcio: ");
@@ -50,6 +53,9 @@ namespace ConsolaFTP
 
                         Console.WriteLine(msgProcessat);
                         break;
+                    case "V":
+                        veure();
+                        break;
                     default:
                         Console.Write("ERROR.\n");
                         break;
@@ -60,6 +66,10 @@ namespace ConsolaFTP
         private static void bienvenida()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("   __________________________________\n");
+            Console.Write("  |:                          ``::%H|\n");
+            Console.Write("  |%:.       UtinniGroup         `:%|\n");
+            Console.Write("  |H%::..__________________________:|\n");
             Console.Write("               ____==========_______\n");
             Console.Write("    _--____   |    | ''  ' ''|      \\\n");
             Console.Write("   /  )8}  ^^^| 0  |  =     |  o  0  |\n");
@@ -67,9 +77,9 @@ namespace ConsolaFTP
             Console.Write("    \\_____/   |____|________|________|\n");
             Console.Write("             (_(  )\\________/___(  )__)\n");
             Console.Write("               |\\  \\            /  /\\\n");
-            Console.Write("  ------------ | \\  \\          /  /\\ \\\n");
-            Console.Write("  UTINNI GROUP  | |\\  \\        /  /  \\ \\\n");
-            Console.Write("  ------------ (  )(  )       (  \\   (  )\n");
+            Console.Write("               | \\  \\          /  /\\ \\\n");
+            Console.Write("                | |\\  \\        /  /  \\ \\\n");
+            Console.Write("               (  )(  )       (  \\   (  )\n");
             Console.Write("                \\  / /        \\  \\   \\  \\\n");
             Console.Write("                 \\|  |\\        \\  \\  |  |\n");
             Console.Write("                  |  | )____    \\  \\ \\  )___\n");
@@ -82,6 +92,7 @@ namespace ConsolaFTP
             Console.Write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
             Console.Write("D: Baixar fitxers des del servidor FTP\n");
             Console.Write("E: Processat de fitxer EDI\n");
+            Console.Write("V: Veure el fitxer processat\n");
             Console.Write("S: Sortir\n");
             Console.Write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
         }
@@ -129,8 +140,54 @@ namespace ConsolaFTP
 
         private static bool processat()
         {
-            bool a = true;
+            //string query;
+            //dts = new DataSet();
+            //Connection cnx = new ConnectionToDB();
+            bool a = false;
+            //StreamReader sr = new StreamReader(pathedi);
+
+            //campsLinia = ProcessLine(linia);
+
+            //switch ()
+            //{
+            //    case "ORD":
+
+            //        break;
+
+            //    case "DTM":
+
+            //        break;
+            //    case "NADMS":
+
+            //        break;
+            //    case "NADMR":
+
+            //        break;
+            //    case "LIN":
+
+            //        break;
+            //    default:
+
+            //        break;
+            //}
+
             return a;
+        }
+
+        private static void veure()
+        {
+            StreamReader sr = new StreamReader(pathedi);
+            string linia;
+
+            linia = sr.ReadLine();
+            Console.WriteLine("\n               VIEW ORDER             ");
+            Console.WriteLine("========================================");
+            while (linia != null)
+            {
+                Console.WriteLine(linia);
+                linia = sr.ReadLine();
+            }
+            Console.WriteLine("========================================\n");
         }
 
         public static string filename (string file)
