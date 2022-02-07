@@ -68,7 +68,7 @@ namespace SecureCoreFinal
         }
         private void generateButtons(int level)
         {
-            query = "Select * from UserOptions " + " where minLevel <= '" + level + "'";
+            query = "Select * from UserOptions " + " where minLevel >= '" + level + "'";
 
             dts = _Dades.PortarPerConsulta(query, "UserOptions");
 
