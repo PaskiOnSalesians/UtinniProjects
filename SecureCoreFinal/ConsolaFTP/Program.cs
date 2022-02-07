@@ -42,13 +42,13 @@ namespace ConsolaFTP
                         break;
                     case "E":
                         correctOrder = processat();
-                        if (!correctOrder)
+                        if (correctOrder)
                         {
-                            msgProcessat = "El fitxer no s'ha processat correctament\n";
+                            msgProcessat = "El processat a tingut éxit!\n";
                         }
                         else
                         {
-                            msgProcessat = "El processat a tingut éxit!";
+                            msgProcessat = "El fitxer no s'ha processat correctament\n";
                         }
 
                         Console.WriteLine(msgProcessat);
@@ -176,18 +176,25 @@ namespace ConsolaFTP
 
         private static void veure()
         {
-            StreamReader sr = new StreamReader(pathedi);
-            string linia;
-
-            linia = sr.ReadLine();
-            Console.WriteLine("\n               VIEW ORDER             ");
-            Console.WriteLine("========================================");
-            while (linia != null)
+            try
             {
-                Console.WriteLine(linia);
+                StreamReader sr = new StreamReader(pathedi);
+                string linia;
+
                 linia = sr.ReadLine();
+                Console.WriteLine("\n               VIEW ORDER             ");
+                Console.WriteLine("========================================");
+                while (linia != null)
+                {
+                    Console.WriteLine(linia);
+                    linia = sr.ReadLine();
+                }
+                Console.WriteLine("========================================\n");
             }
-            Console.WriteLine("========================================\n");
+            catch (Exception)
+            {
+                Console.WriteLine("ERROR VISUALITZANT");
+            }
         }
 
         public static string filename (string file)
