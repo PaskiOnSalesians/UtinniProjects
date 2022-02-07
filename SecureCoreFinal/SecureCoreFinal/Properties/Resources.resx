@@ -130,13 +130,16 @@
   <data name="xdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="starwarshlaconlool2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starwarshlaconlool2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="okkstarwars" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\okkstarwars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rebels-r2-d2-and-c-3po-star-wars-rebels-r2d2-11563225257oc69vhrqhb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rebels-r2-d2-and-c-3po-star-wars-rebels-r2d2-11563225257oc69vhrqhb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="starwarshlaconlool2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\starwarshlaconlool2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
