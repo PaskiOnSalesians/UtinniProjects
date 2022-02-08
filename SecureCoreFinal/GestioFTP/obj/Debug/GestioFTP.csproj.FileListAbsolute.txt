@@ -1,0 +1,7 @@
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFTP\bin\Debug\GestioFTP.dll
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFTP\bin\Debug\GestioFTP.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFTP\obj\Debug\GestioFTP.Frm_OpenConsole.resources
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFTP\obj\Debug\GestioFTP.csproj.GenerateResource.cache
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFTP\obj\Debug\GestioFTP.csproj.CoreCompileInputs.cache
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFTP\obj\Debug\GestioFTP.dll
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFTP\obj\Debug\GestioFTP.pdb
