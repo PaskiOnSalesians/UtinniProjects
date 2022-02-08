@@ -31,3 +31,5 @@ C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.csproj.CopyComplete
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.dll
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\TarjaUser.rpt
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\TarjaUser.cs

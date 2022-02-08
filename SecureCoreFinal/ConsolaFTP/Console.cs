@@ -5,27 +5,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Net;
-
+using DocumentFormat.OpenXml.Drawing.Diagrams;
+using System.Data;
 
 namespace ConsolaFTP
 {
-    class Console
+    class Program
     {
+        static DataSet dts;
+        const string pathedi = "../RAREDI_2.edi";
         static void Main(string[] args)
         {
-            string opcio;
+            string opcio, msgProcessat;
+            bool correctOrder;
 
+            bienvenida();
             do
             {
                 menu();
 
-                System.Console.Write("Opcio: ");
-                opcio = System.Console.ReadLine().ToUpper().Trim();
+                Console.Write("Opcio: ");
+                opcio = Console.ReadLine().ToUpper().Trim();
 
                 if (opcio.Length > 1)
                 {
-                    System.Console.Write("Torna a introduïr l'opcio: ");
-                    opcio = System.Console.ReadLine().ToUpper().Trim();
+                    Console.Write("Torna a introduïr l'opcio: ");
+                    opcio = Console.ReadLine().ToUpper().Trim();
                 }
 
                 switch (opcio)
@@ -36,25 +41,60 @@ namespace ConsolaFTP
                         download();
                         break;
                     case "E":
-                        //edi();
+                        correctOrder = processat();
+                        if (correctOrder)
+                        {
+                            msgProcessat = "El processat a tingut éxit!\n";
+                        }
+                        else
+                        {
+                            msgProcessat = "El fitxer no s'ha processat correctament\n";
+                        }
+
+                        Console.WriteLine(msgProcessat);
+                        break;
+                    case "V":
+                        veure();
                         break;
                     default:
-                        System.Console.Write("ERROR. OPCIÓ NO DISPONIBLE.\n");
+                        Console.Write("ERROR.\n");
                         break;
                 }
             } while (opcio != "S");
         }
 
-
+        private static void bienvenida()
+        {
+            string grupo = "██╗   ██╗████████╗██╗███╗   ██╗███╗   ██╗██╗\n██║   ██║╚══██╔══╝██║████╗  ██║████╗  ██║██║\n██║   ██║   ██║   ██║██╔██╗ ██║██╔██╗ ██║██║\n██║   ██║   ██║   ██║██║╚██╗██║██║╚██╗██║██║\n╚██████╔╝   ██║   ██║██║ ╚████║██║ ╚████║██║\n ╚═════╝    ╚═╝   ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝\n";
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write($"{grupo}");
+            Console.Write("               ____==========_______\n");
+            Console.Write("    _--____   |    | ''  ' ''|      \\\n");
+            Console.Write("   /  )8}  ^^^| 0  |  =     |  o  0  |\n");
+            Console.Write(" </_ +-==B vvv|''  |  =     | '  '' ' | \n");
+            Console.Write("    \\_____/   |____|________|________|\n");
+            Console.Write("             (_(  )\\________/___(  )__)\n");
+            Console.Write("               |\\  \\            /  /\\\n");
+            Console.Write("               | \\  \\          /  /\\ \\\n");
+            Console.Write("                | |\\  \\        /  /  \\ \\\n");
+            Console.Write("               (  )(  )       (  \\   (  )\n");
+            Console.Write("                \\  / /        \\  \\   \\  \\\n");
+            Console.Write("                 \\|  |\\        \\  \\  |  |\n");
+            Console.Write("                  |  | )____    \\  \\ \\  )___\n");
+            Console.Write("                  (  )  /  /    (  )  (/  /\n");
+            Console.Write("                 /___\\ /__/     /___\\ /__/\n");
+        }
 
         private static void menu()
         {
-            System.Console.Write("----------------------------------\n");
-            System.Console.Write("D: Baixar fitxers des del servidor FTP\n");
-            System.Console.Write("E: Processat de fitxer EDI\n");
-            System.Console.Write("S: Sortir\n");
-            System.Console.Write("----------------------------------\n");
+            Console.Write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+            Console.Write("D: Baixar fitxers des del servidor FTP\n");
+            Console.Write("E: Processat de fitxer EDI\n");
+            Console.Write("V: Veure el fitxer processat\n");
+            Console.Write("S: Sortir\n");
+            Console.Write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
         }
+
         private static void download()
         {
             //Ruta de classe
@@ -84,20 +124,72 @@ namespace ConsolaFTP
 
                     // Has de fer una carpeta temp a la unitat 'C:\'
                     File.WriteAllText("C:\\temp\\" + document, contingut);
-                    System.Console.WriteLine($"Download Complete, status {response.StatusDescription}");
+                    Console.WriteLine($"Download Complete, status {response.StatusDescription}");
                     reader.Close();
                     response.Close();
                     rename(document);
                 }
                 catch (Exception)
                 {
-                    System.Console.WriteLine("ERROR");
+                    Console.WriteLine("ERROR");
 
                 }
             }
         }
 
+        private static bool processat()
+        {
+            bool a = false;
+            string b = "ORD";
+            
+            switch (b)
+            {
+                case "ORD":
 
+                    break;
+
+                case "DTM":
+
+                    break;
+                case "NADMS":
+
+                    break;
+                case "NADMR":
+
+                    break;
+                case "LIN":
+
+                    break;
+                default:
+
+                    break;
+            }
+
+            return a;
+        }
+
+        private static void veure()
+        {
+            try
+            {
+                StreamReader sr = new StreamReader(pathedi);
+                string linia;
+
+                linia = sr.ReadLine();
+                Console.WriteLine("\n               VIEW ORDER             ");
+                Console.WriteLine("========================================");
+                while (linia != null)
+                {
+                    Console.WriteLine(linia);
+                    linia = sr.ReadLine();
+                }
+                Console.WriteLine("========================================\n");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("ERROR VISUALITZANT");
+            }
+        }
 
         public static string filename (string file)
         {
@@ -161,11 +253,11 @@ namespace ConsolaFTP
                 }
                 if (!line.StartsWith("d"))
                 {
-                    System.Console.WriteLine($"\nDirectory List Complete, status {response.StatusDescription}.");
+                    Console.WriteLine($"\nDirectory List Complete, status {response.StatusDescription}.");
                 }
                 else
                 {
-                    System.Console.WriteLine("\nThere aren't files to download.");
+                    Console.WriteLine("\nThere aren't files to download.");
                 }
                 line = reader.ReadLine();
             }
@@ -202,9 +294,9 @@ namespace ConsolaFTP
                 ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
                 ftpResponse.Close();
                 ftpRequest = null;
-                System.Console.WriteLine(linea + " moved to 'Tractats'.\n");
+                Console.WriteLine(linea + " moved to 'Tractats'.\n");
             }
-            catch (Exception ex) { System.Console.WriteLine(ex); }
+            catch (Exception ex) { Console.WriteLine(ex); }
         }
     }
 }
