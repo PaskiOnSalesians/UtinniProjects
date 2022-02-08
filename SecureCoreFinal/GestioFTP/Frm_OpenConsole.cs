@@ -9,22 +9,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ConsolaFTP
+namespace GestioFTP
 {
-    public partial class OpenConsole : Form
+    public partial class Frm_OpenConsole : Form
     {
         string path;
-        public OpenConsole()
+        public Frm_OpenConsole()
         {
             InitializeComponent();
         }
 
-        private void btn_console_Click(object sender, EventArgs e)
+        private void lbl_close_Click(object sender, EventArgs e)
         {
-            Process.Start(path + "\\ConsolaFTP\\obj\\Debug\\ConsolaFTP.exe");
+            Application.Exit();
         }
 
-        private void OpenConsole_Load(object sender, EventArgs e)
+        private void btn_console_Click(object sender, EventArgs e)
+        {
+            Process.Start(path + "\\ConsolaFTP\\bin");
+        }
+
+        private void Frm_OpenConsole_Load(object sender, EventArgs e)
         {
             path = Application.StartupPath;
         }
