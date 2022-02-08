@@ -65,11 +65,9 @@ namespace ConsolaFTP
 
         private static void bienvenida()
         {
+            string grupo = "██╗   ██╗████████╗██╗███╗   ██╗███╗   ██╗██╗\n██║   ██║╚══██╔══╝██║████╗  ██║████╗  ██║██║\n██║   ██║   ██║   ██║██╔██╗ ██║██╔██╗ ██║██║\n██║   ██║   ██║   ██║██║╚██╗██║██║╚██╗██║██║\n╚██████╔╝   ██║   ██║██║ ╚████║██║ ╚████║██║\n ╚═════╝    ╚═╝   ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝\n";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.Write("   __________________________________\n");
-            Console.Write("  |:                          ``::%H|\n");
-            Console.Write("  |%:.       UtinniGroup         `:%|\n");
-            Console.Write("  |H%::..__________________________:|\n");
+            Console.Write($"{grupo}");
             Console.Write("               ____==========_______\n");
             Console.Write("    _--____   |    | ''  ' ''|      \\\n");
             Console.Write("   /  )8}  ^^^| 0  |  =     |  o  0  |\n");
@@ -96,6 +94,7 @@ namespace ConsolaFTP
             Console.Write("S: Sortir\n");
             Console.Write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
         }
+
         private static void download()
         {
             //Ruta de classe
@@ -140,36 +139,31 @@ namespace ConsolaFTP
 
         private static bool processat()
         {
-            //string query;
-            //dts = new DataSet();
-            //Connection cnx = new ConnectionToDB();
             bool a = false;
-            //StreamReader sr = new StreamReader(pathedi);
+            string b = "ORD";
+            
+            switch (b)
+            {
+                case "ORD":
 
-            //campsLinia = ProcessLine(linia);
+                    break;
 
-            //switch ()
-            //{
-            //    case "ORD":
+                case "DTM":
 
-            //        break;
+                    break;
+                case "NADMS":
 
-            //    case "DTM":
+                    break;
+                case "NADMR":
 
-            //        break;
-            //    case "NADMS":
+                    break;
+                case "LIN":
 
-            //        break;
-            //    case "NADMR":
+                    break;
+                default:
 
-            //        break;
-            //    case "LIN":
-
-            //        break;
-            //    default:
-
-            //        break;
-            //}
+                    break;
+            }
 
             return a;
         }

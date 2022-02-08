@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SecureCoreFinal.exe" size="2871776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SecureCoreFinal.exe" size="3347424">
       <assemblyIdentity name="SecureCoreFinal" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>baqSkEm0t3cUw1uv4+KK8xVu+bd9t8Qi7of+Rae9rNY=</dsig:DigestValue>
+        <dsig:DigestValue>npM0AyjtZ7nJ4qSS5N7X3JVyt0u799nMlT0WmSwx3nc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -33,11 +33,11 @@ namespace SecureCoreFinal
             this.lblTest = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.picUser = new System.Windows.Forms.PictureBox();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.pnlRight = new System.Windows.Forms.Panel();
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.picUser = new System.Windows.Forms.PictureBox();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.SuspendLayout();
@@ -78,15 +78,6 @@ namespace SecureCoreFinal
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username";
             // 
-            // picUser
-            // 
-            this.picUser.Location = new System.Drawing.Point(3, 3);
-            this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(42, 42);
-            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUser.TabIndex = 3;
-            this.picUser.TabStop = false;
-            // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.DarkBlue;
@@ -118,11 +109,22 @@ namespace SecureCoreFinal
             // 
             // pnlMain
             // 
+            this.pnlMain.BackgroundImage = global::SecureCoreFinal.Properties.Resources.fondo;
+            this.pnlMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(200, 50);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(816, 481);
             this.pnlMain.TabIndex = 5;
+            // 
+            // picUser
+            // 
+            this.picUser.Location = new System.Drawing.Point(3, 3);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(42, 42);
+            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUser.TabIndex = 3;
+            this.picUser.TabStop = false;
             // 
             // frmMain
             // 

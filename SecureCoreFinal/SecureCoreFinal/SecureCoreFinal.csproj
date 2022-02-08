@@ -213,6 +213,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
     <Content Include="Sectors.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Sectors.edmx</DependentUpon>
