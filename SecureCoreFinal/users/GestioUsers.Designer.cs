@@ -39,7 +39,7 @@ namespace users
             this.lbl_login = new System.Windows.Forms.Label();
             this.lbl_password = new System.Windows.Forms.Label();
             this.lbl_photo = new System.Windows.Forms.Label();
-            this.CrearFitxa = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.TarjaUser1 = new users.TarjaUser();
             this.SuspendLayout();
@@ -160,15 +160,15 @@ namespace users
             this.lbl_photo.TabIndex = 17;
             this.lbl_photo.Text = "Photo:";
             // 
-            // CrearFitxa
+            // button1
             // 
-            this.CrearFitxa.Location = new System.Drawing.Point(153, 669);
-            this.CrearFitxa.Name = "CrearFitxa";
-            this.CrearFitxa.Size = new System.Drawing.Size(183, 38);
-            this.CrearFitxa.TabIndex = 18;
-            this.CrearFitxa.Text = "Fitxa ";
-            this.CrearFitxa.UseVisualStyleBackColor = true;
-            this.CrearFitxa.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Location = new System.Drawing.Point(153, 669);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(183, 38);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Fitxa ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // crystalReportViewer1
             // 
@@ -188,7 +188,7 @@ namespace users
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 904);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Controls.Add(this.CrearFitxa);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_photo);
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_login);
@@ -213,7 +213,7 @@ namespace users
             this.Controls.SetChildIndex(this.lbl_login, 0);
             this.Controls.SetChildIndex(this.lbl_password, 0);
             this.Controls.SetChildIndex(this.lbl_photo, 0);
-            this.Controls.SetChildIndex(this.CrearFitxa, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
             this.Controls.SetChildIndex(this.crystalReportViewer1, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -232,7 +232,7 @@ namespace users
         private System.Windows.Forms.Label lbl_login;
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.Label lbl_photo;
-        private System.Windows.Forms.Button CrearFitxa;
+        private System.Windows.Forms.Button button1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private TarjaUser TarjaUser1;
     }

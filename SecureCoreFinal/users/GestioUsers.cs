@@ -44,8 +44,8 @@ namespace users
         private void button1_Click(object sender, EventArgs e)
         {
 
-            try
-            {
+            //try
+            //{
                 ReportDocument cryRpt = new ReportDocument();
                 cryRpt.Load("TarjaUser.rpt");
 
@@ -53,7 +53,7 @@ namespace users
 
                 // establir connexio i ruta de les dades
 
-                cryRpt.RecordSelectionFormula = "{Users.idUsers} = " + swTextbox_codi; // posar id del clan
+                cryRpt.RecordSelectionFormula = "{Users.UserName} = " + swTextbox_codi; // posar id del clan
 
                 //Passar credencials per codi
 
@@ -86,12 +86,12 @@ namespace users
                 crystalReportViewer1.Refresh();
 
 
-            }
-            catch (Exception)
-            {
+            //}
+            //catch (Exception)
+            //{
 
-                throw;
-            }
+            //    throw;
+            //}
 
 
 
@@ -112,8 +112,8 @@ namespace users
             //passwd = builder.Password;
 
             //this.Hide();
-            FitxaUser frm = new FitxaUser();
-            frm.ShowDialog();
+            //FitxaUser frm = new FitxaUser();
+            //frm.ShowDialog();
 
         }
 

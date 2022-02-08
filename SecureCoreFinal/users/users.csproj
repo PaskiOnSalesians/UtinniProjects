@@ -51,12 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FitxaUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FitxaUser.Designer.cs">
-      <DependentUpon>FitxaUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestioUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +63,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TarjaUser.rpt</DependentUpon>
       <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -90,15 +85,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FitxaUser.resx">
-      <DependentUpon>FitxaUser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GestioUsers.resx">
       <DependentUpon>GestioUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TarjaUser.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TarjaUser.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
