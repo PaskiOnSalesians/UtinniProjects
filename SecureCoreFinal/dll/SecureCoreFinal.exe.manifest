@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>93X/Wu+sQkeJh6XOHRrkICro6Yy1GIVPRlpmAm9CDXQ=</dsig:DigestValue>
+        <dsig:DigestValue>yU9ObLX9kOX1/5y3tM3YGpO3MLo8Tl6lA2BDlY0ucQM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>APUaG6P5BEJirUVFLcicc+2XoPT9G/DznZOrf1iUVyQ=</dsig:DigestValue>
+        <dsig:DigestValue>heEIdcIrwulM8pEKPOdHBD2HZBdsyaFMYQ4xpj9Lr4s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,7 +97,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tMcgQtxK7QHHVLRgDeOmjb7/JqN39GCVTQ41tI64K2o=</dsig:DigestValue>
+        <dsig:DigestValue>ISvvVnNAwZ1Ew+1SGD9vtrqkt1AtL7jOWO6Jyzvmnis=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,7 +109,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QV6ORHbUu9YAVghp6MEidNwrgl/HMGUozcaGzdTksXY=</dsig:DigestValue>
+        <dsig:DigestValue>Mo/pDEql1hbrtPWQQtZNIwhSng9Ha7VDZz8p9CgT1so=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -131,13 +131,13 @@
       <dsig:DigestValue>Id5021hy6UwLkSzut7O12eOgkty/H/fPflaorgDIWVE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SecureCoreFinal.exe.config" size="2522">
+  <file name="SecureCoreFinal.exe.config" size="2224">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6L+8JbpXghOv2Fq+JAob2Y60nyuvJ2oq3E1vHVoChhQ=</dsig:DigestValue>
+      <dsig:DigestValue>aXY5oM8qujJRZS9sOZ5XmgfJYHw7u//zRueJWH+szzk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="UserCategory.Context.tt" size="22936">
