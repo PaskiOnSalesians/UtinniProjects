@@ -55,9 +55,18 @@
     <Compile Include="frmSimple.Designer.cs">
       <DependentUpon>frmSimple.cs</DependentUpon>
     </Compile>
+    <Compile Include="openConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openConsole.Designer.cs">
+      <DependentUpon>openConsole.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmSimple.resx">
       <DependentUpon>frmSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openConsole.resx">
+      <DependentUpon>openConsole.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
