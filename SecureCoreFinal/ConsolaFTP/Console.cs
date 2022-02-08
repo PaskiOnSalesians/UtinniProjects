@@ -9,7 +9,7 @@ using System.Net;
 
 namespace ConsolaFTP
 {
-    class Program
+    class Console
     {
         static void Main(string[] args)
         {
@@ -19,13 +19,13 @@ namespace ConsolaFTP
             {
                 menu();
 
-                Console.Write("Opcio: ");
-                opcio = Console.ReadLine().ToUpper().Trim();
+                System.Console.Write("Opcio: ");
+                opcio = System.Console.ReadLine().ToUpper().Trim();
 
                 if (opcio.Length > 1)
                 {
-                    Console.Write("Torna a introduïr l'opcio: ");
-                    opcio = Console.ReadLine().ToUpper().Trim();
+                    System.Console.Write("Torna a introduïr l'opcio: ");
+                    opcio = System.Console.ReadLine().ToUpper().Trim();
                 }
 
                 switch (opcio)
@@ -39,7 +39,7 @@ namespace ConsolaFTP
                         //edi();
                         break;
                     default:
-                        Console.Write("ERROR. OPCIÓ NO DISPONIBLE.\n");
+                        System.Console.Write("ERROR. OPCIÓ NO DISPONIBLE.\n");
                         break;
                 }
             } while (opcio != "S");
@@ -49,11 +49,11 @@ namespace ConsolaFTP
 
         private static void menu()
         {
-            Console.Write("----------------------------------\n");
-            Console.Write("D: Baixar fitxers des del servidor FTP\n");
-            Console.Write("E: Processat de fitxer EDI\n");
-            Console.Write("S: Sortir\n");
-            Console.Write("----------------------------------\n");
+            System.Console.Write("----------------------------------\n");
+            System.Console.Write("D: Baixar fitxers des del servidor FTP\n");
+            System.Console.Write("E: Processat de fitxer EDI\n");
+            System.Console.Write("S: Sortir\n");
+            System.Console.Write("----------------------------------\n");
         }
         private static void download()
         {
@@ -84,14 +84,14 @@ namespace ConsolaFTP
 
                     // Has de fer una carpeta temp a la unitat 'C:\'
                     File.WriteAllText("C:\\temp\\" + document, contingut);
-                    Console.WriteLine($"Download Complete, status {response.StatusDescription}");
+                    System.Console.WriteLine($"Download Complete, status {response.StatusDescription}");
                     reader.Close();
                     response.Close();
                     rename(document);
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("ERROR");
+                    System.Console.WriteLine("ERROR");
 
                 }
             }
@@ -161,11 +161,11 @@ namespace ConsolaFTP
                 }
                 if (!line.StartsWith("d"))
                 {
-                    Console.WriteLine($"\nDirectory List Complete, status {response.StatusDescription}.");
+                    System.Console.WriteLine($"\nDirectory List Complete, status {response.StatusDescription}.");
                 }
                 else
                 {
-                    Console.WriteLine("\nThere aren't files to download.");
+                    System.Console.WriteLine("\nThere aren't files to download.");
                 }
                 line = reader.ReadLine();
             }
@@ -202,9 +202,9 @@ namespace ConsolaFTP
                 ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
                 ftpResponse.Close();
                 ftpRequest = null;
-                Console.WriteLine(linea + " moved to 'Tractats'.\n");
+                System.Console.WriteLine(linea + " moved to 'Tractats'.\n");
             }
-            catch (Exception ex) { Console.WriteLine(ex); }
+            catch (Exception ex) { System.Console.WriteLine(ex); }
         }
     }
 }
