@@ -98,8 +98,3 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreF
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.application
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe.manifest
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.application
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.SuggestedBindingRedirects.cache
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe.manifest
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.application
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe.manifest
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.application
