@@ -1,9 +1,0 @@
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\planets.dll
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\planets.pdb
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\planets\obj\Debug\planets.csproj.AssemblyReference.cache
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\planets\obj\Debug\planets.GestioUsers.resources
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\planets\obj\Debug\planets.csproj.GenerateResource.cache
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\planets\obj\Debug\planets.csproj.CoreCompileInputs.cache
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\planets\obj\Debug\planets.csproj.CopyComplete
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\planets\obj\Debug\planets.dll
-C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\planets\obj\Debug\planets.pdb
