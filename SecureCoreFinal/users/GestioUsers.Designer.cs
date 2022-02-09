@@ -39,11 +39,14 @@ namespace users
             this.lbl_login = new System.Windows.Forms.Label();
             this.lbl_password = new System.Windows.Forms.Label();
             this.lbl_photo = new System.Windows.Forms.Label();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.TarjaUser1 = new users.TarjaUser();
+            this.LlistatBoto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblExit
             // 
-            this.lblExit.Location = new System.Drawing.Point(1094, 14);
+            this.lblExit.Location = new System.Drawing.Point(1176, 14);
             this.lblExit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             // 
             // swTextbox_codi
@@ -156,11 +159,34 @@ namespace users
             this.lbl_photo.TabIndex = 17;
             this.lbl_photo.Text = "Photo:";
             // 
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = 0;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(70, 741);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ReportSource = this.TarjaUser1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1147, 455);
+            this.crystalReportViewer1.TabIndex = 18;
+            // 
+            // LlistatBoto
+            // 
+            this.LlistatBoto.Location = new System.Drawing.Point(216, 673);
+            this.LlistatBoto.Name = "LlistatBoto";
+            this.LlistatBoto.Size = new System.Drawing.Size(155, 30);
+            this.LlistatBoto.TabIndex = 19;
+            this.LlistatBoto.Text = "Llistat";
+            this.LlistatBoto.UseVisualStyleBackColor = true;
+            this.LlistatBoto.Click += new System.EventHandler(this.LlistatBoto_Click);
+            // 
             // GestioUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 962);
+            this.ClientSize = new System.Drawing.Size(1232, 962);
+            this.Controls.Add(this.LlistatBoto);
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.lbl_photo);
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_login);
@@ -185,6 +211,8 @@ namespace users
             this.Controls.SetChildIndex(this.lbl_login, 0);
             this.Controls.SetChildIndex(this.lbl_password, 0);
             this.Controls.SetChildIndex(this.lbl_photo, 0);
+            this.Controls.SetChildIndex(this.crystalReportViewer1, 0);
+            this.Controls.SetChildIndex(this.LlistatBoto, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +230,8 @@ namespace users
         private System.Windows.Forms.Label lbl_login;
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.Label lbl_photo;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private TarjaUser TarjaUser1;
+        private System.Windows.Forms.Button LlistatBoto;
     }
 }

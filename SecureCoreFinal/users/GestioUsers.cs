@@ -19,5 +19,10 @@ namespace users
             InitializeComponent();
             nomTaula = taula;
         }
+
+        private void LlistatBoto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
