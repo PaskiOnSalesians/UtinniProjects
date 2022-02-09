@@ -1,0 +1,8 @@
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\dll\ConsoleForm.dll
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\dll\ConsoleForm.pdb
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsoleForm\obj\Debug\ConsoleForm.OpenConsole.resources
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsoleForm\obj\Debug\ConsoleForm.csproj.GenerateResource.cache
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsoleForm\obj\Debug\ConsoleForm.csproj.CoreCompileInputs.cache
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsoleForm\obj\Debug\ConsoleForm.dll
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsoleForm\obj\Debug\ConsoleForm.pdb
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsoleForm\obj\Debug\ConsoleForm.csproj.AssemblyReference.cache
