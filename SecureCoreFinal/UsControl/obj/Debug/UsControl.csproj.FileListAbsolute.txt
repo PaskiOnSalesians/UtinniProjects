@@ -18,6 +18,15 @@ C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Deb
 C:\Users\oriol\Desktop\Github\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.LlancaApp.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.Properties.Resources.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
@@ -28,12 +37,3 @@ C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\D
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.dll
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\UsControl.pdb
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.LlancaApp.resources
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.Properties.Resources.resources
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
-C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb

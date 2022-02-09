@@ -64,19 +64,6 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreF
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.pdb
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe.config
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.pdb
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmLogin.resources
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmMain.resources
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmSplash.resources
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.Properties.Resources.resources
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.GenerateResource.cache
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CoreCompileInputs.cache
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe.config
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe
@@ -98,3 +85,16 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreF
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.application
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe.manifest
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.application
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe.config
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.exe
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\SecureCoreFinal.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmLogin.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmMain.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmSplash.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.Properties.Resources.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.GenerateResource.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CoreCompileInputs.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb

@@ -1,7 +1,6 @@
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.exe.config
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.exe
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.pdb
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.AssemblyReference.cache
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.exe
 C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
@@ -13,3 +12,5 @@ C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.OpenConsole.resources
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.GenerateResource.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.OpenConsole.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.GenerateResource.cache

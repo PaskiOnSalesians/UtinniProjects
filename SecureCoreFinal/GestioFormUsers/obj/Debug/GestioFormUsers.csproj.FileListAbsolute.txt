@@ -1,12 +1,3 @@
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.AssemblyReference.cache
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CoreCompileInputs.cache
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.dll
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.pdb
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CopyComplete
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.dll
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.pdb
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.GestioEspecies.resources
-C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.GenerateResource.cache
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.dll
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.pdb
 C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.AssemblyReference.cache
@@ -24,3 +15,12 @@ C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\Git
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CoreCompileInputs.cache
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.dll
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\dll\GestioFormUsers.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.AssemblyReference.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.GestioEspecies.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.GenerateResource.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CoreCompileInputs.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CopyComplete
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.dll
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.pdb
