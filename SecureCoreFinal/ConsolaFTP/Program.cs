@@ -176,18 +176,18 @@ namespace ConsolaFTP
                 string linia;
 
                 linia = sr.ReadLine();
-                Console.WriteLine("\n               VIEW ORDER             ");
-                Console.WriteLine("========================================");
+                System.Console.WriteLine("\n              VEURE COMANDA             ");
+                System.Console.WriteLine("------------------------------------------");
                 while (linia != null)
                 {
-                    Console.WriteLine(linia);
+                    System.Console.WriteLine(linia);
                     linia = sr.ReadLine();
                 }
-                Console.WriteLine("========================================\n");
+                System.Console.WriteLine("------------------------------------------");
             }
             catch (Exception)
             {
-                Console.WriteLine("ERROR VISUALITZANT");
+                System.Console.WriteLine("NO S'HA POGUT VISUALITZAR");
             }
         }
 
