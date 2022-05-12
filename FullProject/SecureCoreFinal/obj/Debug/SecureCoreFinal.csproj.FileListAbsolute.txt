@@ -111,3 +111,16 @@ C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\SecureCore
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\dll\SecureCoreFinal.exe.config
+D:\ForkGit\Utinni-Projectes\FullProject\dll\SecureCoreFinal.exe
+D:\ForkGit\Utinni-Projectes\FullProject\dll\SecureCoreFinal.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmLogin.resources
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmMain.resources
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmSplash.resources
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.Properties.Resources.resources
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.GenerateResource.cache
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CoreCompileInputs.cache
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
+D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb

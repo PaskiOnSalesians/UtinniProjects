@@ -59,3 +59,14 @@ C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\formsAuxil
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.dll
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\formsAuxiliars\obj\Debug\formsAuxiliars.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\dll\formsAuxiliars.dll.config
+D:\ForkGit\Utinni-Projectes\FullProject\dll\formsAuxiliars.dll
+D:\ForkGit\Utinni-Projectes\FullProject\dll\formsAuxiliars.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.AssemblyReference.cache
+D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.frmSimple.resources
+D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.Properties.Resources.resources
+D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.GenerateResource.cache
+D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CoreCompileInputs.cache
+D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete
+D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.dll
+D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.pdb

@@ -47,3 +47,13 @@ C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\UsControl\
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.csproj.CopyComplete
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.dll
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\UsControl\obj\Debug\UsControl.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\dll\UsControl.dll
+D:\ForkGit\Utinni-Projectes\FullProject\dll\UsControl.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
+D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.LlancaApp.resources
+D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.Properties.Resources.resources
+D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
+D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
+D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.CopyComplete
+D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.dll
+D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.pdb
