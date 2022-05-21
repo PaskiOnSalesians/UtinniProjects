@@ -71,7 +71,6 @@ namespace ConsoleForm
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OpenConsole";
             this.Text = "OpenConsole";
-            this.Load += new System.EventHandler(this.OpenConsole_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

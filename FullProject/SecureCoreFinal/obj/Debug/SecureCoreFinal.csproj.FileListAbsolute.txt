@@ -124,3 +124,17 @@ D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFina
 D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
 D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
 D:\ForkGit\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\SecureCoreFinal.exe.config
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\SecureCoreFinal.exe
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\SecureCoreFinal.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.SuggestedBindingRedirects.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmLogin.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmMain.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmSplash.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.Properties.Resources.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.GenerateResource.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CoreCompileInputs.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb

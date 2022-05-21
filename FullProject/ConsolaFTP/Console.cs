@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Net;
 using System.Data;
+using System.Windows.Forms;
 
 namespace ConsolaFTP
 {
     class Console
     {
+        
         static DataSet dts;
         const string pathedi = "../RAREDI_2.edi";
+
+        [STAThread]
         static void Main(string[] args)
         {
             string opcio, msgProcessat;
@@ -62,12 +66,15 @@ namespace ConsolaFTP
             } while (opcio != "S");
         }
 
-
-
-
         private static void bienvenida()
         {
-            string grupo = "██╗   ██╗████████╗██╗███╗   ██╗███╗   ██╗██╗\n██║   ██║╚══██╔══╝██║████╗  ██║████╗  ██║██║\n██║   ██║   ██║   ██║██╔██╗ ██║██╔██╗ ██║██║\n██║   ██║   ██║   ██║██║╚██╗██║██║╚██╗██║██║\n╚██████╔╝   ██║   ██║██║ ╚████║██║ ╚████║██║\n ╚═════╝    ╚═╝   ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝\n";
+            string grupo = "██╗   ██╗████████╗██╗███╗   ██╗███╗   ██╗██╗\n" +
+                "           ██║   ██║╚══██╔══╝██║████╗  ██║████╗  ██║██║\n" +
+                "           ██║   ██║   ██║   ██║██╔██╗ ██║██╔██╗ ██║██║\n" +
+                "           ██║   ██║   ██║   ██║██║╚██╗██║██║╚██╗██║██║\n" +
+                "           ╚██████╔╝   ██║   ██║██║ ╚████║██║ ╚████║██║\n" +
+                "            ╚═════╝    ╚═╝   ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝\n";
+
             System.Console.ForegroundColor = ConsoleColor.DarkYellow;
             System.Console.Write($"{grupo}");
             System.Console.Write("               ____==========_______\n");
@@ -87,9 +94,6 @@ namespace ConsolaFTP
             System.Console.Write("                 /___\\ /__/     /___\\ /__/\n");
         }
 
-
-
-
         private static void menu()
         {
             System.Console.Write("----------------------------------\n");
@@ -99,6 +103,7 @@ namespace ConsolaFTP
             System.Console.Write("S: Sortir\n");
             System.Console.Write("----------------------------------\n");
         }
+
         private static void download()
         {
             //Ruta de classe
@@ -133,9 +138,9 @@ namespace ConsolaFTP
                     response.Close();
                     rename(document);
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    System.Console.WriteLine("ERROR");
+                    MessageBox.Show(ex.ToString()); ;
 
                 }
             }
@@ -172,7 +177,6 @@ namespace ConsolaFTP
             return a;
         }
 
-
         private static void veure()
         {
             try
@@ -195,11 +199,6 @@ namespace ConsolaFTP
                 System.Console.WriteLine("NO S'HA POGUT VISUALITZAR");
             }
         }
-
-
-
-
-
 
         public static string filename (string file)
         {
@@ -227,8 +226,6 @@ namespace ConsolaFTP
 
             return tallarlinea.Trim();
         }
-
-
 
         private static List<string> AgafarRuta()
         {
@@ -258,9 +255,7 @@ namespace ConsolaFTP
             {
                 if (!line.StartsWith("d"))
                 {
-
                     rutas.Add(filename(line));
-
                 }
                 if (!line.StartsWith("d"))
                 {
@@ -307,7 +302,7 @@ namespace ConsolaFTP
                 ftpRequest = null;
                 System.Console.WriteLine(linea + " moved to 'Tractats'.\n");
             }
-            catch (Exception ex) { System.Console.WriteLine(ex); }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
         }
     }
 }

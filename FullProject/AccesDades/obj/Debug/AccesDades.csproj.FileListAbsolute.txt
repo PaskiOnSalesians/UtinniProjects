@@ -31,3 +31,9 @@ D:\ForkGit\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.csproj.A
 D:\ForkGit\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.csproj.CoreCompileInputs.cache
 D:\ForkGit\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.dll
 D:\ForkGit\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\bin\Debug\AccesDades.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\bin\Debug\AccesDades.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.csproj.AssemblyReference.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.csproj.CoreCompileInputs.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.pdb

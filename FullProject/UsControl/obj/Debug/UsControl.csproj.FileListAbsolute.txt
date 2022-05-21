@@ -57,3 +57,13 @@ D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.Cor
 D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.CopyComplete
 D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.dll
 D:\ForkGit\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\UsControl.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\UsControl.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.LlancaApp.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.Properties.Resources.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.CopyComplete
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.pdb

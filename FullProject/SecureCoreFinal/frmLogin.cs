@@ -84,14 +84,15 @@ namespace SecureCoreFinal
                     "' and Password='" + swTextboxPasswd.Text + "'";
 
             dts = _Dades.PortarPerConsulta(query, "Users");
-
             registres = dts.Tables[0].Rows.Count;
+
+            GlobalVariables.username = swTextboxUsername.Text;
 
             if (registres > 0)
             {
                 this.Hide();
-                frmMain frm = new frmMain(swTextboxUsername.Text);
-                frm.ShowDialog();
+                frmMain frm = new frmMain();
+                frm.Show();
             }
         }
 

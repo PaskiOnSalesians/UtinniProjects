@@ -15,8 +15,6 @@ namespace ConsoleForm
 {
     public partial class OpenConsole : Form
     {
-        string path;
-
         public OpenConsole(string taula)
         {
             InitializeComponent();
@@ -24,21 +22,11 @@ namespace ConsoleForm
 
         private void btn_console_Click(object sender, EventArgs e)
         {
-            //Process.Start(path + "\\dll\\ConsolaFTP.exe");
+            string consolaftp = Application.StartupPath + "\\ConsolaFTP.exe";
 
-            string consolaftp = path + "\\ConsolaFTP.exe";
-
-            Console.WriteLine(consolaftp);
-
-            //Process.Start(Path.GetFullPath(consolaftp)); // @"C:\\Users\\ribes\\Desktop\\projectefinal\\Utinni-Projectes\\SecureCoreFinal"
-            Process.Start(consolaftp); // @"C:\\Users\\ribes\\Desktop\\projectefinal\\Utinni-Projectes\\SecureCoreFinal"
-            
-        }
-
-        private void OpenConsole_Load(object sender, EventArgs e)
-        {
-            path = Application.StartupPath;
-            Console.WriteLine(path);
+            ProcessStartInfo startConsole = new ProcessStartInfo(Path.GetFullPath(consolaftp));
+            startConsole.WindowStyle = ProcessWindowStyle.Normal;
+            Process.Start(startConsole);
         }
 
         private void lblExit_Click(object sender, EventArgs e)

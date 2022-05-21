@@ -18,14 +18,16 @@ namespace SecureCoreFinal
         Dades _Dades = new Dades();
 
         string photo;
+        string user;
         string query;
         DataSet dts;
         int userCateogry;
         int level;
 
-        public frmMain(string user)
+        public frmMain()
         {
             InitializeComponent();
+            user = GlobalVariables.username;
             getUsername(user);
         }
 

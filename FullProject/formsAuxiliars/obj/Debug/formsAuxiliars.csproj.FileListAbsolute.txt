@@ -70,3 +70,14 @@ D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.
 D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete
 D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.dll
 D:\ForkGit\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\formsAuxiliars.dll.config
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\formsAuxiliars.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\formsAuxiliars.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.AssemblyReference.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.frmSimple.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.Properties.Resources.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.GenerateResource.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CoreCompileInputs.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.pdb

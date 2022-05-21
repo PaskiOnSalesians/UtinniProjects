@@ -28,9 +28,10 @@ namespace SecureCoreFinal
             if (panelPgb1.Width >= 380)
             {
                 timerSplash.Stop();
-                this.Hide();
+                
                 frmLogin frmLogin = new frmLogin();
-                frmLogin.ShowDialog();
+                frmLogin.Show();
+                this.Hide();
             }
         }
     }
