@@ -26,7 +26,6 @@ C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\dll\Consol
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe.config
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\ConsolaFTP.pdb
-E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.AssemblyReference.cache
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.SuggestedBindingRedirects.cache
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe

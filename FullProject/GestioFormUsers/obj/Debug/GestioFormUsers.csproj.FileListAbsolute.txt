@@ -33,3 +33,12 @@ C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\GestioForm
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CopyComplete
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.dll
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\GestioFormUsers\obj\Debug\GestioFormUsers.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\GestioFormUsers.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\GestioFormUsers.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.AssemblyReference.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.GestioEspecies.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.GenerateResource.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CoreCompileInputs.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CopyComplete
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.pdb

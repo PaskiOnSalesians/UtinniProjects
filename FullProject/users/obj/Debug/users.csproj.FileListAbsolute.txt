@@ -42,3 +42,14 @@ C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\users\obj\
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\users\obj\Debug\users.pdb
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\dll\TarjaUser.rpt
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\dll\TarjaUser.cs
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\TarjaUser.rpt
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\TarjaUser.cs
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\users.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\users.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.csproj.AssemblyReference.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.GestioUsers.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.csproj.GenerateResource.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.csproj.CoreCompileInputs.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.csproj.CopyComplete
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.pdb

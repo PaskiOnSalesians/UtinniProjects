@@ -37,3 +37,13 @@ C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\sectors\ob
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.csproj.CopyComplete
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.dll
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\sectors\obj\Debug\sectors.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\sectors.dll.config
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\sectors.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\sectors.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\sectors\obj\Debug\sectors.csproj.AssemblyReference.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\sectors\obj\Debug\sectors.GestioSectors.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\sectors\obj\Debug\sectors.csproj.GenerateResource.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\sectors\obj\Debug\sectors.csproj.CoreCompileInputs.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\sectors\obj\Debug\sectors.csproj.CopyComplete
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\sectors\obj\Debug\sectors.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\sectors\obj\Debug\sectors.pdb

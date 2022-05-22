@@ -42,3 +42,11 @@ C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\InCont\obj
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.csproj.CoreCompileInputs.cache
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.dll
 C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\InCont\obj\Debug\InCont.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\InCont.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\InCont.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.csproj.AssemblyReference.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.SWTextbox.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.csproj.GenerateResource.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.csproj.CoreCompileInputs.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.dll
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.pdb

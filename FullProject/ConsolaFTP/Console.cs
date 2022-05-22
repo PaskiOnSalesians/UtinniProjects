@@ -23,13 +23,15 @@ namespace ConsolaFTP
             bool correctOrder;
 
 
-            bienvenida();
+            Welcome();
             do
             {
-                menu();
+                Menu();
 
                 System.Console.Write("Opcio: ");
                 opcio = System.Console.ReadLine().ToUpper().Trim();
+
+                System.Console.Title = "Utinni Console";
 
                 if (opcio.Length > 1)
                 {
@@ -39,10 +41,11 @@ namespace ConsolaFTP
 
                 switch (opcio)
                 {
-                    case "S":
+                    case "P":
+                        UploadFilesAsync();
                         break;
                     case "D":
-                        download();
+                        DownloadFiles();
                         break;
                     case "E":
                         correctOrder = processat();
@@ -59,6 +62,8 @@ namespace ConsolaFTP
                     case "V":
                         veure();
                         break;
+                    case "S":
+                        break;
                     default:
                         System.Console.Write("ERROR. OPCIÓ NO DISPONIBLE.\n");
                         break;
@@ -66,14 +71,15 @@ namespace ConsolaFTP
             } while (opcio != "S");
         }
 
-        private static void bienvenida()
+        private static void Welcome()
         {
-            string grupo = "██╗   ██╗████████╗██╗███╗   ██╗███╗   ██╗██╗\n" +
-                "           ██║   ██║╚══██╔══╝██║████╗  ██║████╗  ██║██║\n" +
-                "           ██║   ██║   ██║   ██║██╔██╗ ██║██╔██╗ ██║██║\n" +
-                "           ██║   ██║   ██║   ██║██║╚██╗██║██║╚██╗██║██║\n" +
-                "           ╚██████╔╝   ██║   ██║██║ ╚████║██║ ╚████║██║\n" +
-                "            ╚═════╝    ╚═╝   ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝\n";
+            string grupo = "" +
+                "██╗   ██╗████████╗██╗███╗   ██╗███╗   ██╗██╗\n" +
+                "██║   ██║╚══██╔══╝██║████╗  ██║████╗  ██║██║\n" +
+                "██║   ██║   ██║   ██║██╔██╗ ██║██╔██╗ ██║██║\n" +
+                "██║   ██║   ██║   ██║██║╚██╗██║██║╚██╗██║██║\n" +
+                "╚██████╔╝   ██║   ██║██║ ╚████║██║ ╚████║██║\n" +
+                " ╚═════╝    ╚═╝   ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝\n";
 
             System.Console.ForegroundColor = ConsoleColor.DarkYellow;
             System.Console.Write($"{grupo}");
@@ -94,17 +100,70 @@ namespace ConsolaFTP
             System.Console.Write("                 /___\\ /__/     /___\\ /__/\n");
         }
 
-        private static void menu()
+        private static void Menu()
         {
-            System.Console.Write("----------------------------------\n");
-            System.Console.Write("D: Baixar fitxers des del servidor FTP\n");
-            System.Console.Write("E: Processat de fitxer EDI\n");
-            System.Console.Write("V: Veure el fitxer processat\n");
-            System.Console.Write("S: Sortir\n");
-            System.Console.Write("----------------------------------\n");
+            System.Console.WriteLine("----------------------------------");
+            System.Console.WriteLine("P: Pujar fitxers al servidor FTP");
+            System.Console.WriteLine("B: Baixar fitxers des del servidor FTP");
+            System.Console.WriteLine("E: Processat de fitxer EDI");
+            System.Console.WriteLine("V: Veure el fitxer processat");
+            System.Console.WriteLine("S: Sortir");
+            System.Console.WriteLine("----------------------------------");
         }
 
-        private static void download()
+        private static void UploadFilesAsync()
+        {
+            FtpWebRequest ftpReqUp;
+            string username, password, filepath = string.Empty, fileContent = string.Empty;
+            string path;
+
+            try
+            {
+                using (OpenFileDialog openFiles = new OpenFileDialog())
+                {
+                    openFiles.InitialDirectory = Path.GetFullPath(Application.StartupPath + "\\..\\resources");
+                    openFiles.Filter = "edi files (*.edi)|*.edi|All Files(*.*)|*.*";
+                    openFiles.FilterIndex = 1;
+                    openFiles.RestoreDirectory = true;
+
+                    if (openFiles.ShowDialog() == DialogResult.OK)
+                    {
+                        filepath = openFiles.FileName;
+
+                        ftpReqUp = (FtpWebRequest)WebRequest.Create("ftp://51.83.97.10//home//utinni//ftp//" + filepath);
+
+                        username = "utinni";
+                        password = "utinni";
+
+                        ftpReqUp.Credentials = new NetworkCredential(username, password);
+
+                        ftpReqUp.Method = WebRequestMethods.Ftp.UploadFile;
+
+                        path = Path.GetFullPath(Application.StartupPath + filepath);
+
+                        byte[] content = File.ReadAllBytes(path);
+                        ftpReqUp.ContentLength = content.Length;
+                        Stream stream = ftpReqUp.GetRequestStream();
+                        stream.Write(content, 0, content.Length);
+                        stream.Close();
+                    }
+
+                    System.Console.WriteLine("File Uploaded!");
+                }
+
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "We have some serious problems with the upload, boss!\n" +
+                    "This is the Exception:\n" + ex.ToString(), "Utinni Devs"
+                );
+            }
+        }
+
+        private static void DownloadFiles()
         {
             //Ruta de classe
             //string rutadades = "ftp://g1@10.0.1.220//home//g1";
