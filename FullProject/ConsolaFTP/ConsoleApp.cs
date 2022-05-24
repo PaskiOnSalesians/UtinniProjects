@@ -165,7 +165,7 @@ namespace ConsolaFTP
         {
             var files = GetDirectoryFiles(".edi", "utinni", "utinni");
             string folderPC = Application.StartupPath + "\\..\\resources\\";
-            string newFolderFtp = directoryServer + "Tractats/";
+            string newFolderFtp = "/home/utinni/ftp/Tractats/";
 
             if(files.Count > 0)
             {
@@ -218,7 +218,6 @@ namespace ConsolaFTP
 
         private static void MoveFile(string fileName, string username, string password, string newFilepath)
         {
-
             try
             {
                 FtpWebRequest req = (FtpWebRequest)(WebRequest.Create(directoryServer + fileName));
