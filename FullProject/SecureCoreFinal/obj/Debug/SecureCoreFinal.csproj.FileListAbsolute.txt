@@ -138,3 +138,16 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFin
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\SecureCoreFinal.exe.config
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\SecureCoreFinal.exe
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\SecureCoreFinal.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmLogin.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmMain.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.frmSplash.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.Properties.Resources.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.csproj.CopyComplete
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.exe
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\SecureCoreFinal\obj\Debug\SecureCoreFinal.pdb

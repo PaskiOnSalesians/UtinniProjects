@@ -53,3 +53,14 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Deb
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.csproj.CopyComplete
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.dll
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\users\obj\Debug\users.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\TarjaUser.rpt
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\TarjaUser.cs
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\users.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\users.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\users\obj\Debug\users.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\users\obj\Debug\users.GestioUsers.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\users\obj\Debug\users.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\users\obj\Debug\users.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\users\obj\Debug\users.csproj.CopyComplete
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\users\obj\Debug\users.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\users\obj\Debug\users.pdb

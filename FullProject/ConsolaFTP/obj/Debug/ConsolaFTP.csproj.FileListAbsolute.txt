@@ -36,3 +36,10 @@ D:\ForkGit\Utinni-Projectes\FullProject\dll\ConsolaFTP.pdb
 D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
 D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
 D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe.config
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\ConsolaFTP.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.AssemblyReference.cache

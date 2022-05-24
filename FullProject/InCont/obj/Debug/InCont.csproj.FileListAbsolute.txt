@@ -50,3 +50,10 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\De
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.csproj.CoreCompileInputs.cache
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.dll
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\InCont.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\InCont.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.SWTextbox.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\InCont\obj\Debug\InCont.pdb

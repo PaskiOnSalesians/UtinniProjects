@@ -50,6 +50,7 @@ namespace ConsolaFTP
                         DownloadFile();
                         break;
                     case "E":
+                        
                         correctOrder = processat();
                         if (correctOrder)
                         {
@@ -282,31 +283,28 @@ namespace ConsolaFTP
 
         private static bool processat()
         {
-            bool a = false;
+            List<string[]> comandes = new List<string[]>();
+
+            StreamReader sr = new StreamReader(Application.StartupPath + "/..//resources//_downloadRAREDI_2.edi");
+
+
+            bool a = true;
             string b = "ORD";
 
-            switch (b)
+            string line = "";
+            sr.ReadLine();
+            line = sr.ReadLine();
+
+
+            while (line != null)
             {
-                case "ORD":
-
-                    break;
-
-                case "DTM":
-
-                    break;
-                case "NADMS":
-
-                    break;
-                case "NADMR":
-
-                    break;
-                case "LIN":
-
-                    break;
-                default:
-
-                    break;
+                string[] comanda = line.Split('|');
+                comandes.Add(comanda);
+                Console.WriteLine(comanda);
+                line = sr.ReadLine();
             }
+
+            
 
             return a;
         }

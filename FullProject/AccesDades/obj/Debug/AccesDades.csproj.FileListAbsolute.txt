@@ -37,3 +37,8 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\ob
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.csproj.CoreCompileInputs.cache
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.dll
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\AccesDades\bin\Debug\AccesDades.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\AccesDades\bin\Debug\AccesDades.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.pdb

@@ -47,3 +47,13 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\categories\ob
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\categories\obj\Debug\categories.csproj.CopyComplete
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\categories\obj\Debug\categories.dll
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\categories\obj\Debug\categories.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\categories.dll.config
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\categories.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\categories.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\categories\obj\Debug\categories.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\categories\obj\Debug\categories.GestioCategories.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\categories\obj\Debug\categories.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\categories\obj\Debug\categories.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\categories\obj\Debug\categories.csproj.CopyComplete
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\categories\obj\Debug\categories.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\categories\obj\Debug\categories.pdb

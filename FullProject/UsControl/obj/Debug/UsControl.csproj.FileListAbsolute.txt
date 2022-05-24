@@ -67,3 +67,13 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.CopyComplete
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.dll
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\UsControl.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\UsControl.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.LlancaApp.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.Properties.Resources.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.csproj.CopyComplete
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\UsControl\obj\Debug\UsControl.pdb

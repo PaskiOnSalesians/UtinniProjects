@@ -81,3 +81,14 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliar
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.dll
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\formsAuxiliars.dll.config
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\formsAuxiliars.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\formsAuxiliars.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.frmSimple.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.Properties.Resources.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.csproj.CopyComplete
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\formsAuxiliars\obj\Debug\formsAuxiliars.pdb

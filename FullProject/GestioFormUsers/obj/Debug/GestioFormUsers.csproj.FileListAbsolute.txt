@@ -42,3 +42,12 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUse
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CopyComplete
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.dll
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\GestioFormUsers.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\GestioFormUsers.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.GestioEspecies.resources
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.csproj.CopyComplete
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.dll
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\GestioFormUsers\obj\Debug\GestioFormUsers.pdb
