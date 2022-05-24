@@ -95,16 +95,16 @@ namespace ConsolaFTP
 
         private static void Menu()
         {
-            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine("*-----------------------------------------*");
             Console.WriteLine("|                 MAIN MENU               |");
-            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine("*-----------------------------------------*");
             Console.WriteLine("|  P: Pujar fitxers al servidor FTP       |");
             Console.WriteLine("|  B: Baixar fitxers des del servidor FTP |");
             Console.WriteLine("|  E: Processat de fitxer EDI             |");
             Console.WriteLine("|  V: Veure el fitxer processat           |");
             Console.WriteLine("|  C: Neteja la consola                   |");
             Console.WriteLine("|  S: Sortir                              |");
-            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine("*-----------------------------------------*");
         }
 
         #region FTP - Download | Upload | Move
@@ -173,7 +173,7 @@ namespace ConsolaFTP
                 foreach (string file in files)
                 {
                     // Hem de tenir 2 mètodes per millor visualització
-                    GetFile(file, "utinni", "utinni", folderPC + "_download"); // File to download | username | password | newFolder
+                    GetFile(file, "utinni", "utinni", folderPC + "_downloaded_"); // File to download | username | password | newFolder
                     MoveFile(file, "utinni", "utinni", newFolderFtp);
                 }
             }
