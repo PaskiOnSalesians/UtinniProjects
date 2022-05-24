@@ -50,16 +50,7 @@ namespace ConsolaFTP
                         DownloadFile();
                         break;
                     case "E":
-                        correctOrder = processat();
-                        if (correctOrder)
-                        {
-                            msgProcessat = "El processat a tingut éxit!\n";
-                        }
-                        else
-                        {
-                            msgProcessat = "El fitxer no s'ha processat correctament\n";
-                        }
-                        Console.WriteLine(msgProcessat);
+                        
                         break;
                     case "V":
                         veure();
@@ -279,61 +270,5 @@ namespace ConsolaFTP
         }
 
         #endregion
-
-        private static bool processat()
-        {
-            bool a = false;
-            string b = "ORD";
-
-            switch (b)
-            {
-                case "ORD":
-
-                    break;
-
-                case "DTM":
-
-                    break;
-                case "NADMS":
-
-                    break;
-                case "NADMR":
-
-                    break;
-                case "LIN":
-
-                    break;
-                default:
-
-                    break;
-            }
-
-            return a;
-        }
-
-        private static void veure()
-        {
-            try
-            {
-                StreamReader sr = new StreamReader(pathedi);
-                string linia;
-
-                linia = sr.ReadLine();
-                Console.WriteLine("\n              VEURE COMANDA             ");
-                Console.WriteLine("------------------------------------------");
-                while (linia != null)
-                {
-                    Console.WriteLine(linia);
-                    linia = sr.ReadLine();
-                }
-                Console.WriteLine("------------------------------------------");
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("NO S'HA POGUT VISUALITZAR");
-            }
-        }
-
-
     }
 }
