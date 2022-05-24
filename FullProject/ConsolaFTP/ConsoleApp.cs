@@ -232,7 +232,7 @@ namespace ConsolaFTP
                 FtpWebResponse resp = (FtpWebResponse)req.GetResponse();
                 Stream strm = resp.GetResponseStream();
 
-                Console.WriteLine("We've moved the file: " + fileName + " to the new Folder: Tractats");
+                Console.WriteLine("We've moved the file: " + fileName + " to the new Folder: Tractats\n");
 
                 strm.Close();
                 resp.Close();
