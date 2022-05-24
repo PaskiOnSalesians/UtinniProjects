@@ -107,6 +107,7 @@ namespace ConsolaFTP
             Console.WriteLine("-------------------------------------------");
         }
 
+        #region FTP - Download | Upload | Move
         private static void UploadFile()
         {
             FtpWebRequest ftpReqUp;
@@ -224,7 +225,7 @@ namespace ConsolaFTP
                 req.Credentials = new NetworkCredential(username, password);
                 req.Method = WebRequestMethods.Ftp.Rename;
 
-                req.RenameTo = newFilepath + "RAREDI_1.edi";
+                req.RenameTo = newFilepath + fileName;
 
                 req.UseBinary = true;
 
@@ -258,8 +259,7 @@ namespace ConsolaFTP
 
             List<string> files = new List<string>();
 
-            string line = "";
-            line = sr.ReadLine();
+            string line = sr.ReadLine();
             while (!string.IsNullOrEmpty(line))
             {
                 string[] fileLine = line.Split(' ');
@@ -277,6 +277,8 @@ namespace ConsolaFTP
 
             return files;
         }
+
+        #endregion
 
         private static bool processat()
         {
@@ -331,5 +333,7 @@ namespace ConsolaFTP
                 Console.WriteLine("NO S'HA POGUT VISUALITZAR");
             }
         }
+
+
     }
 }
