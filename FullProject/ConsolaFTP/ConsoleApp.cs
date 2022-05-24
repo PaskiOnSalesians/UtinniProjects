@@ -165,15 +165,15 @@ namespace ConsolaFTP
         {
             var files = GetDirectoryFiles(".edi", "utinni", "utinni");
             string folderPC = Application.StartupPath + "\\..\\resources\\";
-            string newFolderFtp = directoryServer + "\\Tractats\\";
+            string newFolderFtp = directoryServer + "Tractats/";
 
             if(files.Count > 0)
             {
                 foreach (string file in files)
                 {
                     // Hem de tenir 2 mètodes per millor visualització
-                    GetFile(file, "utinni", "utinni", folderPC + "_download" + file); // File to download | username | password
-                    MoveFile(file, "utinni", "utinni", newFolderFtp + file);
+                    GetFile(file, "utinni", "utinni", folderPC + "_download"); // File to download | username | password | newFolder
+                    MoveFile(file, "utinni", "utinni", newFolderFtp);
                 }
             }
             else
@@ -190,10 +190,12 @@ namespace ConsolaFTP
                 req.Credentials = new NetworkCredential(username, password);
                 req.Method = WebRequestMethods.Ftp.DownloadFile;
 
-                FtpWebResponse rep = (FtpWebResponse)req.GetResponse();
-
                 req.KeepAlive = false;
                 req.UsePassive = false;
+
+                FtpWebResponse rep = (FtpWebResponse)req.GetResponse();
+
+                
                 //req.EnableSsl = false;
 
                 Stream respStream = rep.GetResponseStream();
@@ -201,7 +203,7 @@ namespace ConsolaFTP
 
                 string content = sr.ReadToEnd();
 
-                File.WriteAllText(filepath, content);
+                File.WriteAllText(filepath + fileName, content);
                 Console.WriteLine("The file: " + fileName + " has been downloaded on: " + filepath);
 
                 sr.Close();
@@ -216,21 +218,25 @@ namespace ConsolaFTP
 
         private static void MoveFile(string fileName, string username, string password, string newFilepath)
         {
+
             try
             {
                 FtpWebRequest req = (FtpWebRequest)(WebRequest.Create(directoryServer + fileName));
                 req.Credentials = new NetworkCredential(username, password);
                 req.Method = WebRequestMethods.Ftp.Rename;
 
-                req.KeepAlive = false;
-                req.UsePassive = false;
-                //req.EnableSsl = false;
+                req.RenameTo = newFilepath + "RAREDI_1.edi";
 
-                req.RenameTo = newFilepath;
+                req.UseBinary = true;
 
-                Console.WriteLine("We've moved the file: " + fileName + " to the new Folder: \\Tractats");
+                FtpWebResponse resp = (FtpWebResponse)req.GetResponse();
+                Stream strm = resp.GetResponseStream();
 
-                req.GetResponse().Close();
+                Console.WriteLine("We've moved the file: " + fileName + " to the new Folder: Tractats");
+
+                strm.Close();
+                resp.Close();
+                //req.GetResponse().Close();
             }
             catch (Exception ex)
             {
@@ -240,46 +246,37 @@ namespace ConsolaFTP
 
         private static List<string> GetDirectoryFiles(string fileNameExtension, string username, string password)
         {
-            try
+            FtpWebRequest req = (FtpWebRequest)WebRequest.Create(ediFileServer);
+            req.Method = WebRequestMethods.Ftp.ListDirectory;
+            req.Credentials = new NetworkCredential(username, password);
+
+            req.EnableSsl = false;
+
+            FtpWebResponse resp = (FtpWebResponse)req.GetResponse();
+
+            Stream respStream = resp.GetResponseStream();
+            StreamReader sr = new StreamReader(respStream);
+
+            List<string> files = new List<string>();
+
+            string line = "";
+            line = sr.ReadLine();
+            while (!string.IsNullOrEmpty(line))
             {
-                FtpWebRequest req = (FtpWebRequest)WebRequest.Create(ediFileServer);
-                req.Method = WebRequestMethods.Ftp.ListDirectory;
-                req.Credentials = new NetworkCredential(username, password);
-
-                req.KeepAlive = false;
-                req.UsePassive = false;
-                //req.EnableSsl = false;
-
-                FtpWebResponse resp = (FtpWebResponse)req.GetResponse();
-
-                Stream respStream = resp.GetResponseStream();
-                StreamReader sr = new StreamReader(respStream);
-
-                List<string> files = new List<string>();
-
-                string line = sr.ReadLine();
-                while (!string.IsNullOrEmpty(line))
+                string[] fileLine = line.Split(' ');
+                string file = fileLine[fileLine.Length - 1];
+                if (file.EndsWith(fileNameExtension))
                 {
-                    string[] fileLine = line.Split(' ');
-                    string file = fileLine[fileLine.Length - 1];
-                    if (file.EndsWith(fileNameExtension))
-                    {
-                        files.Add(line);
-                    }
-
-                    line = sr.ReadLine();
+                    files.Add(line);
                 }
 
-                sr.Close();
-                resp.Close();
-
-                return files;
-            } 
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error in getting directory File\n" + ex.ToString());
-                return null;
+                line = sr.ReadLine();
             }
+
+            sr.Close();
+            resp.Close();
+
+            return files;
         }
 
         private static bool processat()
