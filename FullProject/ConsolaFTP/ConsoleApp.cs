@@ -135,8 +135,9 @@ namespace ConsolaFTP
                         password = "utinni";
 
                         ftpReqUp.Credentials = new NetworkCredential(username, password);
-                        ftpReqUp.KeepAlive = false;
+                        ftpReqUp.KeepAlive = true;
                         ftpReqUp.UsePassive = false;
+                        ftpReqUp.EnableSsl = false;
 
                         ftpReqUp.Method = WebRequestMethods.Ftp.UploadFile;
                         ftpReqUp.UseBinary = true;
@@ -149,9 +150,9 @@ namespace ConsolaFTP
                         requestStream.Write(data, 0, data.Length);
                         requestStream.Close();
                     }
-
-                    Console.WriteLine("File Uploaded!\n");
                 }
+
+                Console.WriteLine("File Uploaded!\n");
             }
             catch (Exception ex)
             {
@@ -173,7 +174,8 @@ namespace ConsolaFTP
                 foreach (string file in files)
                 {
                     // Hem de tenir 2 mètodes per millor visualització
-                    GetFile(file, "utinni", "utinni", folderPC + "_downloaded_"); // File to download | username | password | newFolder
+                    // File to download | username | password | newFolder
+                    GetFile(file, "utinni", "utinni", folderPC + "_downloaded_");
                     MoveFile(file, "utinni", "utinni", newFolderFtp);
                 }
             }
@@ -191,13 +193,11 @@ namespace ConsolaFTP
                 req.Credentials = new NetworkCredential(username, password);
                 req.Method = WebRequestMethods.Ftp.DownloadFile;
 
-                req.KeepAlive = false;
+                req.KeepAlive = true;
                 req.UsePassive = false;
+                req.EnableSsl = false;
 
                 FtpWebResponse rep = (FtpWebResponse)req.GetResponse();
-
-                
-                //req.EnableSsl = false;
 
                 Stream respStream = rep.GetResponseStream();
                 StreamReader sr = new StreamReader(respStream);

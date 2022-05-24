@@ -30,3 +30,9 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\ob
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe.config
+D:\ForkGit\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe
+D:\ForkGit\Utinni-Projectes\FullProject\dll\ConsolaFTP.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
