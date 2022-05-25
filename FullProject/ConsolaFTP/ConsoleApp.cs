@@ -306,45 +306,45 @@ namespace ConsolaFTP
                 {
                     if (comandes[i][j] == "ORD")
                     {
-                        Console.WriteLine(comandes[i][j]);
-                        Console.WriteLine(comandes[i][j + 1]);
-                        Console.WriteLine(comandes[i][j + 2]);
+                        Console.WriteLine(comandes[i][j]); // Titulo
+                        Console.WriteLine(comandes[i][j + 1]); // Pedido
+                        Console.WriteLine(comandes[i][j + 2]); // Tipos
                     }
 
                     if (comandes[i][j] == "DTM") {
-                        Console.WriteLine(comandes[i][j]);
-                        Console.WriteLine(comandes[i][j + 1]);
+                        Console.WriteLine(comandes[i][j]); // Titulo
+                        Console.WriteLine(comandes[i][j + 1]); // Fecha
                     }
                     if (comandes[i][j] == "NADMS")
                     {
-                        Console.WriteLine(comandes[i][j]);
-                        Console.WriteLine(comandes[i][j + 1]);
-                        Console.WriteLine(comandes[i][j + 2]);
+                        Console.WriteLine(comandes[i][j]); // Titulo
+                        Console.WriteLine(comandes[i][j + 1]); // Area operativa
+                        Console.WriteLine(comandes[i][j + 2]); // Emisor
 
                     }
                     if (comandes[i][j] == "NADMR")
                     {
-                        Console.WriteLine(comandes[i][j]);
-                        Console.WriteLine(comandes[i][j + 1]);
+                        Console.WriteLine(comandes[i][j]); // Titulo
+                        Console.WriteLine(comandes[i][j + 1]); // Receptor
                     }
                     if (comandes[i][j] == "LIN")
                     {
-                        Console.WriteLine(comandes[i][j]);
-                        Console.WriteLine(comandes[i][j + 1]);
-                        Console.WriteLine(comandes[i][j + 2]);
-                        Console.WriteLine(comandes[i][j + 3]);
+                        Console.WriteLine(comandes[i][j]); // Titulo
+                        Console.WriteLine(comandes[i][j + 1]); // Planeta de destino
+                        Console.WriteLine(comandes[i][j + 2]); // Codigo
+                        Console.WriteLine(comandes[i][j + 3]); // Tipo de codigo
 
                     }
                     if (comandes[i][j] == "QTYLIN")
                     {
-                        Console.WriteLine(comandes[i][j]);
-                        Console.WriteLine(comandes[i][j + 1]);
-                        Console.WriteLine(comandes[i][j + 2]);
+                        Console.WriteLine(comandes[i][j]); // Titulo
+                        Console.WriteLine(comandes[i][j + 1]); // Calificador
+                        Console.WriteLine(comandes[i][j + 2]); // Cantidad
                     }
                     if (comandes[i][j] == "DTMLIN")
                     {
-                        Console.WriteLine(comandes[i][j]);
-                        Console.WriteLine(comandes[i][j + 1]);
+                        Console.WriteLine(comandes[i][j]); // Titulo
+                        Console.WriteLine(comandes[i][j + 1]); // Fecha entrega
                     }
                 }
             }
