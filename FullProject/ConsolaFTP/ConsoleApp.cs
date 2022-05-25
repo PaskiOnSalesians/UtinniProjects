@@ -297,13 +297,56 @@ namespace ConsolaFTP
             {
                 string[] comanda = line.Split('|');
                 comandes.Add(comanda);
-                Console.WriteLine(comanda);
                 line = sr.ReadLine();
             }
 
             for (int i = 0; i < comandes.Count; i++)
             {
+                for (int j = 0; j < comandes[i].Length; j++)
+                {
+                    if (comandes[i][j] == "ORD")
+                    {
+                        Console.WriteLine(comandes[i][j]);
+                        Console.WriteLine(comandes[i][j + 1]);
+                        Console.WriteLine(comandes[i][j + 2]);
+                    }
 
+                    if (comandes[i][j] == "DTM") {
+                        Console.WriteLine(comandes[i][j]);
+                        Console.WriteLine(comandes[i][j + 1]);
+                    }
+                    if (comandes[i][j] == "NADMS")
+                    {
+                        Console.WriteLine(comandes[i][j]);
+                        Console.WriteLine(comandes[i][j + 1]);
+                        Console.WriteLine(comandes[i][j + 2]);
+
+                    }
+                    if (comandes[i][j] == "NADMR")
+                    {
+                        Console.WriteLine(comandes[i][j]);
+                        Console.WriteLine(comandes[i][j + 1]);
+                    }
+                    if (comandes[i][j] == "LIN")
+                    {
+                        Console.WriteLine(comandes[i][j]);
+                        Console.WriteLine(comandes[i][j + 1]);
+                        Console.WriteLine(comandes[i][j + 2]);
+                        Console.WriteLine(comandes[i][j + 3]);
+
+                    }
+                    if (comandes[i][j] == "QTYLIN")
+                    {
+                        Console.WriteLine(comandes[i][j]);
+                        Console.WriteLine(comandes[i][j + 1]);
+                        Console.WriteLine(comandes[i][j + 2]);
+                    }
+                    if (comandes[i][j] == "DTMLIN")
+                    {
+                        Console.WriteLine(comandes[i][j]);
+                        Console.WriteLine(comandes[i][j + 1]);
+                    }
+                }
             }
 
             return a;

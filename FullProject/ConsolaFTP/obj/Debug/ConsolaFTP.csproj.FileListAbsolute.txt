@@ -42,4 +42,3 @@ D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
 \\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
 \\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
 \\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
-\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.AssemblyReference.cache
