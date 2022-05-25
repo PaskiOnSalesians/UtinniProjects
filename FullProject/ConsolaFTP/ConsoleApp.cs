@@ -287,14 +287,11 @@ namespace ConsolaFTP
 
             StreamReader sr = new StreamReader(Application.StartupPath + "/..//resources//_downloadRAREDI_2.edi");
 
-
-            bool a = true;
-            string b = "ORD";
+            bool a = false;
 
             string line = "";
             sr.ReadLine();
             line = sr.ReadLine();
-
 
             while (line != null)
             {
@@ -304,7 +301,10 @@ namespace ConsolaFTP
                 line = sr.ReadLine();
             }
 
-            
+            for (int i = 0; i < comandes.Count; i++)
+            {
+
+            }
 
             return a;
         }
