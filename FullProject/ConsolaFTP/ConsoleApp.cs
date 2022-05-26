@@ -7,16 +7,20 @@ using System.IO;
 using System.Net;
 using System.Data;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Globalization;
 
 namespace ConsolaFTP
 {
     class ConsoleApp
     {
-        
-        static DataSet dts;
         const string pathedi = "../RAREDI_2.edi";
         const string ediFileServer = "ftp://51.83.97.10:21//home/utinni/ftp/RAREDI_2.edi";
         const string directoryServer = "ftp://51.83.97.10:21//home/utinni/ftp/";
+
+        static List<string> orderTable = new List<string>();
+        static List<string> orderInfo = new List<string>();
+        static List<string> orderDetails = new List<string>();
 
         [STAThread]
         static void Main(string[] args)
@@ -50,10 +54,10 @@ namespace ConsolaFTP
                         DownloadFile();
                         break;
                     case "E":
-                        
                         correctOrder = processat();
                         if (correctOrder)
                         {
+                            comandesInserts();
                             msgProcessat = "El processat a tingut éxit!\n";
                         }
                         else
@@ -285,9 +289,9 @@ namespace ConsolaFTP
         {
             List<string[]> comandes = new List<string[]>();
 
-            StreamReader sr = new StreamReader(Application.StartupPath + "/..//resources//_downloadRAREDI_2.edi");
+            StreamReader sr = new StreamReader(Application.StartupPath + "/../resources/_downloaded_RAREDI_2.edi");
 
-            bool a = false;
+            bool a = true;
 
             string line = "";
             sr.ReadLine();
@@ -306,50 +310,63 @@ namespace ConsolaFTP
                 {
                     if (comandes[i][j] == "ORD")
                     {
-                        Console.WriteLine(comandes[i][j]); // Titulo
-                        Console.WriteLine(comandes[i][j + 1]); // Pedido
-                        Console.WriteLine(comandes[i][j + 2]); // Tipos
+                        orderTable.Add(comandes[i][j + 1]); // Pedido - Orders.codeOrder
+                        orderTable.Add(comandes[i][j + 2]); // Tipos - Priority.CodePriority - Orders.IdPriority
                     }
-
-                    if (comandes[i][j] == "DTM") {
-                        Console.WriteLine(comandes[i][j]); // Titulo
-                        Console.WriteLine(comandes[i][j + 1]); // Fecha
+                    if (comandes[i][j] == "DTM") 
+                    {
+                        orderTable.Add(comandes[i][j + 1]); // Fecha - Orders.dateOrder
                     }
                     if (comandes[i][j] == "NADMS")
                     {
-                        Console.WriteLine(comandes[i][j]); // Titulo
-                        Console.WriteLine(comandes[i][j + 1]); // Area operativa
-                        Console.WriteLine(comandes[i][j + 2]); // Emisor
+                        orderInfo.Add(comandes[i][j + 1]); // Area operativa - OperationalAreas.CodeOperationalArea - OrderInfo.idOperationalArea
+                        orderInfo.Add(comandes[i][j + 2]); // Emisor - Agencies.CodeAgency - OrderInfo.idAgency
 
                     }
                     if (comandes[i][j] == "NADMR")
                     {
-                        Console.WriteLine(comandes[i][j]); // Titulo
-                        Console.WriteLine(comandes[i][j + 1]); // Receptor
+                        orderTable.Add(comandes[i][j + 1]); // Receptor - Factories.codeFactory - Orders.IdFactory
                     }
                     if (comandes[i][j] == "LIN")
                     {
-                        Console.WriteLine(comandes[i][j]); // Titulo
-                        Console.WriteLine(comandes[i][j + 1]); // Planeta de destino
-                        Console.WriteLine(comandes[i][j + 2]); // Codigo
-                        Console.WriteLine(comandes[i][j + 3]); // Tipo de codigo
+                        orderDetails.Add(comandes[i][j + 1]); // Planeta de destino - Planets.CodePlanets - OrdersDetail.idPlanet
+                        orderDetails.Add(comandes[i][j + 2]); // Codigo - Referencies.codeReference - OrdersDetail.idReference
+                        orderDetails.Add(comandes[i][j + 3]); // Tipo de codigo - 
 
                     }
                     if (comandes[i][j] == "QTYLIN")
                     {
-                        Console.WriteLine(comandes[i][j]); // Titulo
                         Console.WriteLine(comandes[i][j + 1]); // Calificador
                         Console.WriteLine(comandes[i][j + 2]); // Cantidad
                     }
                     if (comandes[i][j] == "DTMLIN")
                     {
-                        Console.WriteLine(comandes[i][j]); // Titulo
                         Console.WriteLine(comandes[i][j + 1]); // Fecha entrega
                     }
                 }
             }
 
             return a;
+        }
+
+        private static void comandesInserts()
+        {
+            DataSet idPrioridad;
+
+            idPrioridad = AccesDades.Dades.PortarPerConsulta("select idPriority from Priority where CodePriority = '" + orderTable[1] + "'", "Priority");
+
+            DateTime fecha = DateTime.ParseExact(orderTable[2], "yyyyMMdd", CultureInfo.InvariantCulture);
+
+            AccesDades.Dades.Executar("" +
+                "insert into Orders(codeOrder, dateOrder, IdPriority, IdFactory) " +
+                "values (" +
+                    orderTable[0].ToString() + ", " +
+                    fecha + ", " +
+                    idPrioridad.Tables[0].Rows[0]["idPriority"] +
+                    ", 1)"
+                );
+            
+            MessageBox.Show("Hecho");
         }
 
         private static void veure()

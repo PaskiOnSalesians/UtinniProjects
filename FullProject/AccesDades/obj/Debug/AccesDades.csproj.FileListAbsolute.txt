@@ -42,3 +42,8 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\ob
 \\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.csproj.CoreCompileInputs.cache
 \\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.dll
 \\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.pdb
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.csproj.CoreCompileInputs.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.dll
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.pdb
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\FullProject\AccesDades\bin\Debug\AccesDades.dll
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\FullProject\AccesDades\bin\Debug\AccesDades.pdb
