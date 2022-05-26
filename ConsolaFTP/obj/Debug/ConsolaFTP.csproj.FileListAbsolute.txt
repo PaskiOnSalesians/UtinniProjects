@@ -1,0 +1,62 @@
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.exe.config
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.exe
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.pdb
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.exe.config
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.exe
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.OpenConsole.resources
+C:\Users\Paski\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.GenerateResource.cache
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.OpenConsole.resources
+C:\Users\ribes\Documents\GitHub\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.GenerateResource.cache
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.exe.config
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.exe
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\bin\Debug\ConsolaFTP.pdb
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\dll\ConsolaFTP.exe.config
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\dll\ConsolaFTP.exe
+C:\Users\ribes\Desktop\projectefinal\Utinni-Projectes\SecureCoreFinal\dll\ConsolaFTP.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe.config
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\dll\ConsolaFTP.pdb
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.SuggestedBindingRedirects.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe.config
+D:\ForkGit\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe
+D:\ForkGit\Utinni-Projectes\FullProject\dll\ConsolaFTP.pdb
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe.config
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\ConsolaFTP.exe
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\dll\ConsolaFTP.pdb
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+\\Mac\Home\Desktop\Github Windows\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+C:\Users\Nitropc\Desktop\Utinni-Projectes-RamaCopiaSeg\Utinni-Projectes-RamaCopiaSeg\FullProject\dll\ConsolaFTP.exe.config
+C:\Users\Nitropc\Desktop\Utinni-Projectes-RamaCopiaSeg\Utinni-Projectes-RamaCopiaSeg\FullProject\dll\ConsolaFTP.exe
+C:\Users\Nitropc\Desktop\Utinni-Projectes-RamaCopiaSeg\Utinni-Projectes-RamaCopiaSeg\FullProject\dll\ConsolaFTP.pdb
+C:\Users\Nitropc\Desktop\Utinni-Projectes-RamaCopiaSeg\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+C:\Users\Nitropc\Desktop\Utinni-Projectes-RamaCopiaSeg\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+C:\Users\Nitropc\Desktop\Utinni-Projectes-RamaCopiaSeg\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+C:\Users\Nitropc\Desktop\Utinni-Projectes-RamaCopiaSeg\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csprojAssemblyReference.cache
+C:\Users\Nitropc\Desktop\Utinni-Projectes-RamaCopiaSeg\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CopyComplete
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\dll\ConsolaFTP.exe.config
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\dll\ConsolaFTP.exe
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\dll\ConsolaFTP.pdb
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.AssemblyReference.cache
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CoreCompileInputs.cache
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CopyComplete
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.exe
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.CrystalLlistat.resources
+C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.GenerateResource.cache
