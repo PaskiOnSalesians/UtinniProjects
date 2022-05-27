@@ -63,7 +63,7 @@ namespace ConsolaFTP
                         if (correctOrder)
                         {
                             ComandesInserts();
-                            Insert2();
+                            //Insert2();
                             msgProcessat = "El processat a tingut éxit!\n";
                         }
                         else
@@ -344,7 +344,6 @@ namespace ConsolaFTP
                         {
                             orderDetails.Add("-" + comandes[i][j + 2]); // Cantidad
                         }
-                        
                     }
                     if (comandes[i][j] == "DTMLIN")
                     {
@@ -390,8 +389,8 @@ namespace ConsolaFTP
             idReference = _data.PortarPerConsulta("select idReference from References where codeReference = '" + orderDetails[1] + "'");
 
             _data.Executar("" +
-                "insert into OrdersDetail(idOrder,                                      idPlanet,                                       idReference,                                            Quantity,               DeliveryDate)" +
-                "values(              " + idOrder.Tables[0].Rows[0]["idOrder"] + "," + idPlanet.Tables[0].Rows[0]["idPlanet"] + "," + idReference.Tables[0].Rows[0]["idReference"] + "," + int.Parse(orderDetails[3]) + "," + "2020-05-27" + ");"
+                "insert into OrdersDetail(idOrder,                                      idPlanet,                                       idReference,                                            Quantity,                           DeliveryDate)" +
+                "values(              " + idOrder.Tables[0].Rows[0]["idOrder"] + "," +  idPlanet.Tables[0].Rows[0]["idPlanet"] + "," +  idReference.Tables[0].Rows[0]["idReference"] + "," +    int.Parse(orderDetails[3]) + "," +  "2020-05-27" + ");"
             );
 
             MessageBox.Show("Hecho x2");
@@ -401,75 +400,19 @@ namespace ConsolaFTP
         {
             try
             {
-                StreamReader sr = new StreamReader(pathedi);
-                string linia;
+                int idOrder = 220;
 
-                linia = sr.ReadLine();
-                Console.WriteLine("\n              VEURE COMANDA             ");
-                Console.WriteLine("------------------------------------------");
-                while (linia != null)
-                {
-                    Console.WriteLine(linia);
-                    linia = sr.ReadLine();
-                }
-                Console.WriteLine("------------------------------------------");
+                Application.EnableVisualStyles();
+                CrystalLlistat llistat = new CrystalLlistat();
+
+                llistat.agafarid(idOrder);
+                Application.Run(llistat);
             }
             catch (Exception)
             {
+
                 Console.WriteLine("NO S'HA POGUT VISUALITZAR");
             }
         }
-
-        //#region Dades Class Static
-
-        //public static SqlConnection con;
-        //public static string conString;
-
-        //// Connectar a la Base de Dades
-        //#region Connectar
-        //public static void ConnectDB()
-        //{
-        //    conString = CadenaConnexio(); // Trae la cadena
-        //    con = new SqlConnection(conString); // Nos genera la conexión
-        //    con.Open(); // Obrim al connexió
-        //    //con.InitializeLifetimeService();
-        //}
-        //#endregion
-
-        //// Obtenir la cadena de connexió de App.config
-        //#region Cadena Connexió
-        //public static string CadenaConnexio()
-        //{
-        //    string cadena = "";
-        //    ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["SecureCoreServer"];
-
-        //    if (settings != null)
-        //    {
-        //        cadena = settings.ConnectionString.ToString();
-        //    }
-
-        //    return cadena;
-        //}
-        //#endregion
-
-        //#region Query
-        //public static DataSet PortarPerConsulta(string query, string nomtaula)
-        //{
-        //    ConnectDB();
-        //    DataSet dataSet = new DataSet();
-        //    new SqlDataAdapter(query, con).Fill(dataSet, nomtaula);
-        //    return dataSet;
-        //}
-        //#endregion
-
-        //#region Executa (INSERT + UPDATE + DELETE)
-        //public static int Executar(string comanda)
-        //{
-        //    ConnectDB();
-        //    return new SqlCommand(comanda, con).ExecuteNonQuery();
-        //}
-        //#endregion
-
-        //#endregion
     }
 }

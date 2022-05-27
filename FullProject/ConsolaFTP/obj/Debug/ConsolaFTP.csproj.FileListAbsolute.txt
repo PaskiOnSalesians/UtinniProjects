@@ -60,3 +60,7 @@ C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg
 C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.pdb
 C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.CrystalLlistat.resources
 C:\Users\ribes\Desktop\Utinni-Projectes-cristalFPT\Utinni-Projectes-RamaCopiaSeg\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.GenerateResource.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.AssemblyReference.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.CrystalLlistat.resources
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.GenerateResource.cache
+E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CopyComplete

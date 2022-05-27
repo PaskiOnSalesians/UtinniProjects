@@ -46,4 +46,3 @@ C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\Git
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.pdb
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\FullProject\AccesDades\bin\Debug\AccesDades.dll
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\Utinni-Projectes\FullProject\AccesDades\bin\Debug\AccesDades.pdb
-E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\AccesDades\obj\Debug\AccesDades.csproj.AssemblyReference.cache
