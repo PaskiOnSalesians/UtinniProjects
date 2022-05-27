@@ -63,7 +63,7 @@ namespace ConsolaFTP
                         if (correctOrder)
                         {
                             ComandesInserts();
-                            //Insert2();
+                            Insert2();
                             msgProcessat = "El processat a tingut éxit!\n";
                         }
                         else
@@ -375,32 +375,36 @@ namespace ConsolaFTP
                 "values (       " + orderTable[0] + "," +   "2020-05-27" + "," +    idPrioridad.Tables[0].Rows[0]["idPriority"] + "," + idFact.Tables[0].Rows[0]["idFactory"] + ");"
             );
 
-            MessageBox.Show("Hecho");
+            Console.WriteLine("Updated Orders!\n");
         }
 
         private static void Insert2()
         {
-            DataSet idOrder;
-            DataSet idPlanet;
-            DataSet idReference;
+            DataSet idOrder = new DataSet();
+            DataSet idPlanet = new DataSet();
+            DataSet idReference = new DataSet();
 
-            idOrder = _data.PortarPerConsulta("select idOrder from Orders where codeOrder = '" + orderTable[0] + "'");
-            idPlanet = _data.PortarPerConsulta("select idPlanet from Planets where CodePlanet = '" + orderDetails[0] + "'");
-            idReference = _data.PortarPerConsulta("select idReference from References where codeReference = '" + orderDetails[1] + "'");
+            idOrder = _data.PortarPerConsulta("select idOrder from [Orders] where codeOrder = '" + orderTable[0] + "' order by dateOrder desc", "Orders");
+            idPlanet = _data.PortarPerConsulta("select idPlanet from [Planets] where CodePlanet = '" + orderDetails[0] + "'", "Planets");
+            idReference = _data.PortarPerConsulta("select idReference from [References] where codeReference = '" + orderDetails[1] + "'", "References");
 
-            _data.Executar("" +
+            _data.Executar(
                 "insert into OrdersDetail(idOrder,                                      idPlanet,                                       idReference,                                            Quantity,                           DeliveryDate)" +
-                "values(              " + idOrder.Tables[0].Rows[0]["idOrder"] + "," +  idPlanet.Tables[0].Rows[0]["idPlanet"] + "," +  idReference.Tables[0].Rows[0]["idReference"] + "," +    int.Parse(orderDetails[3]) + "," +  "2020-05-27" + ");"
+                "values(              " + "484" + "," +  idPlanet.Tables[0].Rows[0]["idPlanet"] + "," +  idReference.Tables[0].Rows[0]["idReference"] + "," +    int.Parse(orderDetails[3]) + "," +  "2020-05-27" + ");"
             );
 
-            MessageBox.Show("Hecho x2");
+            Console.WriteLine("Updated OrderDetails!\n");
         }
 
         private static void Veure()
         {
             try
             {
-                int idOrder = 220;
+                DataSet dts = new DataSet();
+
+                dts = _data.PortarPerConsulta("select top 1 * from Orders order by idOrder asc", "Orders");
+
+                int idOrder = int.Parse(dts.Tables[0].Columns[0].ToString()); // Rows[0]["idOrder"]
 
                 Application.EnableVisualStyles();
                 CrystalLlistat llistat = new CrystalLlistat();

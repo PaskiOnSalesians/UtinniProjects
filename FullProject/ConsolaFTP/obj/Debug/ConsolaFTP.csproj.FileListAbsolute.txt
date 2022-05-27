@@ -64,3 +64,7 @@ E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\ob
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.CrystalLlistat.resources
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.GenerateResource.cache
 E:\Proyectos\Desarrollo\Respositories\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CopyComplete
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.AssemblyReference.cache
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.CrystalLlistat.resources
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.GenerateResource.cache
+D:\ForkGit\Utinni-Projectes\FullProject\ConsolaFTP\obj\Debug\ConsolaFTP.csproj.CopyComplete
