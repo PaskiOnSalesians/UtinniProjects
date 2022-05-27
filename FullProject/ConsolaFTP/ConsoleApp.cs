@@ -64,6 +64,7 @@ namespace ConsolaFTP
                         {
                             ComandesInserts();
                             //Insert2();
+                            Insert3();
                             msgProcessat = "El processat a tingut éxit!\n";
                         }
                         else
@@ -375,7 +376,7 @@ namespace ConsolaFTP
                 "values (       " + orderTable[0] + "," +   "2020-05-27" + "," +    idPrioridad.Tables[0].Rows[0]["idPriority"] + "," + idFact.Tables[0].Rows[0]["idFactory"] + ");"
             );
 
-            MessageBox.Show("Hecho");
+            Console.WriteLine("Insert Hecho");
         }
 
         private static void Insert2()
@@ -393,7 +394,25 @@ namespace ConsolaFTP
                 "values(              " + idOrder.Tables[0].Rows[0]["idOrder"] + "," +  idPlanet.Tables[0].Rows[0]["idPlanet"] + "," +  idReference.Tables[0].Rows[0]["idReference"] + "," +    int.Parse(orderDetails[3]) + "," +  "2020-05-27" + ");"
             );
 
-            MessageBox.Show("Hecho x2");
+            Console.WriteLine("Insert 2 Hecho");
+        }
+
+        private static void Insert3()
+        {
+            DataSet idOperationalArea;
+            DataSet idAgency;
+            DataSet idOrder;
+
+            idOperationalArea = _data.PortarPerConsulta("select idOperationalArea from OperationalAreas where CodeOperationalArea = '" + orderInfo[0] + "'");
+            idAgency = _data.PortarPerConsulta("select idAgency from Agencies where CodeAgency = '" + orderInfo[1] + "'");
+            idOrder = _data.PortarPerConsulta("select idOrder from Orders where codeOrder = '" + orderTable[0] + "'");
+
+            _data.Executar("" +
+                "insert into OrderInfo(idOrder, idAgency, idOperationalArea)" +
+                "values(484," + idAgency.Tables[0].Rows[0]["idAgency"] + "," + idOperationalArea.Tables[0].Rows[0]["idOperationalArea"] + ");"
+            );
+
+            Console.WriteLine("Insert 3 Hecho");
         }
 
         private static void Veure()
