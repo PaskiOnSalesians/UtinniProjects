@@ -9,6 +9,9 @@ using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Globalization;
+using System.Configuration;
+
+using AccesDades;
 
 namespace ConsolaFTP
 {
@@ -22,11 +25,13 @@ namespace ConsolaFTP
         static List<string> orderInfo = new List<string>();
         static List<string> orderDetails = new List<string>();
 
+        static Dades _data = new Dades();
+
         [STAThread]
         static void Main(string[] args)
         {
-            string opcio, msgProcessat;
-            bool correctOrder;
+            string opcio, msgProcessat = "";
+            bool correctOrder = true;
 
 
             Welcome();
@@ -54,10 +59,11 @@ namespace ConsolaFTP
                         DownloadFile();
                         break;
                     case "E":
-                        correctOrder = processat();
+                        correctOrder = ProcessatEDI();
                         if (correctOrder)
                         {
-                            comandesInserts();
+                            ComandesInserts();
+                            Insert2();
                             msgProcessat = "El processat a tingut éxit!\n";
                         }
                         else
@@ -67,7 +73,7 @@ namespace ConsolaFTP
                         Console.WriteLine(msgProcessat);
                         break;
                     case "V":
-                        veure();
+                        Veure();
                         break;
                     case "C":
                         Console.Clear();
@@ -241,7 +247,6 @@ namespace ConsolaFTP
 
                 strm.Close();
                 resp.Close();
-                //req.GetResponse().Close();
             }
             catch (Exception ex)
             {
@@ -285,19 +290,16 @@ namespace ConsolaFTP
 
         #endregion
 
-        private static bool processat()
+        private static bool ProcessatEDI()
         {
             List<string[]> comandes = new List<string[]>();
 
             StreamReader sr = new StreamReader(Application.StartupPath + "/../resources/_downloaded_RAREDI_2.edi");
 
-            bool a = true;
-
-            string line = "";
             sr.ReadLine();
-            line = sr.ReadLine();
+            string line = sr.ReadLine();
 
-            while (line != null)
+            while (!string.IsNullOrEmpty(line))
             {
                 string[] comanda = line.Split('|');
                 comandes.Add(comanda);
@@ -321,7 +323,6 @@ namespace ConsolaFTP
                     {
                         orderInfo.Add(comandes[i][j + 1]); // Area operativa - OperationalAreas.CodeOperationalArea - OrderInfo.idOperationalArea
                         orderInfo.Add(comandes[i][j + 2]); // Emisor - Agencies.CodeAgency - OrderInfo.idAgency
-
                     }
                     if (comandes[i][j] == "NADMR")
                     {
@@ -332,44 +333,71 @@ namespace ConsolaFTP
                         orderDetails.Add(comandes[i][j + 1]); // Planeta de destino - Planets.CodePlanets - OrdersDetail.idPlanet
                         orderDetails.Add(comandes[i][j + 2]); // Codigo - Referencies.codeReference - OrdersDetail.idReference
                         orderDetails.Add(comandes[i][j + 3]); // Tipo de codigo - 
-
                     }
                     if (comandes[i][j] == "QTYLIN")
                     {
-                        Console.WriteLine(comandes[i][j + 1]); // Calificador
-                        Console.WriteLine(comandes[i][j + 2]); // Cantidad
+                        if(comandes[i][j + 1] == "21")
+                        {
+                            orderDetails.Add(comandes[i][j + 2]); // Cantidad
+                        }
+                        else
+                        {
+                            orderDetails.Add("-" + comandes[i][j + 2]); // Cantidad
+                        }
+                        
                     }
                     if (comandes[i][j] == "DTMLIN")
                     {
-                        Console.WriteLine(comandes[i][j + 1]); // Fecha entrega
+                        orderDetails.Add(comandes[i][j + 1]); // Fecha entrega
                     }
                 }
             }
 
-            return a;
+            if(comandes.Count > 0)
+            {
+                return true;
+            }
+
+            return false;
         }
 
-        private static void comandesInserts()
+        private static void ComandesInserts()
         {
             DataSet idPrioridad;
+            DataSet idFact;
 
-            idPrioridad = AccesDades.Dades.PortarPerConsulta("select idPriority from Priority where CodePriority = '" + orderTable[1] + "'", "Priority");
-
-            DateTime fecha = DateTime.ParseExact(orderTable[2], "yyyyMMdd", CultureInfo.InvariantCulture);
-
-            AccesDades.Dades.Executar("" +
-                "insert into Orders(codeOrder, dateOrder, IdPriority, IdFactory) " +
-                "values (" +
-                    orderTable[0].ToString() + ", " +
-                    fecha + ", " +
-                    idPrioridad.Tables[0].Rows[0]["idPriority"] +
-                    ", 1)"
-                );
+            idPrioridad = _data.PortarPerConsulta("select idPriority from Priority where CodePriority = '" + orderTable[1] + "'", "Priority");
+            idFact = _data.PortarPerConsulta("select idFactory from Factories where codeFactory = '" + orderTable[3] + "'", "Factories");
             
+            //DateTime fecha = DateTime.ParseExact(orderTable[2], "YYYYMMDD", CultureInfo.InvariantCulture);
+
+            _data.Executar("" +
+                "insert into Orders(codeOrder,              dateOrder,              IdPriority,                                         IdFactory) " +
+                "values (       " + orderTable[0] + "," +   "2020-05-27" + "," +    idPrioridad.Tables[0].Rows[0]["idPriority"] + "," + idFact.Tables[0].Rows[0]["idFactory"] + ");"
+            );
+
             MessageBox.Show("Hecho");
         }
 
-        private static void veure()
+        private static void Insert2()
+        {
+            DataSet idOrder;
+            DataSet idPlanet;
+            DataSet idReference;
+
+            idOrder = _data.PortarPerConsulta("select idOrder from Orders where codeOrder = '" + orderTable[0] + "'");
+            idPlanet = _data.PortarPerConsulta("select idPlanet from Planets where CodePlanet = '" + orderDetails[0] + "'");
+            idReference = _data.PortarPerConsulta("select idReference from References where codeReference = '" + orderDetails[1] + "'");
+
+            _data.Executar("" +
+                "insert into OrdersDetail(idOrder,                                      idPlanet,                                       idReference,                                            Quantity,               DeliveryDate)" +
+                "values(              " + idOrder.Tables[0].Rows[0]["idOrder"] + "," + idPlanet.Tables[0].Rows[0]["idPlanet"] + "," + idReference.Tables[0].Rows[0]["idReference"] + "," + int.Parse(orderDetails[3]) + "," + "2020-05-27" + ");"
+            );
+
+            MessageBox.Show("Hecho x2");
+        }
+
+        private static void Veure()
         {
             try
             {
@@ -392,6 +420,56 @@ namespace ConsolaFTP
             }
         }
 
+        //#region Dades Class Static
 
+        //public static SqlConnection con;
+        //public static string conString;
+
+        //// Connectar a la Base de Dades
+        //#region Connectar
+        //public static void ConnectDB()
+        //{
+        //    conString = CadenaConnexio(); // Trae la cadena
+        //    con = new SqlConnection(conString); // Nos genera la conexión
+        //    con.Open(); // Obrim al connexió
+        //    //con.InitializeLifetimeService();
+        //}
+        //#endregion
+
+        //// Obtenir la cadena de connexió de App.config
+        //#region Cadena Connexió
+        //public static string CadenaConnexio()
+        //{
+        //    string cadena = "";
+        //    ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["SecureCoreServer"];
+
+        //    if (settings != null)
+        //    {
+        //        cadena = settings.ConnectionString.ToString();
+        //    }
+
+        //    return cadena;
+        //}
+        //#endregion
+
+        //#region Query
+        //public static DataSet PortarPerConsulta(string query, string nomtaula)
+        //{
+        //    ConnectDB();
+        //    DataSet dataSet = new DataSet();
+        //    new SqlDataAdapter(query, con).Fill(dataSet, nomtaula);
+        //    return dataSet;
+        //}
+        //#endregion
+
+        //#region Executa (INSERT + UPDATE + DELETE)
+        //public static int Executar(string comanda)
+        //{
+        //    ConnectDB();
+        //    return new SqlCommand(comanda, con).ExecuteNonQuery();
+        //}
+        //#endregion
+
+        //#endregion
     }
 }

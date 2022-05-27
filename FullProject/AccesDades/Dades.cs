@@ -17,14 +17,14 @@ namespace AccesDades
 
     //using Microsoft.VisualBasic.CompilerServices;
 
-    public static class Dades
+    public class Dades
     {
-        public static SqlConnection con;
-        public static string conString;
+        public SqlConnection con;
+        public string conString;
 
         // Connectar a la Base de Dades
         #region Connectar
-        public static void ConnectDB()
+        public void ConnectDB()
         {
             conString = CadenaConnexio(); // Trae la cadena
             con = new SqlConnection(conString); // Nos genera la conexión
@@ -35,7 +35,7 @@ namespace AccesDades
 
         // Obtenir la cadena de connexió de App.config
         #region Cadena Connexió
-        private static string CadenaConnexio()
+        private string CadenaConnexio()
         {
             string cadena = "";
             ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["SecureCoreServer"];
@@ -51,7 +51,7 @@ namespace AccesDades
 
         // Portar la Taula de la Base de Dades
         #region PortaTaula
-        public static DataTable PortaTaula(string query)
+        public DataTable PortaTaula(string query)
         {
             DataTable taulaData = null;
 
@@ -77,7 +77,7 @@ namespace AccesDades
         // Portar una consulta i retornar les Dades per DataSet
         #region PortarPerConsulta
 
-        public static DataSet PortarPerConsulta(string query)
+        public DataSet PortarPerConsulta(string query)
         {
             ConnectDB();
             SqlDataAdapter adapter = new SqlDataAdapter(query, con);
@@ -87,7 +87,7 @@ namespace AccesDades
             return dataSet;
         }
 
-        public static DataSet PortarPerConsulta(string query, string nomtaula)
+        public DataSet PortarPerConsulta(string query, string nomtaula)
         {
             ConnectDB();
             DataSet dataSet = new DataSet();
@@ -99,7 +99,7 @@ namespace AccesDades
 
         // Actualitzar la Base de Dades
         #region Actualitzar
-        public static void Actualitzar(string query, string taula, DataSet _dts)
+        public void Actualitzar(string query, string taula, DataSet _dts)
         {
             int numReg;
 
@@ -123,7 +123,7 @@ namespace AccesDades
 
         // Executar comandes
         #region Executa (INSERT + UPDATE + DELETE)
-        public static int Executar(string comanda)
+        public int Executar(string comanda)
         {
             ConnectDB();
             return new SqlCommand(comanda, con).ExecuteNonQuery();
