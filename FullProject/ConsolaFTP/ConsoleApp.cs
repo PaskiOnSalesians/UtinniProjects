@@ -64,6 +64,7 @@ namespace ConsolaFTP
                         {
                             ComandesInserts();
                             Insert2();
+                            Insert3();
                             msgProcessat = "El processat a tingut éxit!\n";
                         }
                         else
@@ -396,15 +397,33 @@ namespace ConsolaFTP
             Console.WriteLine("Updated OrderDetails!\n");
         }
 
+        private static void Insert3()
+        {
+            DataSet idOperationalArea;
+            DataSet idAgency;
+            DataSet idOrder;
+
+            idOperationalArea = _data.PortarPerConsulta("select idOperationalArea from OperationalAreas where CodeOperationalArea = '" + orderInfo[0] + "'");
+            idAgency = _data.PortarPerConsulta("select idAgency from Agencies where CodeAgency = '" + orderInfo[1] + "'");
+            idOrder = _data.PortarPerConsulta("select idOrder from Orders where codeOrder = '" + orderTable[0] + "'");
+
+            _data.Executar("" +
+                "insert into OrderInfo(idOrder, idAgency, idOperationalArea)" +
+                "values(484," + idAgency.Tables[0].Rows[0]["idAgency"] + "," + idOperationalArea.Tables[0].Rows[0]["idOperationalArea"] + ");"
+            );
+
+            Console.WriteLine("Updated OrderInfo!\n");
+        }
+
         private static void Veure()
         {
             try
             {
-                DataSet dts = new DataSet();
+                //DataSet dts = new DataSet();
 
-                dts = _data.PortarPerConsulta("select top 1 * from Orders order by idOrder asc", "Orders");
+                //dts = _data.PortarPerConsulta("select top 1 * from Orders order by idOrder asc", "Orders");
 
-                int idOrder = int.Parse(dts.Tables[0].Columns[0].ToString()); // Rows[0]["idOrder"]
+                int idOrder = 484; //int.Parse(dts.Tables[0].Columns[0].ToString()); // Rows[0]["idOrder"]
 
                 Application.EnableVisualStyles();
                 CrystalLlistat llistat = new CrystalLlistat();
